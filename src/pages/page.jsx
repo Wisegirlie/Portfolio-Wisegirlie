@@ -1,6 +1,5 @@
-import { Button, ButtonGroup } from "@mui/material";
-import { Header } from "./Header.jsx";
-import './page.css'
+import { Header } from "./header.jsx";
+import './main.css'
 
 export function Page(props) {
 
