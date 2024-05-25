@@ -8,6 +8,7 @@ header {
     top: 0;
     z-index: 10;
     padding-top: 5px;
+    background-color: #FFF;
 }
 
 .logo-img {
@@ -17,12 +18,17 @@ header {
     object-fit: cover;
   }
 
+.logo-img:hover {
+    transform: scale(1.02);
+    transition: all 0.2s; 
+}
+
 .nav-button {     
     display: inline-block;
     min-width: 40px;
     box-shadow: none;
     cursor: pointer;
-    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-family: "Roboto", "Arial", sans-serif;
     font-weight: 800;
     font-size: 18px;
     letter-spacing: 0.02857em;

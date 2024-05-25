@@ -20,7 +20,9 @@ export function Header(props) {
                 );                      
   return (
     <header>
-      <img src="./src/assets/logo_gaby_bolder.png" alt="Logo Gabriela Waisman" className="logo-img"/>     
+      <Link to="/">
+        <img src="./src/assets/logo_gaby_bolder.png" alt="Logo Gabriela Waisman" className="logo-img"/>     
+      </Link>
       <nav>
         <ul>{menuitems}</ul>   
       </nav>     
