@@ -6,16 +6,17 @@ export default function Contact() {
     return (
         <div>
             <Header />
-                <div className="recuadro gris_back">
+                <div className="recuadro_nomargin">
                     <div className="contact_container">
-                        {/* <div className="contact_info_div">
-                            <h1 className="negro">Gabriela Waisman </h1>                            
+                        <div className="contact_info_div">
+                            <img src="./src/assets/logo_g_alone_blanco.png" alt="Gabriela Logo" className="logo_g"/>
+                            <h1 className="blanco">Gabriela Waisman </h1>                            
                             <a href="mailto:gabywaisman@hotmail.com">gabywaisman@hotmail.com</a> <br />
                             <a href="tel:+6476422281">PH: (647) 642-2281</a> <br />
                             <Nets className="net_icon" />
 
-                        </div> */}
-                        {/* <div className="contact_form_div"> */}
+                        </div> 
+                        <div className="contact_form_div gris_back"> 
                             <h1 className="negro">Need a Full-Stack Developer?</h1>
                                 
                             I'm ready to hear about your project. <br />
@@ -38,11 +39,12 @@ export default function Contact() {
                             </form>
 
 
-                        {/* </div>   */}
+                        </div>  
                     </div> {/* contact_container */}
                 </div>
             <Footer/>
         </div>
+        
     );
 }
     

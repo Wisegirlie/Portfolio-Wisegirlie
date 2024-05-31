@@ -1,3 +1,5 @@
+/*  ----- HEADER CSS ------ */
+
 header {
     display: flex; 
     vertical-align: top;   
@@ -23,6 +25,9 @@ header {
     transition: all 0.2s; 
 }
 
+
+/*  ----- NAV CSS ------ */
+
 .nav-button {     
     display: inline-block;
     min-width: 40px;
@@ -34,14 +39,17 @@ header {
     letter-spacing: 0.02857em;
     text-align: center;
     min-width: 64px;
-    padding: 6px 16px;
-    color: var(--fucsia);    
-    /* background-color: #d2197f; */
+    margin: 6px 16px;
+    color: var(--fucsia);       
 }
 
-.nav-button:hover {
-    /* border: 1px dashed var(--fucsia);
-    border-radius: 5px; */
+.nav-button:hover {    
     transform: scale(1.1);
     transition: all 0.2s; 
+   
 }
+
+/* .nav-button-dot {
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid var(--fucsia);     
+} */

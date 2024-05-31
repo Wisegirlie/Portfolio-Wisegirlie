@@ -65,7 +65,7 @@ export default function Services() {
                 <div class="service_div" >
                     <div class="service_info">
                     <i class="fas fa-database"></i>
-                            <h3>Databases</h3>
+                            <h3>Database</h3>
                             <p>
                                 Database creation and management: Oracle SL, Mongo DB, MySL. 
                             </p>                        

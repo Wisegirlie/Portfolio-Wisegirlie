@@ -19,7 +19,7 @@
 .recuadro {
     background-color: rgba(188, 0, 86, .1);
     margin-top: 30px;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     /* height: 390px; */
     border-radius: 20px;    
     display: flex; 
@@ -51,6 +51,8 @@ h1 {
     flex-flow: row wrap;
     padding-left: 130px ;
     padding-right: 100px;
+    margin-top: 40px;
+    margin-bottom: 30px;
 }
 
 .home_photo_container {
@@ -97,11 +99,11 @@ h1 {
 .highlight_small {
     display: inline-block;
     margin: 3px;
-    background-color: #555;
+    background-color: #d0cbcd;
     color: #FFF;
-    border-radius: 6px;
+    border-radius: 9px;
     border: 1px solid transparent;
-    padding: 0.3em 1.4em;
+    padding: 0.2em 1.3em;
     font-size: .7em;
     font-weight: 600;
     font-family: inherit;
@@ -117,6 +119,90 @@ h1 {
 
 .button_white:hover, .button_white:active {
     border-color: #BC0056;
+}
+
+
+   
+  /* ----------------------------
+             PROJECTS
+   ---------------------------- */
+
+.project_container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;    
+    justify-content: space-between;   
+    margin-bottom: 20px; 
+}
+
+.project_div {
+    flex-grow: 1;
+    height: 400px;     
+    min-width: 250px;
+    width: calc((100% / 4) - 40px);    
+    background-color: #999;
+    margin: 20px 0 40px;    
+    border-radius: 20px;
+    box-shadow: #bcbcbc 10px 8px 15px; /* #d2d2d2 */
+}
+
+.project_img_container {    
+    position: relative;
+    display: block;  
+    height: 250px;    
+}
+
+.project_img_text_vert {
+    position: absolute;
+    z-index: 3;
+    color: #c70b50;    
+    font-weight: bold;
+    font-size: 4em;
+    right: 0;
+    bottom: 0;
+    writing-mode: vertical-lr; 
+    text-orientation: mixed; 
+    transform: rotate(180deg);
+    margin: 0px -20px;
+    text-shadow: 
+    2px -1px 10px #ffffff; 
+    background-color: #ffffff;
+}
+
+.project_title {
+    color: #bfb3b8;   
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    font-family: Raleway, Arial, Helvetica, sans-serif;
+     
+}
+
+.project_img_container img {    
+    width: 100%; 
+    height: 100%;
+    object-fit: cover;    
+    border-radius: 20px;
+    /* object-position: 9%;    */    
+    /* filter: sepia(1) hue-rotate(290deg) saturate(4) brightness(80%) contrast(200%); */
+  
+}
+
+.project_img_container img:hover {      
+    filter: none;
+}
+
+.project_div h2 {
+    margin: 8px 0 5px;
+}
+
+.project_links {
+    margin: 0;
+    padding: 0;
+    color: #000;
+    
+}
+.project_container a:hover, .project_container a:link, .project_container a:visited   {   
+    color: #000;
 }
 
 /* ----------------------------
@@ -192,26 +278,48 @@ h1 {
            CONTACT
    ---------------------------- */
 
-.contact_container {    
+.recuadro_nomargin {
+    background-color: var(--fucsia);
+    margin-top: 30px;
+    margin-bottom: 50px;    
+    border-radius: 20px;    
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;               
+}
+
+.contact_container {
+    width: 100%;
+    margin: 0;
+}
+
+.contact_info_div {
+    display: inline-block;    
+    width: 35%;       
+    text-align: left;
+    min-width: 380px;
+    vertical-align: top;    
+    padding: 45px 0 30px 100px;
+    padding-right: 52px;
     
 }
 
-/* .contact_info_div {
-    display: inline-block;
-    width: 35%;   
-    text-align: right;
-    min-width: 380px;
-    vertical-align: bottom;
-    padding-right: 140px;
+.contact_info_div h1{
+    margin: 10px 0;
 }
 
 .contact_form_div {
     display: inline-block;
-    max-width: 600px;
+    width: 50%;
+    padding: 20px;
+    max-width: 800px;
     margin-left: auto;
     margin-right: auto;  
     text-align: center;  
-} */
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
 
 .net_icon {
     height: 30px;
@@ -220,25 +328,35 @@ h1 {
     margin-top: 15px;
 }
 
-/* .contact_info_div a, .contact_info_div:visited {
-    color: #000;
+.contact_info_div a, .contact_info_div:visited {
+    color: rgb(252, 208, 229);
 }
 
 .contact_info_div a:hover  {
-    color: var(--fucsia);
-} */
+    color: #ffeab0;
+}
+
+.blanco {
+    color: #FFF;
+}
+
+.logo_g {
+    height: 70px;
+    margin: 0;
+}
 
 /* ----------- FORM -------------- */
            
 .form_container {
     display: block;
+    width: 70%;
     margin-top: 40px;    
     margin-left: auto;
     margin-right: auto;  
     background-color: #CCC;
     max-width: 600px;  
     border-radius: 15px;   
-    padding: 30px 50px 30px 37px;
+    padding: 30px 50px;
     text-align: center;
 }
 
@@ -302,4 +420,12 @@ label {
 
 .negro {
     color: #000;;
+}
+
+.rosa {
+    color: rgba(188, 0, 86, .1);
+}
+
+.rosa_back {
+    background-color: rgba(188, 0, 86, .1);
 }

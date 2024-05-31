@@ -13,7 +13,7 @@ export function Header(props) {
    const menuitems = navButtons.map(
               button => 
                  <Link to={button.location}>
-                    <li key={button.key} className="nav-button" >
+                    <li key={button.key} className="nav-button" id={button.key} >
                         {button.name}
                     </li>
                  </Link>
