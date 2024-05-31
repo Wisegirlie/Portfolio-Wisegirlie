@@ -1,3 +1,10 @@
+/* ===============================
+   |  Student: GABRIELA WAISMAN  |
+   |         # 301328259         |
+   =============================== 
+   |   COMPONENT:    FOOTER      |
+   =============================== */ 
+   
 import './footer.css'
 import { Nets } from "./nets.jsx";
 

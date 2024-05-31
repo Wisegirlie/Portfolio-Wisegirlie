@@ -1,4 +1,14 @@
-export default function Icons() {
+/* ===============================
+   |  Student: GABRIELA WAISMAN  |
+   |         # 301328259         |
+   =============================== 
+   |   COMPONENT: not used       |
+   |  (used for developing only) |
+   |      show icons to know     |
+   |      which one to use       |
+   =============================== */ 
+   
+   export default function Icons() {
   return (
     <div>
           {/* script vacio creado en app

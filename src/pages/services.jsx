@@ -1,3 +1,10 @@
+/* ===============================
+   |  Student: GABRIELA WAISMAN  |
+   |         # 301328259         |
+   =============================== 
+   |        SERVICES PAGE        |
+   =============================== */ 
+   
 import { Header } from "./header.jsx";
 import { Footer } from "./footer.jsx";
 
@@ -5,12 +12,14 @@ export default function Services() {
     return (
         <div>
             <Header />
+
+            {/* ---- SERVICES PAGE ---- */}
             
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"></link>
 
            
             <div class="services_container">
-
+                {/* <h1>I do</h1> */}
                 <div class="service_div">
                     <div class="service_info">
                     <i class="fas fa-globe"></i>                        

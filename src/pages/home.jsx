@@ -1,3 +1,10 @@
+/* ===============================
+   |  Student: GABRIELA WAISMAN  |
+   |         # 301328259         |
+   =============================== 
+   |          HOME PAGE          |
+   =============================== */ 
+
 import { Header } from "./header.jsx";
 import { Footer } from "./footer.jsx";
 import './main.css'

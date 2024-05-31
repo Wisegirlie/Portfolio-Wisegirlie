@@ -1,7 +1,9 @@
 /* ===============================
    |  Student: GABRIELA WAISMAN  |
    |         # 301328259         |
-   ============================= */   
+   =============================== 
+   |        MAIN CSS FILE        |
+   =============================== */ 
    
    /* ----------------------------
              GENERAL
@@ -117,11 +119,16 @@ h1 {
     padding-right: 30px;
 }
 
-.button_white:hover, .button_white:active {
+.button_white:hover, .button_white:active, .button_white_no_margin:hover, .button_white_no_margin:active {
     border-color: #BC0056;
+    color: var(--fucsia);
 }
 
-
+.button_white_no_margin {    
+    margin: 5px auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
    
   /* ----------------------------
              PROJECTS
@@ -137,19 +144,26 @@ h1 {
 
 .project_div {
     flex-grow: 1;
-    height: 400px;     
+    height: 550px;     
     min-width: 250px;
     width: calc((100% / 4) - 40px);    
     background-color: #999;
     margin: 20px 0 40px;    
     border-radius: 20px;
-    box-shadow: #bcbcbc 10px 8px 15px; /* #d2d2d2 */
+    box-shadow: #c0c0c0 7px 8px 15px; /*#d2d2d2*/
+    box-sizing: border-box;
+    border: #cacaca solid 1px;
+}
+
+.project_div:hover {
+    transform: scale(1.03);
+    transition: transform 0.2s;
 }
 
 .project_img_container {    
     position: relative;
     display: block;  
-    height: 250px;    
+    height: 250px;   
 }
 
 .project_img_text_vert {
@@ -170,20 +184,26 @@ h1 {
 }
 
 .project_title {
-    color: #bfb3b8;   
+    color: #aaaaaa;   
+    /* #bfb3b8;    */
     font-weight: 500;
     letter-spacing: 0.05em;
     font-family: Raleway, Arial, Helvetica, sans-serif;
+    margin-top: 6px;
+    margin-bottom: 5px;
      
 }
 
 .project_img_container img {    
-    width: 100%; 
+    /* width: 100%;  */
+    width: 95%;
+    margin: 5px auto;
     height: 100%;
     object-fit: cover;    
     border-radius: 20px;
     /* object-position: 9%;    */    
-    /* filter: sepia(1) hue-rotate(290deg) saturate(4) brightness(80%) contrast(200%); */
+    /* filter: sepia(1) hue-rotate(290deg) saturate(4) brightness(80%) contrast(200%); */    
+    
   
 }
 
@@ -192,7 +212,7 @@ h1 {
 }
 
 .project_div h2 {
-    margin: 8px 0 5px;
+    margin: 5px 0 5px;
 }
 
 .project_links {
@@ -203,6 +223,11 @@ h1 {
 }
 .project_container a:hover, .project_container a:link, .project_container a:visited   {   
     color: #000;
+}
+
+.project_text {
+    padding: 0 40px;
+    color: #444444;   
 }
 
 /* ----------------------------
@@ -218,11 +243,12 @@ h1 {
     display: inline-block;
     width: 22%;
     margin: 1%;    
-    background-color: rgba(188, 0, 86, .1);
+    background-color: rgba(189, 37, 105, 0.1);    
+    /* background-color: rgba(188, 0, 86, .1);     */
     border-radius: 20px;
     padding: 20px;
     text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(31, 2, 10, 0.169);
     transition: transform 0.2s;
     height: 250px;
   }
@@ -302,6 +328,7 @@ h1 {
     vertical-align: top;    
     padding: 45px 0 30px 100px;
     padding-right: 52px;
+    color: #FFF;
     
 }
 
@@ -428,4 +455,48 @@ label {
 
 .rosa_back {
     background-color: rgba(188, 0, 86, .1);
+}
+
+.fucsia {
+    color: #BC0056;  
+}
+
+/* ----------------------------
+            About me
+   ---------------------------- */
+
+.about_resume_div {
+    display: inline-block;    
+    width: 28%;       
+    text-align: center;
+    min-width: 370px;
+    vertical-align: top;    
+    /* padding: 45px 0 20px 20px;
+    padding-right: 20px; */
+    padding: 0;
+    margin: 45px 30px 45px 20px;
+    color: #FFF;
+}
+
+.about_bio_div {
+    display: inline-block;
+    width: 630px;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0;    
+    text-align: left;  
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 20px 90px 40px 140px;
+}
+
+.about_photo {
+    display: block;
+    border-radius: 50%;
+    height: 130px;
+    object-fit: cover;    
+    /* margin-top: 25px; */
+    margin-bottom: 40px;
+    margin: auto;
+    border: #fce9f1 solid 2px;
 }

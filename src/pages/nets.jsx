@@ -1,3 +1,10 @@
+/* ===============================
+   |  Student: GABRIELA WAISMAN  |
+   |         # 301328259         |
+   =============================== 
+   |   COMPONENT: network links  |
+   =============================== */ 
+
 import './footer.css'
 
 export function Nets(props) {

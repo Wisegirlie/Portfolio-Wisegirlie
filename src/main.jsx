@@ -22,8 +22,7 @@ import App from './App';
 
 import "./index.css";
 
-
-
+{/* ---- ROUTER ---- */}
 
 const router = createBrowserRouter([
   {

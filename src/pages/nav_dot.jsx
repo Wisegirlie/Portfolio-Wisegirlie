@@ -1,4 +1,11 @@
-
+/* ===============================
+   |  Student: GABRIELA WAISMAN  |
+   |         # 301328259         |
+   =============================== 
+   |   COMPONENT: not used       |
+   |      (saved for later)      |
+   =============================== */ 
+   
 const nav_buttons = getElementsbyClassName ("nav-button");
 nav_buttons.classList.remove("nav-button-dot");
 

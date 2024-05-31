@@ -1,3 +1,10 @@
+/* ===============================
+   |  Student: GABRIELA WAISMAN  |
+   |         # 301328259         |
+   =============================== 
+   |   COMPONENT:    HEADER      |
+   =============================== */ 
+   
 import { Link } from 'react-router-dom';
 import './header.css'
 
