@@ -1,12 +1,12 @@
 /* ===============================
-   |  Student: GABRIELA WAISMAN  |
-   |         # 301328259         |
+   |       GABRIELA WAISMAN      |
    =============================== 
    |   COMPONENT:    HEADER      |
    =============================== */ 
    
 import { Link } from 'react-router-dom';
-import './header.css'
+import '../css/header.css'
+import logo from '../assets/logo_gaby_bolder.png';
 
 export function Header(props) {
 
@@ -19,8 +19,8 @@ export function Header(props) {
             
    const menuitems = navButtons.map(
               button => 
-                 <Link to={button.location}>
-                    <li key={button.key} className="nav-button" id={button.key} >
+                 <Link to={button.location} key={button.key} >
+                    <li className="nav-button" id={button.key} >
                         {button.name}
                     </li>
                  </Link>
@@ -28,7 +28,7 @@ export function Header(props) {
   return (
     <header>
       <Link to="/">
-        <img src="./src/assets/logo_gaby_bolder.png" alt="Logo Gabriela Waisman" className="logo-img"/>     
+        <img src={logo} alt="Logo Gabriela Waisman" className="logo-img"/>     
       </Link>
       <nav>
         <ul>{menuitems}</ul>   

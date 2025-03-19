@@ -1,13 +1,12 @@
 /* ===============================
-   |  Student: GABRIELA WAISMAN  |
-   |         # 301328259         |
+   |       GABRIELA WAISMAN      |
    =============================== 
    |          HOME PAGE          |
    =============================== */ 
 
 import { Header } from "./header.jsx";
 import { Footer } from "./footer.jsx";
-import './main.css'
+import '../css/main.css'
 import { Link } from 'react-router-dom';
 
 const home_content = {
@@ -29,18 +28,17 @@ export default function Home() {
                             <h1 style={{fontSize: '3.45em'}}>Gabriela Waisman</h1>
 
                             <div className="highlight_big">
-                                Full-Stack Developer
-                            </div>
+                                Software Developer
+                            </div> 
                             <div className="highlight_big" style={{marginLeft: '10px'}}>
-                                Software Engineer Technician
-                            </div> <br /> <br />
-                            <span style={{color: '#333'}}>I'm passionate about technology and would like to be part of teams that seek the creation of innovative solutions. I have a lot of other interests as well, as film, photography and trading. </span><br />
+                                Full-Stack Web Developer
+                            </div>
+                            <br /> <br />
+                            <span style={{color: '#333'}}>I'm passionate about technology and would like to be part of teams that seek the creation of innovative solutions. I have a lot of other interests as well, as finance, trading, sci-fi, and photography. </span><br />
 
                             <Link to="/about">
                                 <button className="button_white">About me</button>
-                            </Link>
-
-                            
+                            </Link>                            
                         </div>
                     </div>
                 </div>

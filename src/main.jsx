@@ -1,7 +1,7 @@
-/* ===============================
-   |  Student: GABRIELA WAISMAN  |
-   |         # 301328259         |
-   ============================= */   
+/* ===========================================
+   |             GABRIELA WAISMAN            |
+   |    Copyright © All rights reserved      |
+   =========================================== */   
    
 import React from 'react'
 import ReactDOM from 'react-dom/client'
@@ -13,11 +13,11 @@ import {
   RouterProvider,
 } from "react-router-dom";
 
-import Home from './pages/home'
-import About from './pages/about'
-import Projects from './pages/projects'
-import Services from './pages/services'
-import Contact from './pages/contact'
+import Home from './components/home'
+import About from './components/about'
+import Projects from './components/projects'
+import Services from './components/services'
+import Contact from './components/contact'
 import App from './App';
 
 import "./index.css";

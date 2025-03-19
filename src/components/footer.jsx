@@ -1,11 +1,10 @@
 /* ===============================
-   |  Student: GABRIELA WAISMAN  |
-   |         # 301328259         |
+   |       GABRIELA WAISMAN      |
    =============================== 
    |   COMPONENT:    FOOTER      |
    =============================== */ 
    
-import './footer.css'
+import '../css/footer.css';
 import { Nets } from "./nets.jsx";
 
 export function Footer() {
@@ -14,7 +13,7 @@ export function Footer() {
         <footer>
              © Gabriela Waisman <br />
              {/* <a href="tel:+6476422281">PH: (647) 642-2281</a> <br /> */}
-             <a href="mailto:gabywaisman@hotmail.com">gabywaisman@hotmail.com</a> <br />  
+             <a href="mailto:gabywaisman@outlook.com">gabywaisman@outlook.com</a> <br />  
              
              <Nets className="net_icon" />             
         </footer>

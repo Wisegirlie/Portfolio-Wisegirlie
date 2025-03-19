@@ -1,12 +1,11 @@
 /* ===============================
-   |  Student: GABRIELA WAISMAN  |
-   |         # 301328259         |
+   |       GABRIELA WAISMAN      |
    =============================== 
    |        PAGE NOT USED        |
    =============================== */ 
    
    import { Header } from "./header.jsx";
-import './main.css'
+import '../css/main.css'
 
 export function Page(props) {
 

@@ -1,6 +1,5 @@
 /* ===============================
-   |  Student: GABRIELA WAISMAN  |
-   |         # 301328259         |
+   |       GABRIELA WAISMAN      |
    =============================== 
    |   COMPONENT: not used       |
    |  (used for developing only) |
