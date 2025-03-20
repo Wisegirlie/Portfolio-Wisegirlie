@@ -13,6 +13,7 @@ dist
 dist-ssr
 *.local
 src/assets/Originals
+public/.htaccess
 
 # Editor directories and files
 .vscode/*
@@ -24,3 +25,4 @@ src/assets/Originals
 *.njsproj
 *.sln
 *.sw?
+
