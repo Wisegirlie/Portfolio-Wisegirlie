@@ -7,6 +7,10 @@
 import { Header } from "./header.jsx";
 import { Footer } from "./footer.jsx";
 import Highlight_small from "./highlight_mall.jsx";
+import projectDiversaImg from '../assets/diversa1.jpg';
+import projectRosariaImg from '../assets/rosaria3.jpg';
+import projectEnergitImg from'../assets/energit2.jpg';
+import projectRealStateImg from '../assets/realstate1.jpg';
 
 export default function Projects() {
     return (
@@ -22,7 +26,7 @@ export default function Projects() {
                 <div className="project_div gris_back">
                     <a href="http://diversafilms.com.ar" target="blank">
                         <div className="project_img_container">
-                            <img src="./src/assets/diversa1.jpg" alt="Project Diversa WebSite" />
+                            <img src={projectDiversaImg} alt="Project Diversa WebSite" />
                             <h2>Diversa Films</h2>
                             <Highlight_small texto='HTML'/>
                             <Highlight_small texto='CSS'/>
@@ -41,7 +45,7 @@ export default function Projects() {
                 <div className="project_div gris_back">
                     <a href="http://soyrosaria.com.ar" target="blank">
                         <div className="project_img_container">
-                            <img src="./src/assets/rosaria3.jpg" alt="Project Rosaria WebSite" />
+                            <img src={projectRosariaImg} alt="Project Rosaria WebSite" />
                             <h2>Rosaria</h2>
                             <Highlight_small texto='HTML'/>
                             <Highlight_small texto='CSS'/>
@@ -60,7 +64,7 @@ export default function Projects() {
                 <div className="project_div gris_back">
                     <a href="https://energit.com.ar" target="blank">
                         <div className="project_img_container">
-                            <img src="./src/assets/energit2.jpg" alt="Project Energit WebSite" />
+                            <img src={projectEnergitImg} alt="Project Energit WebSite" />
                             <h2>Energit</h2>
                             <Highlight_small texto='HTML'/>
                             <Highlight_small texto='CSS'/>
@@ -82,7 +86,7 @@ export default function Projects() {
                 <div className="project_div gris_back">
                     <a href="http://studentweb.cencol.ca/gwaisman/project/index.html" className="project_links"  target="blank">
                         <div className="project_img_container">
-                            <img src="./src/assets/realstate1.jpg" alt="Project Real State WebSite" />
+                            <img src={projectRealStateImg} alt="Project Real State WebSite" />
                             <h2>Real State</h2>
                             <Highlight_small texto='HTML'/>
                             <Highlight_small texto='CSS'/>

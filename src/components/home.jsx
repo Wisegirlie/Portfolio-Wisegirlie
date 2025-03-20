@@ -8,6 +8,7 @@ import { Header } from "./header.jsx";
 import { Footer } from "./footer.jsx";
 import '../css/main.css'
 import { Link } from 'react-router-dom';
+import photo_gaby from '../assets/foto_gaby.jpg';
 
 const home_content = {
     
@@ -21,7 +22,7 @@ export default function Home() {
             <div className="recuadro">
                     <div className="home_container">
                         <div className="home_photo_container">
-                            <img src="./src/assets/foto_gaby.jpg" alt="Gabriela Waisman Photo" className="home_photo"/>
+                            <img src={photo_gaby} alt="Gabriela Waisman Photo" className="home_photo"/>
                         </div>
                         <div className="home_info">
                             Hello Everyone, I am

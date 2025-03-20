@@ -8,6 +8,7 @@
 import { Header } from "./header.jsx";
 import { Footer } from "./footer.jsx";
 import { Link } from 'react-router-dom';
+import Photo_Gaby from '../assets/foto_gaby.jpg'
 
 export default function About() {
     return (
@@ -17,7 +18,7 @@ export default function About() {
                     <div className="contact_container">
                         <div className="contact_info_div about_resume_div">
 
-                            <img src="./src/assets/foto_gaby.jpg" alt="Gabriela Waisman Photo" className="about_photo"/> <br />
+                            <img src={Photo_Gaby} alt="Gabriela Waisman Photo" className="about_photo"/> <br />
 
 
                             <i>My Resume</i>
@@ -29,7 +30,7 @@ export default function About() {
                             <br />
                         </div> 
                         <div className="about_bio_div gris_back"> 
-                            <h1>How about me</h1>
+                            <h1>About me</h1>
                                 
                             <span style={{fontSize: '110%'}}><strong>I am a skilled and passionate web and software developer with experience in creating visually appealing and user-friendly websites. I have a strong understanding of design and a keen eye for detail. </strong></span>
                             <br /> <br /><br />

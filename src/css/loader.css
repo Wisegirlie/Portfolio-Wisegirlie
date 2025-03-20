@@ -1,0 +1,42 @@
+/* ----------------------------------------- */
+/* ---------- LOADING ANIMATED GIF --------- */
+/* ----------------------------------------- */
+
+.loader_fullscreen {
+	display: block;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(229,229,229,0.55);
+	z-index: 1000;	
+	
+}
+
+.loader_container {
+	display: block;
+	position: fixed;
+	top: 40%;
+	left: 50%;	
+	transform: translate(-50%, -50%);
+	width: 250px;	
+	background-color: #FFF;
+	border-radius: 20px;
+	margin: 0;
+	text-align: center;
+	padding: 10px;
+}
+
+.loader_img {
+	width: 200px;	
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.loader_texto {
+	font-weight: bold;
+	color: #000;
+}
+
+.hide {
+    display: none;
+}

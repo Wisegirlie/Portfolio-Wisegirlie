@@ -499,3 +499,7 @@ label {
     margin: auto;
     border: #fce9f1 solid 2px;
 }
+
+.hide {
+    display: none;
+}
