@@ -13,7 +13,7 @@ export function Footer() {
         <footer>
              © Gabriela Waisman <br />
              {/* <a href="tel:+6476422281">PH: (647) 642-2281</a> <br /> */}
-             <a href="mailto:gabywaisman@outlook.com">gabywaisman@outlook.com</a> <br />  
+             <a href="mailto:developer@gabywaisman.com">developer@gabywaisman.com</a> <br />  
              
              <Nets className="net_icon" />             
         </footer>

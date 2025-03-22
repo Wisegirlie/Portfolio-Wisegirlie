@@ -6,18 +6,18 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './index.css'
-import { Link } from 'react-router-dom';
 
 import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
 
-import Home from './components/home'
-import About from './components/about'
-import Projects from './components/projects'
-import Services from './components/services'
-import Contact from './components/contact'
+import Home from './components/home';
+import About from './components/about';
+import Projects from './components/projects';
+import Skills  from './components/skills';
+import Contact from './components/contact';
+import Services from './components/services';
 import App from './App';
 
 import "./index.css";
@@ -37,6 +37,10 @@ const router = createBrowserRouter([
     path: "/projects",
     element: <Projects />,
   },
+  {
+    path: "/skills",
+    element: <Skills />,
+  }, 
   {
     path: "/services",
     element: <Services />,

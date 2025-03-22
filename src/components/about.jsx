@@ -9,14 +9,15 @@ import { Header } from "./header.jsx";
 import { Footer } from "./footer.jsx";
 import { Link } from 'react-router-dom';
 import Photo_Gaby from '../assets/foto_gaby.jpg'
+import '../css/about.css';
 
 export default function About() {
     return (
         <div>
             <Header />
                 <div className="recuadro_nomargin">
-                    <div className="contact_container">
-                        <div className="contact_info_div about_resume_div">
+                    <div className="aboutntainer">
+                        <div className="about_info_div about_resume_div">
 
                             <img src={Photo_Gaby} alt="Gabriela Waisman Photo" className="about_photo"/> <br />
 
@@ -35,25 +36,13 @@ export default function About() {
                             <span style={{fontSize: '110%'}}><strong>I am a skilled and passionate web and software developer with experience in creating visually appealing and user-friendly websites. I have a strong understanding of design and a keen eye for detail. </strong></span>
                             <br /> <br /><br />
                             
-                            I discovered computer programming at the age of 12, and since then, never stopped enjoying it. As a teenager, I chose a technical High School from where I graduated as a <strong> Computer Programming Technician.</strong> <br /> <br />
+                            I started programming at the age of 12, and it was then that I found my passion for technology. From that moment on, I began teaching myself various programming languages and applications. I graduated as a <strong> Computer Programming Technician</strong> from high school, and since I’ve always been drawn to challenges, I pursued a different field of study at university to broaden my skill set, getting a bachelor’s degree in <strong> Design of Image and Sound</strong>. <br /> <br />
 
-                            My many interests took me through diverse paths, getting a bachelor’s degree in  
-                            <strong> Design of Image and Sound</strong> (Cinematography and Multimedia) and an Advanced Diploma in <strong>Television Direction and Production</strong>. I’m also a professional (and hobbyist) <strong>photographer</strong>. 
-                            <br /> <br />
-
-                            At all times, I kept self-teaching different aspects of programming, including Full-Stack Web Development, Javascript, SEO, C# and Cobol, among others, until I decided to make it official and study to be a <strong>Software Engineer</strong>. So, I did, and here I am. I also have a Certificate in <strong>Inclusive Leadership Practices</strong>. 
-                            <br /> <br />
-                            
-                            As a web developer with a strong background in <strong>visual communication</strong> and <strong>social sciences</strong>, I possess comprehensive skills in color theory, design principles, and communication processes.
-                            <br /> <br />
-                            
-                            I have been a <strong>freelancer Web Developer</strong> for the last years, but I realized I wanted to do bigger things, and to achieve them, the better was being part of a <strong>team</strong>. 
+                            With over 9 years of experience in <strong>Web Development</strong>, I decided to advance my career in Software Engineering, earning a diploma as a <strong>Software Engineering Technician</strong> and a Certificate in <strong>Inclusive Leadership Practices</strong>, while also expanding my expertise across a diverse range of technologies and programming languages. I have also a strong interest in the financial and trading sector. 
                             <br /> <br />
 
-                            I love creating websites and applications, and I’m also very  interested in entering the financial sector, with the aspiration to work in trading technology someday.
-                            <br /> <br />
-
-                            Maybe you can help me to make <span className="fucsia"><strong>my dreams true</strong>.</span>
+                            I am eager to contribute to the innovations shaping our future. One key realization I've had is that great achievements are only possible through <strong>teamwork</strong>. <br />
+                            Let’s make it happen!
                             <br />
 
                             <Link to="/contact">

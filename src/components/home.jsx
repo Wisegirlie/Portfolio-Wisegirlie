@@ -35,7 +35,7 @@ export default function Home() {
                                 Full-Stack Web Developer
                             </div>
                             <br /> <br />
-                            <span style={{color: '#333'}}>I'm passionate about technology and would like to be part of teams that seek the creation of innovative solutions. I have a lot of other interests as well, as finance, trading, sci-fi, and photography. </span><br />
+                            <span style={{color: '#333'}}>I am a developer with 9 years of experience. I would like to be part of teams that seek the creation of innovative solutions. I have a lot of other interests as well, as finance, trading, sci-fi, and photography. </span><br />
 
                             <Link to="/about">
                                 <button className="button_white">About me</button>

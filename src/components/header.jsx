@@ -14,7 +14,7 @@ export function Header(props) {
             {key: "home", name: "Home", location: "/"},
             {key: "about", name: "About me", location: "/about"},
             {key: "projects", name:"Projects", location: "/projects" },
-            {key: "services", name:"Services", location: "/services" },
+            {key: "skills", name:"Skills", location: "/skills" },
             {key: "contact", name:"Contact", location: "/contact" }];
             
    const menuitems = navButtons.map(

@@ -12,6 +12,7 @@ import { useState } from "react";
 import Dialog from './dialog.jsx';
 import Loader from './loader.jsx';
 import logo_gaby_blanco from '../assets/logo_g_blanco.png';
+import '../css/contact.css'
 
 export default function Contact() {
 
@@ -146,9 +147,7 @@ export default function Contact() {
                     <div className="contact_container">
                         <div className="contact_info_div">
                             <img src={logo_gaby_blanco} alt="Gabriela Logo" className="logo_g"/>
-                            <h1 className="blanco">Gabriela Waisman </h1>                            
-                            <a href="mailto:gabywaisman@hotmail.com">gabywaisman@outlook.com</a> <br />
-                            <a href="tel:+6476422281">PH: +1 (647) 642-2281</a> <br />
+                            <h1 className="blanco">Gabriela Waisman </h1>    
                             <Nets className="net_icon" />
 
                         </div> 

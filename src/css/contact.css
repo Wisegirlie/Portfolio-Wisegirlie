@@ -1,0 +1,136 @@
+/* ===============================
+   |       GABRIELA WAISMAN      |
+   =============================== 
+   |            CONTACT          |
+   |           CSS FILE          |
+   =============================== */ 
+
+   /* ----------------------------
+           CONTACT
+   ---------------------------- */
+
+.recuadro_nomargin {
+    background-color: var(--fucsia);
+    margin-top: 30px;
+    margin-bottom: 50px;    
+    border-radius: 20px;    
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;               
+}
+
+.contact_container {
+    width: 100%;
+    margin: 0;
+}
+
+.contact_info_div {
+    display: inline-block;    
+    width: 35%;       
+    text-align: left;
+    min-width: 380px;
+    vertical-align: top;    
+    padding: 45px 0 30px 100px;
+    padding-right: 52px;
+    color: #FFF;
+    
+}
+
+.contact_info_div h1{
+    margin: 10px 0 3px;
+}
+
+.contact_form_div {
+    display: inline-block;
+    width: 50%;
+    padding: 20px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;  
+    text-align: center;  
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.contact_info_div a, .contact_info_div:visited {
+    color: rgb(252, 208, 229);
+}
+
+.contact_info_div a:hover  {
+    color: #ffeab0;
+}
+
+.blanco {
+    color: #FFF;
+}
+
+.logo_g {
+    height: 70px;
+    margin: 0;
+}
+
+/* ----------- FORM -------------- */
+           
+.form_container {
+    display: block;
+    width: 70%;
+    margin-top: 40px;    
+    margin-left: auto;
+    margin-right: auto;  
+    background-color: #CCC;
+    max-width: 600px;  
+    border-radius: 15px;   
+    padding: 30px 50px;
+    text-align: center;
+}
+
+label {
+    display: block;
+    font-size: 90%;
+    font-weight: 600;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2px;
+}
+
+.form_input, textarea {
+    display: block;
+    width: 100%;
+    border: none;
+    line-height: 1.6;
+    border-radius: 5px;
+    padding: 3px 8px;    
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.form_boton_submit {
+    display: inline-block;
+    width: 200px;
+    background-color: #d4f4df;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 17px;
+    margin-top: 10px;
+}
+
+.form_boton_submit:hover {
+    transform: scale(1.05);
+    border: #4e7d5e 1px solid;
+    transition: all 0.2s;
+    background-color: #a6e8bd;
+}
+
+.form_button_reset {
+    width: 140px;
+    background-color: #d4f7f9;
+    margin-left: 60px;
+}
+
+.form_button_reset:hover {
+    border: #5c9799 1px solid;
+    /* color: #FFF; */
+    background-color: #a5e8eb;
+}

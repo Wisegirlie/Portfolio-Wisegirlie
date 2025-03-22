@@ -1,0 +1,67 @@
+/* ===============================
+   |       GABRIELA WAISMAN      |
+   =============================== 
+   |            ABOUT            |
+   |           CSS FILE          |
+   =============================== */ 
+   
+/* ----------------------------
+            About me
+   ---------------------------- */
+
+.about_container {
+    width: 100%;
+    margin: 0;
+}
+
+.about_info_div {
+    display: inline-block;    
+    width: 35%;       
+    text-align: left;
+    min-width: 380px;
+    vertical-align: top;    
+    padding: 45px 0 30px 100px;
+    padding-right: 52px;
+    color: #FFF;
+    
+}
+
+.about_info_div h1{
+    margin: 10px 0;
+}
+
+.about_resume_div {
+    display: inline-block;    
+    width: 28%;       
+    text-align: center;
+    min-width: 370px;
+    vertical-align: top;    
+    /* padding: 45px 0 20px 20px;
+    padding-right: 20px; */
+    padding: 0;
+    margin: 45px 30px 45px 20px;
+    color: #FFF;
+}
+
+.about_bio_div {
+    display: inline-block;
+    width: 630px;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0;    
+    text-align: left;  
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 20px 90px 40px 140px;
+}
+
+.about_photo {
+    display: block;
+    border-radius: 50%;
+    height: 130px;
+    object-fit: cover;    
+    /* margin-top: 25px; */
+    margin-bottom: 40px;
+    margin: auto;
+    border: #fce9f1 solid 2px;
+}

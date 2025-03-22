@@ -1,0 +1,68 @@
+/* ----------------------------
+           SERVICES
+   ---------------------------- */
+
+   .services_container {
+    margin: 30px auto 40px;
+}
+   /* Container for each service */
+
+.service_div {
+    display: inline-block;
+    width: 22%;
+    margin: 1%;    
+    background-color: rgba(189, 37, 105, 0.1);    
+    /* background-color: rgba(188, 0, 86, .1);     */
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(31, 2, 10, 0.169);
+    transition: transform 0.2s;
+    height: 250px;
+  }
+  
+  .service_info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .service_info i {
+    font-size: 50px;
+    margin-top: 18px;
+    margin-bottom: 0px;    
+    color: var(--fucsia);
+    /* text-shadow: 2px 2px 4px #ffffffc6;  */
+  }
+  
+  .service_info h3 {
+    font-size: 24px;
+    margin-bottom: 3px;
+    color: #3e0c27;
+    /* text-shadow: 2px 2px 4px #ff81ba67;  */
+    text-shadow: 2px 2px 4px #ffffffc6; 
+  }
+  
+  .service_info p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.5;
+    font-weight: 500;
+  }
+  
+  .service_div:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Responsive adjustments */
+  @media screen and (max-width: 1200px) {
+    .service_div {
+      width: 45%;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .service_div {
+      width: 90%;
+    }
+  }

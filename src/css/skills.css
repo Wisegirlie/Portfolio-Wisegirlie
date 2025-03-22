@@ -1,0 +1,92 @@
+/* ----------------------------
+             SKILLS
+   ---------------------------- */
+
+.skills_container {
+    margin: 10px auto 40px;
+}
+   /* Container for each skills */
+
+.skills_div {
+    display: inline-block;
+    width: 22%;
+    margin: 1%;    
+    background-color: hsla(0, 0%, 77%, 0.1);    
+    background-color: #EEE;
+    /* background-color: rgba(188, 0, 86, .1);     */
+    border-radius: 20px;
+    padding: 20px;
+    padding-top: 10px;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(31, 2, 10, 0.169);
+    transition: transform 0.2s;
+    min-height: 250px;
+  }
+  
+  .skills_info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .skills_info i {
+    font-size: 50px;
+    margin-top: 18px;
+    margin-bottom: 0px;    
+    color: var(--fucsia);
+    /* text-shadow: 2px 2px 4px #ffffffc6;  */
+  }
+  
+  .skills_info h3 {
+    font-size: 24px;
+    margin-bottom: 3px;
+    color: #3e0c27;
+    /* text-shadow: 2px 2px 4px #ff81ba67;  */
+    text-shadow: 2px 2px 4px #ffffffc6; 
+    align-self: center;
+  }
+  
+  .skills_info p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.5;
+    font-weight: 500;
+  }
+  
+  .skills_div:hover {
+    transform: scale(1.05);
+  }
+
+  .ul_bullet {
+    list-style-type: none; 
+    margin-left: 10px;
+  }
+
+  .ul_bullet li{
+    position: relative;    
+    color: black; 
+    min-width: 150px;
+    font-weight: 500;
+    font-size: 16px;    
+  }
+  
+ .ul_bullet li::before{
+    color: #BC0056;
+    margin-right: 20px;
+    content: "•"; 
+    font-size: 1.4em; 
+    line-height: 1em;
+  }
+
+  /* Responsive adjustments */
+  @media screen and (max-width: 1200px) {
+    .skills_div {
+      width: 45%;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .skills_div {
+      width: 90%;
+    }
+  }
+
