@@ -6,6 +6,7 @@
    
 import { Header } from "./header.jsx";
 import { Footer } from "./footer.jsx";
+import '../css/services.css';
 
 export default function Services() {
     return (
