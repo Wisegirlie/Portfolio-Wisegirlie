@@ -37,6 +37,17 @@
     
 }
 
+.contact_smalltext {
+    font-size: 90%;
+    color: #ffc0d2;    
+}
+
+.contact_smalltext a {    
+    color: #ffc0d2 !important;
+    font-weight: normal !important;
+    letter-spacing: 0.02ch;
+}
+
 .contact_info_div h1{
     margin: 10px 0 3px;
 }
@@ -57,8 +68,8 @@
     color: rgb(252, 208, 229);
 }
 
-.contact_info_div a:hover  {
-    color: #ffeab0;
+.contact_info_div a:hover, .contact_smalltext a:hover  {
+    color: #ffeab0 !important;
 }
 
 .blanco {

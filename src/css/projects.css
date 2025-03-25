@@ -1,0 +1,102 @@
+/* ----------------------------
+             PROJECTS
+   ---------------------------- */
+
+.project_container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;    
+    justify-content: center;   
+    margin-bottom: 40px;     
+}
+
+.project_container a:hover, .project_container a:link, .project_container a:visited   {   
+    color: #000;
+}
+  
+.project_div {
+    flex-grow: 1;
+    width: 280px;
+    max-width: 400px;
+    min-height: 500px;    
+    height: auto;     
+    /* width: calc((100% / 4) - 40px);   */
+    background-color: #EEE;
+    margin: 20px 0 30px;    
+    border-radius: 20px;
+    box-shadow: #bdbdbd 6px 8px 20px; /*#d2d2d2*/
+    box-sizing: border-box;
+    border: #cacaca solid 0px;    
+    padding-bottom: 10px;
+}
+
+.project_div:hover {
+    transform: scale(1.03);
+    transition: transform 0.2s;
+}
+
+.project_img_text_vert {
+    position: absolute;
+    z-index: 3;
+    color: #c70b50;    
+    font-weight: bold;
+    font-size: 4em;
+    right: 0;
+    bottom: 0;
+    writing-mode: vertical-lr; 
+    text-orientation: mixed; 
+    transform: rotate(180deg);
+    margin: 0px -20px;
+    text-shadow: 
+    2px -1px 10px #ffffff; 
+    background-color: #ffffff;
+}
+
+.project_title {
+    color: #aaaaaa;   
+    /* #bfb3b8;    */
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    font-family: Raleway, Arial, Helvetica, sans-serif;
+    margin-top: 6px;
+    margin-bottom: 5px;
+}
+
+.project_img_container {    
+    position: relative;
+    display: block;  
+    height: 250px;   
+}
+
+.project_img_container img {    
+    /* width: 100%;  */
+    width: 100%;
+    /* margin: 5px auto; */
+    height: 100%;
+    object-fit: cover;    
+    border-radius: 20px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;    
+    /* object-position: 9%;    */    
+    /* filter: sepia(1) hue-rotate(290deg) saturate(4) brightness(80%) contrast(200%); */    
+}
+
+.project_img_container img:hover {      
+    filter: none;
+}
+
+.project_div h2 {
+    margin: 8px 0 10px;
+}
+
+.project_links {
+    margin: 0;
+    padding: 0;
+    color: #000;
+}
+
+.project_text {
+    padding: 0 30px;
+    color: #444444;  
+    margin-bottom: 12px; 
+}

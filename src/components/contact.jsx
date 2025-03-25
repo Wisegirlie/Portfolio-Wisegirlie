@@ -147,9 +147,12 @@ export default function Contact() {
                     <div className="contact_container">
                         <div className="contact_info_div">
                             <img src={logo_gaby_blanco} alt="Gabriela Logo" className="logo_g"/>
-                            <h1 className="blanco">Gabriela Waisman </h1>    
+                            <h1 className="blanco">Gabriela Waisman </h1> 
+                            <span className="contact_smalltext">
+                                <a href="mailto:developer@gabywaisman.com">developer@gabywaisman.com</a> <br />
+                                Toronto, Canada. 
+                            </span>
                             <Nets className="net_icon" />
-
                         </div> 
                         <div className="contact_form_div gris_back"> 
                             <h1 className="negro">Need a Developer?</h1>
