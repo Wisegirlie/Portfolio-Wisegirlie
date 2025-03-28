@@ -44,7 +44,7 @@ export default function Projects() {
             description: "Design and development of my portfolio's website.", 
             website: "/", 
             image: projectGabywaismanImg, 
-            techs: ["React", "Node.js", "JavaScript", "PHP", "HTML", "CSS", "Git"]
+            techs: ["React", "Vite", "Node.js", "JavaScript", "PHP", "HTML", "CSS", "Git"]
         }, 
         {  id: 'project-formbuilder', 
             title: 'Form Builder', 
@@ -73,7 +73,7 @@ export default function Projects() {
         {  id: 'project-diversafilms', 
             title: 'Diversa Films', 
             type: "Web Development", 
-            description: "Design and development of complete website.", 
+            description: "Development of complete website.", 
             website: "https://www.diversafilms.com.ar", 
             image: projectDiversaImg, 
             techs: ["HTML", "CSS", "JavaScript"]

@@ -25,7 +25,7 @@ export function Nets(props) {
     return (       
             <div className="networks_container">
                 { nets.map(   net => 
-                    <a href={net.location} target='blank' key={net.name}>
+                    <a href={net.location} target='_blank' key={net.name}>
                         <img src={net.image} className={props.className} alt={net.alt} />
                     </a>)
                 }

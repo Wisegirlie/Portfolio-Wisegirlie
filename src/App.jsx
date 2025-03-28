@@ -1,3 +1,8 @@
+/* ------------------------    
+    EXECUTE WITH:
+    npm run dev
+  ------------------------    */
+
 import './App.css'
 
 function App() {  

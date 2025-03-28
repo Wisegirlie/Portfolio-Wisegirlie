@@ -166,7 +166,7 @@ export default function Contact() {
                                 <input type="text" name="name" id="name" className="form_input" value={formData.name} onChange={handleInputChange} required/>  <br />
                                 <label htmlFor="email">E-mail:</label>
                                 <input type="email" name="email" id="email" className="form_input" value={formData.email} onChange={handleInputChange} required/> <br />
-                                <label htmlFor="number">Contact number:</label>
+                                <label htmlFor="number">Phone:</label>
                                 <input type="text" name="number" id="number" className="form_input" value={formData.number} onChange={handleInputChange}/>  <br />
                                 <label htmlFor="message">Your message:</label>
                                 <textarea name="message" id="message" rows="7" value={formData.message} onChange={handleInputChange} required></textarea><br />
