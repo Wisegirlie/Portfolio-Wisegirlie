@@ -17,7 +17,7 @@
 .project_div {
     flex-grow: 1;
     width: 280px;
-    max-width: 400px;
+    max-width: 350px;
     min-height: 500px;    
     height: auto;     
     /* width: calc((100% / 4) - 40px);   */

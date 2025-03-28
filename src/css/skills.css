@@ -4,13 +4,17 @@
 
 .skills_container {
     margin: 10px auto 40px;
+    box-sizing: border-box;
 }
    /* Container for each skills */
 
 .skills_div {
     display: inline-block;
     width: 22%;
-    margin: 1%;    
+    min-width: 250px;
+    min-height: 250px;
+    margin: 1%;  
+    margin-bottom: 2%;  
     background-color: hsla(0, 0%, 77%, 0.1);    
     background-color: #EEE;
     /* background-color: rgba(188, 0, 86, .1);     */
@@ -19,8 +23,7 @@
     padding-top: 10px;
     text-align: left;
     box-shadow: 0 4px 8px rgba(31, 2, 10, 0.169);
-    transition: transform 0.2s;
-    min-height: 250px;
+    transition: transform 0.2s;    
   }
   
   .skills_info {
@@ -80,13 +83,13 @@
   /* Responsive adjustments */
   @media screen and (max-width: 1200px) {
     .skills_div {
-      width: 45%;
+      /* width: 45%; */
     }
   }
   
   @media screen and (max-width: 768px) {
     .skills_div {
-      width: 90%;
+      width: 70%;
     }
   }
 

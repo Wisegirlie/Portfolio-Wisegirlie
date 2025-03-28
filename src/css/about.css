@@ -65,3 +65,95 @@
     margin: auto;
     border: #fce9f1 solid 2px;
 }
+
+
+
+/* ============================
+          RESPONSIVENESS       
+    ==========================  */
+  
+        
+/* ----------------------------
+             1318
+   ---------------------------- */
+
+   @media screen and (max-width: 1318px) {
+
+    .about_bio_div {
+        border-top-left-radius: 20px;
+        border-bottom-right-radius: 0px;
+    }
+    
+}
+
+
+/* ----------------------------
+             1230
+   ---------------------------- */
+
+   @media screen and (max-width: 1230px) {
+    
+}
+
+/* ----------------------------
+          900
+---------------------------- */
+
+@media screen and (max-width: 900px) {
+
+    .recuadro_nomargin {
+        width: 100%;
+        max-width: auto;
+        box-sizing: border-box;             
+        margin-bottom: 40px;   
+    }
+
+    .about_container {
+    }
+
+    .about_bio_div {
+        width: 100%;
+        max-width: auto;
+        box-sizing: border-box;
+        padding-left: 90px;
+        padding-right: 90px;
+        text-align: center;
+    }
+
+    .about_resume_div {
+        min-width: auto;
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .about_resume_div h1 {
+        font-size: 30px;
+    }
+    
+}
+ 
+/* ----------------------------
+          815
+---------------------------- */
+
+@media screen and (max-width: 850px) {
+
+    .about_bio_div {
+        border-radius: 0;
+    }
+
+}
+  
+/* ----------------------------
+             550
+---------------------------- */  
+
+@media screen and (max-width: 550px) {
+    .about_bio_div {
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+ 
+}
+

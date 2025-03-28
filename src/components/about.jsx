@@ -16,7 +16,7 @@ export default function About() {
         <div>
             <Header />
                 <div className="recuadro_nomargin">
-                    <div className="aboutntainer">
+                    <div className="about_container">
                         <div className="about_info_div about_resume_div">
 
                             <img src={Photo_Gaby} alt="Gabriela Waisman Photo" className="about_photo"/> <br />

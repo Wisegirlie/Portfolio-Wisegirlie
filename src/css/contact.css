@@ -123,7 +123,9 @@ label {
     width: 200px;
     background-color: #d4f4df;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin-left: 17px;
+    /* margin-left: 17px; */
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 10px;
 }
 
@@ -144,4 +146,150 @@ label {
     border: #5c9799 1px solid;
     /* color: #FFF; */
     background-color: #a5e8eb;
+}
+
+
+
+/* ============================
+          RESPONSIVENESS       
+    ==========================  */
+  
+        
+/* ----------------------------
+             1318
+   ---------------------------- */
+
+   @media screen and (max-width: 1318px) {
+
+    .contact_form_div {
+        border-top-left-radius: 20px;
+        border-bottom-right-radius: 0px;
+    }
+    
+}
+
+
+/* ----------------------------
+             1230
+   ---------------------------- */
+
+   @media screen and (max-width: 1318px) {
+
+        .recuadro_nomargin {
+            width: 100%;
+            max-width: auto;
+            box-sizing: border-box;             
+            margin-bottom: 40px;   
+        }
+    
+        .contact_form_div {
+            width: 100%;
+            max-width: auto;
+            box-sizing: border-box;
+            padding-left: 90px;
+            padding-right: 90px;
+            text-align: center;
+        }
+    
+        .contact_info_div {
+            /* min-width: auto; */
+            margin-right: auto;
+            margin-left: auto;
+        }
+    
+        .form_container {
+            box-sizing: border-box;
+            width: 100%;
+        }
+           
+}
+
+/* ----------------------------
+          900
+---------------------------- */
+
+@media screen and (max-width: 900px) {
+
+
+    
+}
+ 
+/* ----------------------------
+          815
+---------------------------- */
+
+@media screen and (max-width: 850px) {
+
+    .contact_form_div {
+        border-radius: 0;
+    }
+
+}
+
+/* ----------------------------
+          732
+---------------------------- */
+
+@media screen and (max-width: 732px) {
+    
+    .form_boton_submit {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .form_button_reset {        
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+    }
+
+  
+
+}
+
+
+/* ----------------------------
+             550
+---------------------------- */  
+
+@media screen and (max-width: 550px) {
+    .contact_form_div {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+ 
+}
+
+/* ----------------------------
+             500
+---------------------------- */  
+
+@media screen and (max-width: 500px) {
+    .contact_info_div {
+        min-width: auto;
+        width: 75%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 0;
+        padding-right: 0;
+
+    }
+ 
+}
+
+/* ----------------------------
+             370
+---------------------------- */  
+
+@media screen and (max-width: 370px) {
+    
+    .form_boton_submit {
+        width: 150px;
+    }
+
+    .form_container {
+        padding-left: 40px;
+        /* padding-right: 40px; */
+    }
 }

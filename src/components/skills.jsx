@@ -34,8 +34,7 @@ export default function Skills() {
                 </div>
 
                 <div class="skills_div">
-                    <div class="skills_info">                       
-                        <div class="holder-section">
+                    <div class="skills_info">   
                             <h3>Backend Development</h3>
                             <ul className="ul_bullet">
                                 <li>PHP</li>
@@ -45,7 +44,6 @@ export default function Skills() {
                                 <li>COBOL</li>
                                 <li>Express.js</li>                                
                             </ul>
-                        </div>
                     </div>
                 </div>
 

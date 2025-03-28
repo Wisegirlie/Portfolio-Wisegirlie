@@ -5,9 +5,9 @@
    =============================== */ 
 
 import '../css/nets.css'
-import LinkedinIcon from '../assets/Linkedin_4.png';
-import GithubIcon from '../assets/Github_1.png';
-// import InstragramIcon from '../assets/Instagram_3.png';
+import LinkedinIcon from '../assets/nets/Linkedin_4.png';
+import GithubIcon from '../assets/nets/Github_1.png';
+// import InstragramIcon from '../nets/assets/Instagram_3.png';
 
 export function Nets(props) {
 

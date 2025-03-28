@@ -25,7 +25,8 @@
     /* height: 390px; */
     border-radius: 20px;    
     display: flex; 
-    justify-content: center;
+    /* justify-content: center; */
+    justify-content: space-around;
     align-items: center;
     padding: 20px 0;               
 }
@@ -83,6 +84,7 @@ h1 {
 
 .home_info h1 {
     margin: 3px 0 20px;
+    font-size: 3.45em;
 }
 
 .highlight_big {
@@ -115,6 +117,9 @@ h1 {
     padding-right: 20px;
 }
    
+.spacebetweenJobs {
+    margin-left: 10px;
+}
   
 /* ----------------------------
              COLORS
@@ -145,3 +150,174 @@ h1 {
     display: none;
 }
 
+
+/* ============================
+          RESPONSIVENESS       
+    ==========================  */
+  
+/* ----------------------------
+             1230
+   ---------------------------- */
+
+   @media screen and (max-width: 1230px) {
+
+       .recuadro {
+           justify-content: space-around;
+       }
+
+       .home_container {
+           padding-left: 0;
+           padding-right: 0;
+           width: 100%;
+       }
+           
+       .home_photo_container {
+            min-width: auto;
+            width: auto;
+            margin-left: 20px; 
+            margin-right: 20px; 
+        }
+
+       .home_photo {           
+           height: 280px;
+           margin-bottom: 30px;
+           margin-left: 30px;
+       }
+
+       .home_info h1 {
+            font-size: 2.9em;
+            margin-bottom: 10px;
+        }
+    
+        .highlight_big {
+            font-size: 0.9em;
+        }    
+   }
+
+/* ----------------------------
+             1015
+   ---------------------------- */
+
+   @media screen and (max-width: 1050px) {
+
+    .home_info {
+        padding: 60px 20px 50px 40px;
+    }
+
+    .home_photo {           
+        height: 240px;
+        margin-bottom: 30px;
+        margin-left: 0px;
+    }
+
+    .home_container {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
+    
+/* ----------------------------
+             815
+   ---------------------------- */
+
+   @media screen and (max-width: 850px) {
+
+    .home_info {
+        padding-left: 25px;
+        padding-top: 30px;
+        padding-bottom: 10px;
+
+    }
+
+    .home_info h1 {
+        font-size: 2.4em;        
+    }
+
+    .home_photo {           
+        height: 200px;
+        margin-left: 0px;
+    }
+
+    .highlight_big {
+        font-size: 0.76em;       
+    }
+   }
+     
+/* ----------------------------
+             711
+   ---------------------------- */  
+
+@media screen and (max-width: 710px) {
+
+    #root {
+        padding: 0;
+        padding-top: 10px;        
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    header {
+        flex-direction: column;;
+    }
+
+    .home_info {
+        display: block;
+        min-width: auto;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    .home_info h1 {
+        font-size: 2.6em;
+        margin-bottom: 10px;
+        margin-top: 5px;
+    }
+
+    .home_photo_container {
+        display: block;
+    }
+
+    .recuadro {
+        margin-top: 10px;
+        margin-bottom: 30px;
+        margin: 10px 10px 30px;
+    }
+
+    .highlight_big {
+        margin: 5px auto;
+        font-size: 0.85em;       
+    } 
+
+    .spacebetweenJobs {
+        margin-left: 10px;
+    }
+    
+}
+
+
+/* ----------------------------
+             426
+   ---------------------------- */  
+
+@media screen and (max-width: 426px) {
+    
+    .spacebetweenJobs {
+        margin-left: 0px;
+    }
+
+    .highlight_big {
+        font-size: 0.8em;        
+    } 
+
+    .home_info h1 {
+        font-size: 2.4em;
+    }
+}
+
+/* ----------------------------
+             271
+   ---------------------------- */  
+
+   

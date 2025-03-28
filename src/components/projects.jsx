@@ -7,14 +7,15 @@
 import { Header } from "./header.jsx";
 import { Footer } from "./footer.jsx";
 import Highlight_small from "./highlight_small.jsx";
-import projectDiversaImg from '../assets/project-diversa1.jpg';
-import projectRosariaImg from '../assets/project-rosaria3.jpg';
-import projectEnergitImg from'../assets/project-energit2.jpg';
-import projectRealStateImg from '../assets/project-realstate1.jpg';
-import projectGabywaismanImg from '../assets/projects-gabywaisman.jpg';
-import projectFormBuilderImg from '../assets/project-form-builder.png';
-import projectFindGrantImg from '../assets/project-findgrant-home2.jpg';
-import projectProtectedAreasImg from '../assets/project-protectedareas_2.jpg';
+import projectDiversaImg from '../assets/projects/project-diversa1.jpg';
+import projectRosariaImg from '../assets/projects/project-rosaria3.jpg';
+import projectEnergitImg from'../assets/projects/project-energit2.jpg';
+import projectRealStateImg from '../assets/projects/project-realstate1.jpg';
+import projectGabywaismanImg from '../assets/projects/projects-gabywaisman.jpg';
+import projectFormBuilderImg from '../assets/projects/project-form-builder.png';
+import projectFindGrantImg from '../assets/projects/project-findgrant-home2.jpg';
+import projectProtectedAreasImg from '../assets/projects/project-protectedareas_2.jpg';
+import projectSupermarketImg from '../assets/projects/project-supermarketlist.jpg';
 import Project from "./project.jsx";
 import "../css/projects.css";
 import { createContext } from "react";
@@ -32,11 +33,11 @@ export default function Projects() {
         },        
         {  id: 'project-findgrant', 
             title: 'Findgrant', 
-            type: "Web App", 
-            description: "Development of complete functional website based on a Figma design provided by the client. Designed as a website and mobile app.", 
+            type: "Web & Mobile App", 
+            description: "Development of functional website based on a Figma design provided by the client. Designed as a website and mobile app.", 
             website: "https://findgrant.ca/", 
             image: projectFindGrantImg, 
-            techs: ["React Native", "Expo", "Node.js", "Git", "JavaScript","HTML", "CSS"]
+            techs: ["React Native", "Expo", "Node.js", "Express.js", "Git", "JavaScript","HTML", "CSS"]
         },
         {  id: 'project-portfolio', 
             title: 'My Portfolio', 
@@ -46,14 +47,14 @@ export default function Projects() {
             image: projectGabywaismanImg, 
             techs: ["React", "Vite", "Node.js", "JavaScript", "PHP", "HTML", "CSS", "Git"]
         }, 
-        {  id: 'project-formbuilder', 
-            title: 'Form Builder', 
-            type: "Web App", 
-            description: "Created a web app to create custom HTML forms with drag & drop.", 
-            website: "https://www.gabywaisman.com/portfolio/form-builder/index.html", 
-            image: projectFormBuilderImg, 
-            techs: ["React", "JavaScript", "Git", "HTML", "CSS"]
-        },          
+        {  id: 'project-supermarketlist', 
+            title: 'Voice Commanded Supermarket List', 
+            type: "Mobile App", 
+            description: "This app allows users to easily create and manage their shopping lists using voice commands.", 
+            website: "https://github.com/Wisegirlie/Supermarket-list-voice-commanded", 
+            image: projectSupermarketImg, 
+            techs: ["React Native", "Expo", "Node.js", "Express.js","MongoDB", "Google Speech-to-Text API", "JavaScript", "HTML", "CSS", "Git"]
+        },       
         {  id: 'project-realstate', 
             title: 'Real State', 
             type: "Web Development", 
@@ -61,7 +62,23 @@ export default function Projects() {
             website: "https://www.gabywaisman.com/portfolio/real-state/index.html", 
             image: projectRealStateImg, 
             techs: ["HTML", "CSS", "JavaScript"]
-        },
+        },          
+        {  id: 'project-formbuilder', 
+            title: 'Form Builder', 
+            type: "Web App", 
+            description: "Created a web app to create custom HTML forms with drag & drop.", 
+            website: "https://www.gabywaisman.com/portfolio/form-builder/index.html", 
+            image: projectFormBuilderImg, 
+            techs: ["React", "JavaScript", "Git", "HTML", "CSS"]
+        },  
+        {  id: 'project-diversafilms', 
+            title: 'Diversa Films', 
+            type: "Web Development", 
+            description: "Development of complete website.", 
+            website: "https://www.diversafilms.com.ar", 
+            image: projectDiversaImg, 
+            techs: ["HTML", "CSS", "JavaScript"]
+        },           
         {  id: 'project-rosaria', 
             title: 'Rosaria', 
             type: "Web Development", 
@@ -70,14 +87,6 @@ export default function Projects() {
             image: projectRosariaImg, 
             techs: ["HTML", "CSS", "JavaScript"]
         },
-        {  id: 'project-diversafilms', 
-            title: 'Diversa Films', 
-            type: "Web Development", 
-            description: "Development of complete website.", 
-            website: "https://www.diversafilms.com.ar", 
-            image: projectDiversaImg, 
-            techs: ["HTML", "CSS", "JavaScript"]
-        }, 
         {  id: 'project-protectedareas', 
             title: 'Protected Areas', 
             type: "Webpage", 
