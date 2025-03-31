@@ -204,21 +204,13 @@ label {
            
 }
 
-/* ----------------------------
-          900
----------------------------- */
-
-@media screen and (max-width: 900px) {
-
-
-    
-}
  
 /* ----------------------------
-          815
+          850
 ---------------------------- */
 
 @media screen and (max-width: 850px) {
+   
 
     .contact_form_div {
         border-radius: 0;
@@ -257,8 +249,7 @@ label {
     .contact_form_div {
         padding-left: 10%;
         padding-right: 10%;
-    }
- 
+    } 
 }
 
 /* ----------------------------
