@@ -46,6 +46,7 @@
     /* text-shadow: 2px 2px 4px #ff81ba67;  */
     text-shadow: 2px 2px 4px #ffffffc6; 
     align-self: center;
+    text-align: center;
   }
   
   .skills_info p {

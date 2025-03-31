@@ -56,7 +56,93 @@ header {
    
 }
 
+.hamburger {
+    display: none;
+}
+
 /* .nav-button-dot {
     padding-bottom: 0.5rem;
     border-bottom: 3px solid var(--fucsia);     
 } */
+
+
+
+
+/* ============================
+          RESPONSIVENESS       
+    ==========================  */
+  
+        
+/* ----------------------------
+             785
+   ---------------------------- */
+
+   /* HAMBURGER */
+   @media screen and (max-width: 785px) {
+
+    header {        
+        align-items: flex-start;
+        padding-top: 10px;
+    }
+
+    .hamburger {
+        display: block;
+        position: absolute;
+        padding-right: 0px;
+        right: 0;
+        top: 8px;
+    }
+
+    .hamburgerImg {
+        width: 85%;
+        min-width: 30px;
+    }
+    
+    .nav-ul {
+        display: none;
+        flex-direction: column;
+        align-items: flex-end;     
+        margin-top: 60px;
+        flex-wrap: wrap;
+        position: absolute;
+        right: 0;
+        background-color: #FFF;
+        border-radius: 20px;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        padding-top: 15px;
+        padding-bottom: 20px;
+        border: 1px solid var(--fucsia);
+        border-top: none;
+        z-index: 20;
+    }
+
+    .nav-button {              
+        min-width: auto;
+        font-size: 20px;
+        margin-right: 20px;
+    }
+
+    .show-responsive-menu {
+        display: flex;
+    }
+
+    .logo-img {    
+        max-height: 12vw; /* Scales with viewport width */
+        min-height: 35px;    
+        padding-top: 8px;   
+        padding-bottom: 8px;   
+      }
+}
+
+/* ----------------------------
+             711
+   ---------------------------- */  
+
+@media screen and (max-width: 710px) {
+
+    /* recovers the padding lost with the root padding change */
+    header {
+        padding: 0 12px;        
+    }
+}
