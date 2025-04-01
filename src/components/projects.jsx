@@ -16,6 +16,7 @@ import projectFormBuilderImg from '../assets/projects/project-form-builder.png';
 import projectFindGrantImg from '../assets/projects/project-findgrant-home2.jpg';
 import projectProtectedAreasImg from '../assets/projects/project-protectedareas_2.jpg';
 import projectSupermarketImg from '../assets/projects/project-supermarketlist.jpg';
+import projectSvgMapImg from '../assets/projects/project-svgmap.jpg';
 import Project from "./project.jsx";
 import "../css/projects.css";
 import { createContext } from "react";
@@ -66,7 +67,7 @@ export default function Projects() {
         {  id: 'project-formbuilder', 
             title: 'Form Builder', 
             type: "Web App", 
-            description: "Created a web app to create custom HTML forms with drag & drop.", 
+            description: "Created a web app to create custom HTML forms with drag & drop, as an exercise.", 
             website: "https://www.gabywaisman.com/portfolio/form-builder/index.html", 
             image: projectFormBuilderImg, 
             techs: ["React", "JavaScript", "Git", "HTML", "CSS"]
@@ -74,7 +75,7 @@ export default function Projects() {
         {  id: 'project-diversafilms', 
             title: 'Diversa Films', 
             type: "Web Development", 
-            description: "Development of complete website.", 
+            description: "Development of complete website for the company.", 
             website: "https://www.diversafilms.com.ar", 
             image: projectDiversaImg, 
             techs: ["HTML", "CSS", "JavaScript"]
@@ -86,6 +87,14 @@ export default function Projects() {
             website: "https://www.soyrosaria.com", 
             image: projectRosariaImg, 
             techs: ["HTML", "CSS", "JavaScript"]
+        },
+        {  id: 'project-svgmap', 
+            title: 'Interactive SVG Map', 
+            type: "Component", 
+            description: "Developed an interactive map, using full use of SVG properties, matching the look and feel of the client's webpage.", 
+            website: "https://unidadpopular.org.ar/mapa-referentes/",
+            image: projectSvgMapImg, 
+            techs: ["SVG", "JavaScript", "HTML", "CSS"]
         },
         {  id: 'project-protectedareas', 
             title: 'Protected Areas', 

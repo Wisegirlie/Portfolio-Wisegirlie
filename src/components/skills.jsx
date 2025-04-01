@@ -29,6 +29,7 @@ export default function Skills() {
                                 <li>React Native</li>
                                 <li>WordPress</li>
                                 <li>Responsive Design</li>
+                                <li>SVG</li>
                             </ul>                     
                     </div>
                 </div>

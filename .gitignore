@@ -13,6 +13,8 @@ dist
 dist-ssr
 *.local
 src/assets/\[Originals\]/
+src/assets/projects/\[Originals\]/
+**/\[Originals\]/
 public/.htaccess
 
 # Editor directories and files
