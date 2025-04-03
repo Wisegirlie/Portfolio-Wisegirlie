@@ -40,7 +40,7 @@ export default function Home() {
                             I am a developer with 9 years of experience. I would
                             like to be part of teams that seek the creation of
                             innovative solutions. I have a lot of other
-                            interests as well, as finance, trading, sci-fi, and
+                            interests as well, as trading, culture, sci-fi, and
                             photography.{" "}
                         </span>
                         <br />

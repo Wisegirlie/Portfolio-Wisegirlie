@@ -8,7 +8,77 @@ import { Header } from "./header.jsx";
 import { Footer } from "./footer.jsx";
 import '../css/skills.css';
 
+
 export default function Skills() {
+
+
+    const courses = [
+        {
+            id: "course-cobol",
+            title: "Cobol",
+            provider: "Sistemas Activos SRLSistemas Activos SRL",
+            date: "Jan 2022",            
+            description: "", 
+        },
+        {
+            id: "course-agile",
+            title: "Agile Methodologies - SCRUM",
+            provider: "Fundación Telefónica",
+            date: "May 2021",            
+            description: "", 
+        },
+        {
+            id: "course-bigdata",
+            title: "Principles of Big Data",
+            provider: "Fundación Telefónica",
+            date: "Apr 2021",            
+            description: "", 
+        },        
+        {
+            id: "course-growth",
+            title: "Product Manager 'Growth Hacking'",
+            provider: "Fundación Telefónica",
+            date: "Mar 2021",            
+            description: "", 
+        },
+        {
+            id: "course-analytics",
+            title: "Web Analytics",
+            provider: "Fundación Telefónica",
+            date: "Mar 2021",            
+            description: "", 
+        },
+        {
+            id: "course-color",
+            title: "Strategic Uses of Color",
+            provider: "Paula Zambelli",
+            date: "Jun 2020",            
+            description: "", 
+        },
+        {
+            id: "course-cultural",
+            title: "1st, 2nd and 3rd International Training Seminar for Cultural Managers",
+            provider: "Fundación Triángulo de España y el Centro Cultural de España.",
+            date: "2008, 2009, 2010",            
+            description: "", 
+        },
+        {
+            id: "course-volunteers",
+            title: "Development and management of volunteers for social organizations",
+            provider: "San Andrés University",
+            date: "",            
+            description: "", 
+        },        
+        {
+            id: "course-media",
+            title: "NGOs and Media: a win-win alliance",
+            provider: "Fundación Telefónica",
+            date: "",            
+            description: "", 
+        },
+    ];
+
+
     return (
         <div>
             <Header />
@@ -16,7 +86,7 @@ export default function Skills() {
             {/* ---- SKiLLS PAGE ---- */}    
             <h1>Technical Skills</h1>            
            
-            <div class="skills_container">
+            <main class="skills_container">
                 {/* <h1>I do</h1> */}
                 <div class="skills_div">
                     <div class="skills_info">                    
@@ -92,13 +162,15 @@ export default function Skills() {
                     <div class="skills_info">                   
                             <h3>Additional Tools</h3>
                             <ul className="ul_bullet">                                
-                                <li>Visio</li>
+                                <li>Visio</li>                                
+                                <li>VS Code</li>
+                                <li>Visual Studio</li>                                
+                                <li>Dreamweaver</li>                                
                                 <li>SEO – Search Engine Optimization</li>                                               
                                 <li>Microsoft Office Suite:<br />Word, Excel, PowerPoint, Teams, Outlook, OneDrive</li>                
                             </ul>   
                     </div>
                 </div>
-
                 
                 <div class="skills_div" style={{minHeight: "150px"}}>
                     <div class="skills_info">                   
@@ -110,8 +182,14 @@ export default function Skills() {
                     </div>
                 </div>
 
+                <br /><br />
 
-            </div>
+                {/* ---- COURSES ---- */}    
+                 {/* <h1>Certifications & Courses</h1>             */}
+           
+
+
+            </main>
             <Footer/>
         </div>        
     );

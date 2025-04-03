@@ -104,7 +104,6 @@ export default function Projects() {
             image: projectProtectedAreasImg, 
             techs: ["HTML", "CSS"]
         },
-
     ];
 
     return (
