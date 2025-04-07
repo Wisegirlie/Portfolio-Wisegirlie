@@ -203,9 +203,9 @@ export default function Skills() {
                     </div>
                 </div>
 
+                {/* <br />
                 <br />
-                <br />
-                <br />
+                <br /> */}
 
                 {/* ---- COURSES ---- */}
                 <h1 className="hide">Certifications & Extra Courses</h1>
