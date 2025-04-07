@@ -2,7 +2,8 @@
 
 My portfolio as a Developer.
 
-you can explore the working site at:
+You can explore the working site at:
+
 **www.gabywaisman.com**
 
 
