@@ -1,12 +1,31 @@
-.course-logo {
-
-}
-
-.course-provider {
-
-}
-
-.course-date {
-
-}
+.course-div-container {       
+    /* min-width: 350px; */
+    width: 460px;    
+    display: flex;
     
+}
+
+.course-logo-div {    
+    height: auto;    
+    margin-right: 30px;   
+}
+
+.course-logo-img {
+    width: 75px;
+    border-radius: 50%;
+}
+
+.course-div-container h3 {    
+    margin: 0;
+    padding: 0;
+}
+
+.course-provider, .course-date {
+    font-size: 95%;
+}
+
+@media screen and (max-width: 550px) {
+    .course-logo-img {
+        width: 70px;
+    }
+  }
