@@ -33,7 +33,7 @@ export default function About() {
                         <div className="about_bio_div gris_back"> 
                             <h1>About me</h1>
                                 
-                            <span style={{fontSize: '110%'}}><strong>I am a skilled and passionate web and software developer with experience in building effective, visually appealing, and user-friendly websites and applications. </strong></span>
+                            <span style={{fontSize: '110%'}}><strong>I am a passionate web and software developer with experience in building effective, visually appealing, and user-friendly websites and applications. </strong></span>
                             <br /> <br />
                             
                             I started programming at the age of 12, and it was then that I found my passion for technology. From that moment on, I began teaching myself various programming languages and applications. I graduated as a <strong> Computer Programming Technician</strong> from a technical high school, and since I’ve always been drawn to challenges, I pursued a different field of study at university to broaden my skill set, getting a bachelor’s degree in <strong> Design of Image and Sound</strong> from University of Buenos Aires, Argentina. <br /> <br />

@@ -47,15 +47,7 @@ export default function Projects() {
             website: "/", 
             image: projectGabywaismanImg, 
             techs: ["React", "Vite", "Node.js", "JavaScript", "PHP", "HTML", "CSS", "Git"]
-        }, 
-        {  id: 'project-supermarketlist', 
-            title: 'Voice Commanded Supermarket List', 
-            type: "Mobile App", 
-            description: "This app allows users to easily create and manage their shopping lists using voice commands.", 
-            website: "https://github.com/Wisegirlie/Supermarket-list-voice-commanded", 
-            image: projectSupermarketImg, 
-            techs: ["React Native", "Expo", "Node.js", "Express.js","MongoDB", "Google Speech-to-Text API", "JavaScript", "HTML", "CSS", "Git"]
-        },       
+        },     
         {  id: 'project-realstate', 
             title: 'Real State', 
             type: "Web Development", 
@@ -63,7 +55,15 @@ export default function Projects() {
             website: "https://www.gabywaisman.com/portfolio/real-state/index.html", 
             image: projectRealStateImg, 
             techs: ["HTML", "CSS", "JavaScript"]
-        },          
+        },        
+        {  id: 'project-supermarketlist', 
+            title: 'Voice Commanded Supermarket List', 
+            type: "Mobile App", 
+            description: "This app allows users to easily create and manage their shopping lists using voice commands.", 
+            website: "https://github.com/Wisegirlie/Supermarket-list-voice-commanded", 
+            image: projectSupermarketImg, 
+            techs: ["React Native", "Expo", "Node.js", "Express.js","MongoDB", "Google Speech-to-Text API", "JavaScript", "HTML", "CSS", "Git"]
+        },     
         {  id: 'project-formbuilder', 
             title: 'Form Builder', 
             type: "Web App", 
@@ -83,7 +83,7 @@ export default function Projects() {
         {  id: 'project-rosaria', 
             title: 'Rosaria', 
             type: "Web Development", 
-            description: "Design and development of complete website. The client required to use the brand's colors and fonts.", 
+            description: "Design and development of complete website. The client required to use their brand's colors and fonts.", 
             website: "https://www.soyrosaria.com", 
             image: projectRosariaImg, 
             techs: ["HTML", "CSS", "JavaScript"]

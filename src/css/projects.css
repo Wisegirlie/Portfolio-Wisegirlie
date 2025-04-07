@@ -5,7 +5,8 @@
 .project_container {
     display: flex;
     flex-wrap: wrap;
-    gap: 50px;    
+    gap: 90px;    
+    row-gap: 40px;
     justify-content: center;   
     margin-bottom: 40px;     
 }
@@ -16,8 +17,8 @@
   
 .project_div {
     flex-grow: 1;
-    width: 280px;
-    max-width: 350px;
+    width: 300px;
+    max-width: 380px;
     min-height: 500px;    
     height: auto;     
     /* width: calc((100% / 4) - 40px);   */
