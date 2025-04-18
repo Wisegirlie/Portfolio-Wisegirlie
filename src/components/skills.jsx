@@ -122,13 +122,16 @@ export default function Skills() {
                 <div class="skills_div">
                     <div class="skills_info">
                         <h3>Backend Development</h3>
-                        <ul className="ul_bullet">
-                            <li>PHP</li>
-                            <li>Node.js</li>
-                            <li>C#</li>
-                            <li>Java</li>
-                            <li>COBOL</li>
+                        <ul className="ul_bullet">                            
+                            <li>REST APIs</li>                            
+                            <li>Node.js</li>                            
                             <li>Express.js</li>
+                            <li>PHP</li>
+                            <li>C#</li>
+                            <li>Java</li>                            
+                            <li>COBOL</li>
+                            
+                            
                         </ul>
                     </div>
                 </div>

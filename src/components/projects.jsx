@@ -67,7 +67,7 @@ export default function Projects() {
         {  id: 'project-formbuilder', 
             title: 'Form Builder', 
             type: "Web App", 
-            description: "Created a web app to create custom HTML forms with drag & drop, as an exercise.", 
+            description: "Created a web app to create custom HTML forms with drag & drop, as an exercise. I'll be adding features.", 
             website: "https://www.gabywaisman.com/portfolio/form-builder/index.html", 
             image: projectFormBuilderImg, 
             techs: ["React", "JavaScript", "Git", "HTML", "CSS"]

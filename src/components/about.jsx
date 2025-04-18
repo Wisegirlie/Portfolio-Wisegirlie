@@ -15,7 +15,7 @@ export default function About() {
     return (
         <div>
             <Header />
-                <div className="recuadro_nomargin">
+                <main className="recuadro_nomargin">
                     <div className="about_container">
                         <div className="about_info_div about_resume_div">
 
@@ -46,6 +46,12 @@ export default function About() {
                             I am eager to contribute to the innovations shaping our future. One key realization I've had is that great achievements are only possible through <strong>teamwork</strong>. <br />
                             Let’s make it happen!
                             <br />
+                            <br />
+                            <h3>Awards</h3>
+                            <strong>Outstanding Personality of Culture of the City of Buenos Aires</strong><br />
+                            Legislature of the City of Buenos Aires, Argentina, Sep 2011.<br /> <br />
+                            <strong>PomeGran Inc. Scholarship Award</strong><br />
+                            Awarded scholarship based on demonstrated passion for the field and academic excellence, Nov 2024. <br /> 
 
                             <Link to="/contact">
                                 <button className="button_white">Contact me</button>
@@ -57,7 +63,7 @@ export default function About() {
 
                         </div>  
                     </div> {/* contact_container */}
-                </div>            
+                </main>            
             <Footer/> 
         </div>
     );
