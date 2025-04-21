@@ -1,7 +1,7 @@
 import "../css/projects.css";
 import Highlight_small from "./highlight_small.jsx";
 
-export default function Project( {id, title, type, description, website, image, techs }) {
+export default function Project( { id, title, type, description, website, image, techs }) {
   return (
     <div className="project_div gris_back" id={id}>
       <a href={website} target="blank">
@@ -14,7 +14,7 @@ export default function Project( {id, title, type, description, website, image, 
           {description}
         </div>
         {techs.map((tech) => (
-            <Highlight_small texto={tech}/>
+            <Highlight_small texto={tech} key={tech} />
         ))}
       </a>
     </div>

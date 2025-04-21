@@ -17,6 +17,7 @@ import projectFindGrantImg from '../assets/projects/project-findgrant-home2.jpg'
 import projectProtectedAreasImg from '../assets/projects/project-protectedareas_2.jpg';
 import projectSupermarketImg from '../assets/projects/project-supermarketlist.jpg';
 import projectSvgMapImg from '../assets/projects/project-svgmap.jpg';
+import projectTheatreAppImg from '../assets/projects/projects-theatreapp.jpg';
 import Project from "./project.jsx";
 import "../css/projects.css";
 import { createContext } from "react";
@@ -40,6 +41,14 @@ export default function Projects() {
             image: projectFindGrantImg, 
             techs: ["React Native", "Expo", "Node.js", "Express.js", "Git", "JavaScript","HTML", "CSS"]
         },
+        {  id: 'project-theatreapp', 
+            title: 'Theatre App', 
+            type: "Web App Development", 
+            description: "This app is designed to be a comprehensive online resource for the performing arts, culture, and entertainment. It features user authentication, a different portal for the admin, ticket purchasing simulation, among other features (under development)", 
+            website: "https://github.com/Wisegirlie/Theatre-App", 
+            image: projectTheatreAppImg, 
+            techs: ["React", "Vite", "Node.js", "REST API", "Express.js", "MongoDB", "JavaScript", "HTML", "CSS", "Git", "Login authentication"]
+        }, 
         {  id: 'project-portfolio', 
             title: 'My Portfolio', 
             type: "Web Development", 
@@ -51,7 +60,7 @@ export default function Projects() {
         {  id: 'project-realstate', 
             title: 'Real State', 
             type: "Web Development", 
-            description: "Design and development of complete website as an exercise of a real state website  template.", 
+            description: "Design and development of complete website template for a real state company.", 
             website: "https://www.gabywaisman.com/portfolio/real-state/index.html", 
             image: projectRealStateImg, 
             techs: ["HTML", "CSS", "JavaScript"]
@@ -67,7 +76,7 @@ export default function Projects() {
         {  id: 'project-formbuilder', 
             title: 'Form Builder', 
             type: "Web App", 
-            description: "Created a web app to create custom HTML forms with drag & drop, as an exercise. I'll be adding features.", 
+            description: "Created a web app to create custom HTML forms with drag & drop. I'll be adding features.", 
             website: "https://www.gabywaisman.com/portfolio/form-builder/index.html", 
             image: projectFormBuilderImg, 
             techs: ["React", "JavaScript", "Git", "HTML", "CSS"]
@@ -96,7 +105,7 @@ export default function Projects() {
             image: projectSvgMapImg, 
             techs: ["SVG", "JavaScript", "HTML", "CSS"]
         },
-        {  id: 'project-protectedareas', 
+        {  id: 'project-protectedareas',             
             title: 'Protected Areas', 
             type: "Webpage", 
             description: "Design and development of a webpage for environmental protected areas, done as an exercise.", 
@@ -115,7 +124,8 @@ export default function Projects() {
             <div className="project_container">
                 {projects.map((project) => (
                     <Project 
-                        id={project.id}  
+                        key={project.id}
+                        id={project.id}                          
                         title={project.title} 
                         type={project.type} 
                         description={project.description} 
