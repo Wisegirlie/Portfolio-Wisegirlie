@@ -101,10 +101,10 @@ export default function Skills() {
             {/* ---- SKiLLS PAGE ---- */}
             <h1>Technical Skills</h1>
 
-            <main class="skills_container">
+            <main className="skills_container">
                 {/* <h1>I do</h1> */}
-                <div class="skills_div">
-                    <div class="skills_info">
+                <div className="skills_div">
+                    <div className="skills_info">
                         <h3>Frontend Development</h3>
                         <ul className="ul_bullet">
                             <li>HTML</li>
@@ -119,8 +119,8 @@ export default function Skills() {
                     </div>
                 </div>
 
-                <div class="skills_div">
-                    <div class="skills_info">
+                <div className="skills_div">
+                    <div className="skills_info">
                         <h3>Backend Development</h3>
                         <ul className="ul_bullet">                            
                             <li>REST APIs</li>                            
@@ -129,15 +129,13 @@ export default function Skills() {
                             <li>PHP</li>
                             <li>C#</li>
                             <li>Java</li>                            
-                            <li>COBOL</li>
-                            
-                            
+                            <li>COBOL</li>                            
                         </ul>
                     </div>
                 </div>
 
-                <div class="skills_div">
-                    <div class="skills_info">
+                <div className="skills_div">
+                    <div className="skills_info">
                         <h3>Database Management</h3>
                         <ul className="ul_bullet">
                             <li>MySQL</li>
@@ -148,8 +146,8 @@ export default function Skills() {
                     </div>
                 </div>
 
-                <div class="skills_div">
-                    <div class="skills_info">
+                <div className="skills_div">
+                    <div className="skills_info">
                         <h3>
                             Version Control & <br />
                             Agile Methodologies
@@ -161,8 +159,8 @@ export default function Skills() {
                     </div>
                 </div>
 
-                <div class="skills_div">
-                    <div class="skills_info">
+                <div className="skills_div">
+                    <div className="skills_info">
                         <h3>UI/UX & Design</h3>
                         <ul className="ul_bullet">
                             <li>Figma</li>
@@ -177,11 +175,12 @@ export default function Skills() {
                     </div>
                 </div>
 
-                <div class="skills_div">
-                    <div class="skills_info">
+                <div className="skills_div">
+                    <div className="skills_info">
                         <h3>Additional Tools</h3>
                         <ul className="ul_bullet">
-                            <li>SEO</li>
+                            <li>SEO</li>        
+                            <li>Postman</li>                    
                             <li>Visio</li>
                             <li>VS Code</li>
                             <li>Visual Studio</li>
@@ -196,8 +195,8 @@ export default function Skills() {
                     </div>
                 </div>
 
-                <div class="skills_div" style={{ minHeight: "150px" }}>
-                    <div class="skills_info">
+                <div className="skills_div" style={{ minHeight: "150px" }}>
+                    <div className="skills_info">
                         <h3>Spoken Languages</h3>
                         <ul className="ul_bullet">
                             <li>English</li>
@@ -217,6 +216,7 @@ export default function Skills() {
                     {courses.map((course) => (
                         <Course
                             id={course.id}
+                            key={course.id}
                             title={course.title}                        
                             logo={course.logo}
                             provider={course.provider}
