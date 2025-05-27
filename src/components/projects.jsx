@@ -30,7 +30,7 @@ export default function Projects() {
             description: "Design and development of complete website for a company, including an internal portal to manage products and databases.", 
             website: "https://energit.com.ar", 
             image: projectEnergitImg, 
-            techs: ["HTML", "CSS", "JavaScript", "PHP", "MySQL"]
+            techs: ["PHP", "MySQL", "JavaScript", "HTML", "CSS" ]
         },        
         {  id: 'project-findgrant', 
             title: 'Findgrant', 
@@ -54,16 +54,16 @@ export default function Projects() {
             description: "Design and development of my portfolio's website.", 
             website: "/", 
             image: projectGabywaismanImg, 
-            techs: ["React", "Vite", "Node.js", "JavaScript", "PHP", "HTML", "CSS", "Git"]
-        },     
-        {  id: 'project-realstate', 
-            title: 'Real State', 
-            type: "Web Development", 
-            description: "Design and development of complete website template for a real state company.", 
-            website: "https://www.gabywaisman.com/portfolio/real-state/index.html", 
-            image: projectRealStateImg, 
-            techs: ["HTML", "CSS", "JavaScript"]
-        },        
+            techs: ["React", "Vite", "Node.js", "PHP", "JavaScript","HTML", "CSS", "Git"]
+        },  
+        {  id: 'project-supermarketlist', 
+            title: 'Voice Commanded Supermarket List', 
+            type: "Mobile App", 
+            description: "This app allows users to easily create and manage their shopping lists using voice commands.", 
+            website: "https://github.com/Wisegirlie/Supermarket-list-voice-commanded", 
+            image: projectSupermarketImg, 
+            techs: ["React Native", "Expo", "Node.js", "Express.js","MongoDB", "Google Speech-to-Text API", "JavaScript", "HTML", "CSS", "Git"]
+        },          
         {  id: 'project-secure-form', 
             title: 'Secure Registration System', 
             type: "Component", 
@@ -72,14 +72,14 @@ export default function Projects() {
             image: projectRegistrationForm, 
             techs: ["PHP",  "MySQL",  "JavaScript", "HTML", "CSS", "Git"]
         }, 
-        {  id: 'project-supermarketlist', 
-            title: 'Voice Commanded Supermarket List', 
-            type: "Mobile App", 
-            description: "This app allows users to easily create and manage their shopping lists using voice commands.", 
-            website: "https://github.com/Wisegirlie/Supermarket-list-voice-commanded", 
-            image: projectSupermarketImg, 
-            techs: ["React Native", "Expo", "Node.js", "Express.js","MongoDB", "Google Speech-to-Text API", "JavaScript", "HTML", "CSS", "Git"]
-        },     
+        {  id: 'project-realstate', 
+            title: 'Real State', 
+            type: "Web Development", 
+            description: "Design and development of complete website template for a real state company.", 
+            website: "https://www.gabywaisman.com/portfolio/real-state/index.html", 
+            image: projectRealStateImg, 
+            techs: ["HTML", "CSS", "JavaScript"]
+        },
         {  id: 'project-formbuilder', 
             title: 'Form Builder', 
             type: "Web App", 

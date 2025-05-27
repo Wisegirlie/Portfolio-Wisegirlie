@@ -25,3 +25,13 @@ footer a, footer a:visited {
 footer a:hover {
     color: #ffeab0 !important;
 }
+
+.footer-data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    line-height: 1.3em;
+}
+
