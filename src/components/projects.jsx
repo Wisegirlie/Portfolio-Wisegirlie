@@ -6,7 +6,6 @@
    
 import { Header } from "./header.jsx";
 import { Footer } from "./footer.jsx";
-import Highlight_small from "./highlight_small.jsx";
 import projectDiversaImg from '../assets/projects/project-diversa1.jpg';
 import projectRosariaImg from '../assets/projects/project-rosaria3.jpg';
 import projectEnergitImg from'../assets/projects/project-energit2.jpg';
@@ -18,9 +17,9 @@ import projectProtectedAreasImg from '../assets/projects/project-protectedareas_
 import projectSupermarketImg from '../assets/projects/project-supermarketlist.jpg';
 import projectSvgMapImg from '../assets/projects/project-svgmap.jpg';
 import projectTheatreAppImg from '../assets/projects/projects-theatreapp.jpg';
+import projectRegistrationForm from '../assets/projects/secure-registration-form.jpg';
 import Project from "./project.jsx";
 import "../css/projects.css";
-import { createContext } from "react";
 
 export default function Projects() {
 
@@ -65,6 +64,14 @@ export default function Projects() {
             image: projectRealStateImg, 
             techs: ["HTML", "CSS", "JavaScript"]
         },        
+        {  id: 'project-secure-form', 
+            title: 'Secure Registration System', 
+            type: "Component", 
+            description: "Secure user registration form with many features as real-time front-end and back-end validation, password strength requirements, international phone number input, accessibility support, responsive design, normalized database structure, and secure data storage following best practices.", 
+            website: "https://gabywaisman.com/portfolio/secure-registration-form/index.html", 
+            image: projectRegistrationForm, 
+            techs: ["PHP",  "MySQL",  "JavaScript", "HTML", "CSS", "Git"]
+        }, 
         {  id: 'project-supermarketlist', 
             title: 'Voice Commanded Supermarket List', 
             type: "Mobile App", 
