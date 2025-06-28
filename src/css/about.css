@@ -9,9 +9,23 @@
             About me
    ---------------------------- */
 
+
+.recuadro_nomargin {
+    background-color: var(--fucsia);
+    margin-top: 30px;
+    margin-bottom: 50px;    
+    border-radius: 20px;    
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+}
+
+
 .about_container {
     width: 100%;
     margin: 0;
+    display: flex;
 }
 
 .about_info_div {
@@ -22,8 +36,7 @@
     vertical-align: top;    
     padding: 45px 0 30px 100px;
     padding-right: 52px;
-    color: #FFF;
-    
+    color: #FFF;    
 }
 
 .about_info_div h1{
@@ -39,7 +52,7 @@
     /* padding: 45px 0 20px 20px;
     padding-right: 20px; */
     padding: 0;
-    margin: 45px 30px 45px 20px;
+    margin: 45px 2% 45px 2%;
     color: #FFF;
 }
 
@@ -47,12 +60,11 @@
     display: inline-block;
     width: 630px;
     padding: 20px;
-    max-width: 800px;
     margin: 0;    
     text-align: left;  
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
-    padding: 20px 90px 40px 140px;
+    padding: 20px 7% 40px 10%;
 }
 
 .about_photo {
@@ -68,7 +80,7 @@
 
 .about_container h3 {    
     font-family: Raleway, Arial, Helvetica, sans-serif;    
-    font-size: 24px;
+    font-size: 1.5em;
     font-weight: 600;    
 }
 
@@ -100,10 +112,10 @@
 }
 
 /* ----------------------------
-          900
+          880
 ---------------------------- */
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 880px) {
 
     .recuadro_nomargin {
         width: 100%;
@@ -113,6 +125,10 @@
     }
 
     .about_container {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        max-width: auto;
     }
 
     .about_bio_div {
@@ -122,6 +138,7 @@
         padding-left: 90px;
         padding-right: 90px;
         text-align: center;
+        border-radius: 0;
     }
 
     .about_resume_div {
@@ -132,23 +149,11 @@
     }
 
     .about_resume_div h1 {
-        font-size: 30px;
+        font-size: 1.875em;
     }
     
 }
  
-/* ----------------------------
-          815
----------------------------- */
-
-@media screen and (max-width: 850px) {
-
-    .about_bio_div {
-        border-radius: 0;
-    }
-
-}
-  
 /* ----------------------------
              550
 ---------------------------- */  

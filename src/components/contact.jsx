@@ -143,7 +143,7 @@ export default function Contact() {
                 {/* Render Loader image when submitting */}
                 {showLoader && <Loader  />}                  
 
-                <div className="recuadro_nomargin">
+                <main className="contact_recuadro_nomargin">
                     <div className="contact_container">
                         <div className="contact_info_div">
                             <img src={logo_gaby_blanco} alt="Gabriela Logo" className="logo_g"/>
@@ -179,10 +179,9 @@ export default function Contact() {
 
                         </div>  
                     </div> {/* contact_container */}
-                </div>
+                </main>
             <Footer/>
-        </div>
-        
+        </div>        
     );
 }
     
