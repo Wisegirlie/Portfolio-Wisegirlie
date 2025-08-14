@@ -17,5 +17,11 @@ module.exports = {
       'warn',
       { allowConstantExport: true },
     ],
+    'react/no-unescaped-entities': [
+          'error',
+          {
+            'forbid': ['>', '"', '}'], // Still forbid these but allow apostrophes
+          },
+    ]
   },
 }

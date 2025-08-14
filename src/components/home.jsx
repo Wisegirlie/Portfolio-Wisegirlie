@@ -10,11 +10,6 @@ import '../css/main.css'
 import { Link } from 'react-router-dom';
 import photo_gaby from '../assets/foto_gaby.jpg';
 
-const home_content = {
-    
-}
-
-
 export default function Home() {
     return (
         <div>
@@ -31,17 +26,13 @@ export default function Home() {
                     <div className="home_info">
                         Hello Everyone, I am
                         <h1>Gabriela Waisman</h1>
-                        <div className="highlight_big">Software Developer</div>
+                        <div className="highlight_big">Full-Stack Software Developer</div>
                         <div className="highlight_big spacebetweenJobs">
-                            Full-Stack Web Developer
+                            Web & Mobile
                         </div>
                         <br /> <br />
                         <span style={{ color: "#333" }}>
-                            I am a developer with 9 years of experience. I would
-                            like to be part of teams that seek the creation of
-                            innovative solutions. I have a lot of other
-                            interests as well, as trading, culture, sci-fi, and
-                            photography.{" "}
+                            Software Developer with a designer’s eye and an engineer's mind, passionate about crafting clear, intuitive, user-friendly, and visually appealing digital experiences. Blends strong UI/UX design and communication skills with solid technical expertise in modern technologies and the full software development lifecycle (SDLC).
                         </span>
                         <br />
                         <Link to="/about">

@@ -3,7 +3,7 @@
     npm run dev
 
     BUILD WITH
-    npm run buil
+    npm run build
   ------------------------    */
 
 import './App.css'

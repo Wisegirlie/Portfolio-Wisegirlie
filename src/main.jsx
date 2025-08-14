@@ -5,7 +5,7 @@
    
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import './index.css'
+import '/src/css/index.css'
 
 import {
   createBrowserRouter,
@@ -18,9 +18,6 @@ import Projects from './components/projects';
 import Skills  from './components/skills';
 import Contact from './components/contact';
 import Services from './components/services';
-import App from './App';
-
-import "./index.css";
 
 {/* ---- ROUTER ---- */}
 

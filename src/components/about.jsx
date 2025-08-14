@@ -33,26 +33,35 @@ export default function About() {
                         <div className="about_bio_div gris_back"> 
                             <h1>About me</h1>
                                 
-                            <span style={{fontSize: '110%'}}><strong>I am a passionate web and software developer with experience in building effective, visually appealing, and user-friendly websites and applications. </strong></span>
+                            <span style={{fontSize: '110%'}}><strong>I am a passionate software developer with experience in building effective, visually appealing, and user-centric digital experiences. </strong></span>
                             <br /> <br />
+
+                            I have a diverse background in both <strong>Software Development</strong> and <strong>Design of Image and Sound</strong>, which allows me to approach projects with a unique perspective that combines technical expertise with creative design. <br /> <br />
                             
-                            I started programming at the age of 12, and it was then that I found my passion for technology. From that moment on, I began teaching myself various programming languages and applications. I graduated as a <strong> Computer Programming Technician</strong> from a technical high school, and since I’ve always been drawn to challenges, I pursued a different field of study at university to broaden my skill set, getting a bachelor’s degree in <strong> Design of Image and Sound</strong> from University of Buenos Aires, Argentina. <br /> <br />
+                            My journey into the tech world began when I was 12 years old, where I discovered my passion for technology and programming. From that moment on, I taught myself various programming languages and applications, beginning my journey into tech and graduating from high school with an advanced diploma as a <strong>Computer Programming Technician.</strong> <br /> <br />
+                                                 
+                            Always curious and eager for new challenges, I decided to broaden my skill set by pursuing a different field of study at university, earning a bachelor’s degree in <strong> Design of Image and Sound</strong> from University of Buenos Aires, Argentina. <br /> <br />
 
-                            With over 9 years of experience in <strong>Web Development</strong>, I decided to advance my career in software engineering, earning a diploma as a <strong>Software Engineering Technician</strong> from Centennial College, Canada. 
-                            I also earned a Certificate in <strong>Inclusive Leadership Practices</strong> which provided me with critical skills to foster inclusivity in modern workplaces.
-                            Along the way, I've expanded my expertise across a wide range of technologies, skills, and programming languages.                            
+                            Fascinated by the power of technology to solve real-world problems and improve lives, I took my career a step further into software engineering, earning a diploma as a <strong>Software Engineering Technician</strong> from Centennial College, Canada. 
                             <br /> <br />
 
-                            I am eager to contribute to the innovations shaping our future. One key realization I've had is that great achievements are only possible through <strong>teamwork</strong>. <br />
+                            I also earned a Certificate in <strong>Inclusive Leadership Practices</strong> which provided me with critical skills to foster inclusivity in modern workplaces.
+                            <br /> <br />
+                            Along the way, I’ve expanded my expertise across a wide range of technologies, tools, and programming languages—and continue to do so every day.
+                            <br /> <br />
+
+                             I am eager to contribute to the innovations shaping our present and future. One key realization I've had is that great achievements are only possible through <strong>teamwork</strong>. <br /> <br />
+
                             Let’s make it happen!
                             <br />
                             <br />
                             <h3>Awards</h3>
+                            <strong>PomeGran Inc. Scholarship Award</strong> - Centennial College<br />
+                            Awarded scholarship based on demonstrated passion for the field and academic excellence. <br /><br />
+                            
                             <strong>Outstanding Personality of Culture of the City of Buenos Aires</strong><br />
-                            Legislature of the City of Buenos Aires, Argentina, Sep 2011.<br /> <br />
-                            <strong>PomeGran Inc. Scholarship Award</strong><br />
-                            Awarded scholarship based on demonstrated passion for the field and academic excellence, Nov 2024. <br /> 
-
+                            Legislature of the City of Buenos Aires, Argentina.<br /> 
+                            
                             <Link to="/contact">
                                 <button className="button_white">Contact me</button>
                             </Link>
