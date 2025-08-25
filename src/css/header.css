@@ -82,7 +82,11 @@ header {
 
     header {        
         align-items: flex-start;
-        padding-top: 10px;
+        /* padding-top: 10px; */
+    }
+
+    .buttonHamburger {
+        background-color: #FFFFFF;
     }
 
     .hamburger {
@@ -143,6 +147,19 @@ header {
 
     /* recovers the padding lost with the root padding change */
     header {
-        padding: 0 12px;        
+        padding: 0 12px;  
+    }
+}
+
+
+/* ----------------------------
+             426
+   ---------------------------- */  
+
+@media screen and (max-width: 426px) {
+    
+    header {        
+        height: 65px;
+        align-items: center;
     }
 }

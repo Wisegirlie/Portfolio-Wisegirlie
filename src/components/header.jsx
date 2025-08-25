@@ -11,7 +11,7 @@ import hamburger from "../assets/hamburger.png";
 import { useState } from 'react';
 
 
-export function Header(props) {
+export function Header() {
 
     const [responsiveMenu, setResponsiveMenu] = useState(false);
     
@@ -19,7 +19,7 @@ export function Header(props) {
             {key: "home", name: "Home", location: "/"},
             {key: "about", name: "About me", location: "/about"},
             {key: "projects", name:"Projects", location: "/projects" },
-            {key: "skills", name:"Skills", location: "/skills" },
+            {key: "skills", name:"Tech Skills", location: "/skills" },
             {key: "contact", name:"Contact", location: "/contact" }];
             
    const menuitems = navButtons.map(
@@ -47,7 +47,7 @@ export function Header(props) {
           <nav>
               {/*  hamburger for responsive menu */}
               <div className="hamburger">
-                  <button onClick={toggleResponsiveMenu}>
+                  <button onClick={toggleResponsiveMenu} aria-label="Menu Button"  className="buttonHamburger">
                       <img
                           src={hamburger}
                           alt="Menu Mobile Icon"
