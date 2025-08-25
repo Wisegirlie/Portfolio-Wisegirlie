@@ -114,6 +114,7 @@ export default function Skills() {
                             <li>React Native</li>
                             <li>WordPress</li>
                             <li>Responsive Design</li>
+                            <li>Accesibility</li>
                             <li>SVG</li>
                         </ul>
                     </div>
@@ -184,10 +185,11 @@ export default function Skills() {
                             <li>Visio</li>
                             <li>VS Code</li>
                             <li>Visual Studio</li>
+                            <li>Cursor AI</li>
                             <li>Dreamweaver</li>                            
                             <li>
                                 Microsoft Office Suite:
-                                <br />
+                                
                                 Word, Excel, PowerPoint, Teams, Outlook,
                                 OneDrive
                             </li>

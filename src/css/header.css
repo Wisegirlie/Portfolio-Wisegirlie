@@ -78,7 +78,7 @@ header {
    ---------------------------- */
 
    /* HAMBURGER */
-   @media screen and (max-width: 880px) {
+   @media screen and (max-width: 910px) {
 
     header {        
         align-items: flex-start;
@@ -106,10 +106,10 @@ header {
         display: none;
         flex-direction: column;
         align-items: flex-end;     
-        margin-top: 65px;
+        margin-top: 64px;
         flex-wrap: wrap;
         position: absolute;
-        right: 0;
+        right: 15px;
         background-color: #FFF;
         border-radius: 20px;
         border-top-left-radius: 0px;
@@ -161,5 +161,10 @@ header {
     header {        
         height: 65px;
         align-items: center;
+    }
+
+    .nav-ul {
+        margin-top: 32px;
+        right: 15px;
     }
 }

@@ -4,6 +4,7 @@
    |        PROJECTS PAGE        |
    =============================== */ 
    
+import { useState, useMemo } from "react";
 import { Header } from "./header.jsx";
 import { Footer } from "./footer.jsx";
 import projectDiversaImg from '../assets/projects/project-diversa1.jpg';
@@ -22,6 +23,8 @@ import Project from "./project.jsx";
 import "../css/projects.css";
 
 export default function Projects() {
+    const [selectedTech, setSelectedTech] = useState(null);
+    const [isAnimating, setIsAnimating] = useState(false);
 
     const projects = [
         {  id: 'project-energit', 
@@ -38,7 +41,7 @@ export default function Projects() {
             description: "Front-end Development of a fully functional web & mobile app, based on a Figma design provided by the client. Successfully implemented the original design and functionality; later visual and structural changes were made by the product owner after handoff.", 
             website: "https://findgrant.ca/", 
             image: projectFindGrantImg, 
-            techs: ["React Native", "Expo", "Node.js", "Express.js", "Git", "JavaScript","HTML", "CSS"]
+            techs: ["React Native", "Expo", "REST API", "Node.js", "Express.js", "Figma", "Git", "JavaScript", "HTML", "CSS"]
         },
         {  id: 'project-theatreapp', 
             title: 'Theatre App', 
@@ -94,7 +97,7 @@ export default function Projects() {
             description: "App that allows users to easily create and manage their shopping lists using voice commands.", 
             website: "https://github.com/Wisegirlie/Supermarket-list-voice-commanded", 
             image: projectSupermarketImg, 
-            techs: ["React Native", "Expo", "Node.js", "Express.js","MongoDB", "Google Speech-to-Text API", "JavaScript", "HTML", "CSS", "Git"]
+            techs: ["React Native", "Expo", "Node.js", "REST API", "Express.js","MongoDB", "Google Speech-to-Text API", "JavaScript", "HTML", "CSS", "Git"]
         }, 
         {  id: 'project-rosaria', 
             title: 'Rosaria', 
@@ -122,24 +125,94 @@ export default function Projects() {
         },
     ];
 
+    // Get unique technologies from all projects
+    const allTechnologies = useMemo(() => {
+        const techSet = new Set();
+        projects.forEach(project => {
+            project.techs.forEach(tech => techSet.add(tech));
+        });
+        return Array.from(techSet).sort();
+    }, []);
+
+    // Filter projects based on selected technology
+    const filteredProjects = useMemo(() => {
+        if (!selectedTech) return projects;
+        return projects.filter(project => 
+            project.techs.includes(selectedTech)
+        );
+    }, [selectedTech]);
+
+    const handleTechFilter = (tech) => {
+        setIsAnimating(true);
+        setSelectedTech(selectedTech === tech ? null : tech);
+        
+        // Reset animation state after transition
+        setTimeout(() => {
+            setIsAnimating(false);
+        }, 400);
+    };
+
+    const handleClearFilter = () => {
+        setIsAnimating(true);
+        setSelectedTech(null);
+        
+        // Reset animation state after transition
+        setTimeout(() => {
+            setIsAnimating(false);
+        }, 400);
+    };
+
     return (
         <>
             <Header />
 
             {/* ---- PROJECTS ---- */}
             <h1>Key Projects</h1>
-            <div className="project_container">
-                {projects.map((project) => (
-                    <Project 
+            
+            {/* Technology Filter Badges */}
+            <div className="tech-filter-container">
+                <h3 className="filter-title">Filter by technology</h3>
+                <div className="tech-badges">
+                    {allTechnologies.map((tech) => (
+                        <button
+                            key={tech}
+                            className={`tech-badge ${selectedTech === tech ? 'active' : ''}`}
+                            onClick={() => handleTechFilter(tech)}
+                        >
+                            {tech}
+                        </button>
+                    ))}
+                </div>
+                {selectedTech && (
+                    <button 
+                        className="clear-filter-btn"
+                        onClick={handleClearFilter}
+                    >
+                        Clear Filter
+                    </button>
+                )}
+            </div>
+
+            <div className={`project_container ${isAnimating ? 'animating' : ''}`}>
+                {filteredProjects.map((project, index) => (
+                    <div 
                         key={project.id}
-                        id={project.id}                          
-                        title={project.title} 
-                        type={project.type} 
-                        description={project.description} 
-                        website={project.website} 
-                        image={project.image} 
-                        techs={project.techs} 
-                    />
+                        className="project-wrapper"
+                        style={{ 
+                            animationDelay: `${index * 0.1}s`,
+                            transitionDelay: `${index * 0.05}s`
+                        }}
+                    >
+                        <Project 
+                            id={project.id}                          
+                            title={project.title} 
+                            type={project.type} 
+                            description={project.description} 
+                            website={project.website} 
+                            image={project.image} 
+                            techs={project.techs} 
+                        />
+                    </div>
                 ))}                
             </div>  
             <Footer/>

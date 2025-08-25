@@ -8,6 +8,12 @@ html {
 }
 
 :root {
+
+  /* -----  COLORS  ----- */
+  --fucsia: #BC0056;   
+  --amarillo-light: #ffeab0;
+  --amarillo:#ffe5a3;
+
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;

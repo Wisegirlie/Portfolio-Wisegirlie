@@ -2,13 +2,126 @@
              PROJECTS
    ---------------------------- */
 
+/* Technology Filter Styles */
+.tech-filter-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px 0 50px 0;
+    gap: 10px;
+}
+
+.filter-title {
+    font-size: 1em;
+    font-weight: 500;
+    color: #9b9b9b;
+    margin: 0;     
+}
+
+.tech-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 10px;
+    justify-content: center;
+    max-width: 800px;
+}
+
+.tech-badge {
+    /* background-color: var(--fucsia);
+    color: #ffffff; */
+    background-color: #f8f8f8;
+    color: var(--fucsia);
+    border: 2px solid rgba(199, 11, 80, 0.3);    
+    box-shadow: 0 2px 6px rgba(199, 11, 80, 0.2);
+    border-radius: 12px;
+    padding: 0.45em 1.2em;
+    cursor: pointer;
+    transition: all 0.3s ease;    
+    letter-spacing: 0.1em;
+    margin: 3px;    
+    font-size: .8em;
+    font-weight: 600;
+    font-family: inherit;
+    transition: border-color 0.25s;    
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+}
+
+.tech-badge.active {
+    /* background-color: #f8f8f8;
+    color: var(--fucsia); */
+    background-color: var(--fucsia);
+    color: #ffffff;
+    transform: translateY(-2px);
+    /* box-shadow: 0 4px 12px rgba(199, 11, 80, 0.3); */
+    border: 2px solid #FFFFFF;
+    border: 1px solid var(--fucsia);
+    outline: none;
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+}
+
+.tech-badge:hover {
+    /* background-color: white;
+    color: var(--fucsia); */
+    background-color: var(--fucsia);
+    color: #ffffff;
+    border-color: var(--fucsia);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    outline: none;
+}
+
+
+.clear-filter-btn {
+    background-color: #f8f8f8;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    padding: 6px 14px;
+    font-size: 10px;
+    color: #888;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;   
+    margin-top: 3px;
+}
+
+.clear-filter-btn:hover {
+    background-color: #e8e8e8;
+    border-color: #aaa;
+    color: #666;
+}
+
 .project_container {
     display: flex;
     flex-wrap: wrap;
     gap: 90px;    
     row-gap: 40px;
     justify-content: center;   
-    margin-bottom: 40px;     
+    margin-bottom: 40px;
+    min-height: 200px; /* Prevent layout shift */
+}
+
+.project-wrapper {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.project_container.animating .project-wrapper {
+    animation: fadeInScale 0.4s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+@keyframes fadeInScale {
+    0% {
+        opacity: 0;
+        transform: scale(0.85) translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
 }
 
 .project_container a:hover, .project_container a:link, .project_container a:visited   {   
