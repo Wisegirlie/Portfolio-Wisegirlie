@@ -8,7 +8,7 @@
 import { Header } from "./header.jsx";
 import { Footer } from "./footer.jsx";
 import { Link } from 'react-router-dom';
-import Photo_Gaby from '../assets/foto_gaby.jpg'
+import Photo_Gaby from '../assets/gaby_waisman_light.jpg'
 import '../css/about.css';
 
 export default function About() {

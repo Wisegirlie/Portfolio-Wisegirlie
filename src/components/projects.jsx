@@ -73,7 +73,7 @@ export default function Projects() {
             description: "Secure user registration form with many features as real-time front-end and back-end validation, password strength requirements, international phone number input, accessibility support, responsive design, normalized database structure, and secure data storage following industry best practices.", 
             website: "https://gabywaisman.com/portfolio/secure-registration-form/index.html", 
             image: projectRegistrationForm, 
-            techs: ["PHP",  "MySQL",  "JavaScript", "HTML", "CSS", "Git"]
+            techs: ["PHP",  "MySQL",  "JavaScript", "HTML", "CSS", "Git", "Login authentication"]
         }, 
         {  id: 'project-realstate', 
             title: 'Real State', 

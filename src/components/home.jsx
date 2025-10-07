@@ -8,7 +8,7 @@ import { Header } from "./header.jsx";
 import { Footer } from "./footer.jsx";
 import '../css/main.css'
 import { Link } from 'react-router-dom';
-import photo_gaby from '../assets/foto_gaby.jpg';
+import photo_gaby from '../assets/gaby_waisman_light.jpg';
 
 export default function Home() {
     return (
