@@ -101,9 +101,9 @@ export function Header() {
                           aria-label={`Switch to ${isDarkMode ? 'light' : 'dark'} mode`}
                           className="theme-toggle-button"
                           title={`Switch to ${isDarkMode ? 'light' : 'dark'} mode`}
-                      >
-                          <SunIcon />
+                      >                          
                           <MoonIcon />
+                          <SunIcon />
                       </button>
                   </li>
               </ul>
