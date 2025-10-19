@@ -165,12 +165,16 @@ header {
     }
 
     .buttonHamburger {
-        background-color: transparent;
+        background: none;
         border: none;
     }
 
     .buttonHamburger:focus {
         outline: none;
+    }
+    
+    .buttonHamburger:hover {
+        background: none;
     }
 
     .hamburger {
