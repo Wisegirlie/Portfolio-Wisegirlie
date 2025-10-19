@@ -1,5 +1,6 @@
 import "../css/projects.css";
 import Highlight_small from "./highlight_small.jsx";
+import PropTypes from 'prop-types';
 
 export default function Project( { id, title, type, description, website, image, techs }) {
   return (
@@ -13,10 +14,22 @@ export default function Project( { id, title, type, description, website, image,
         <div className="project_text">
           {description}
         </div>
-        {techs.map((tech) => (
-            <Highlight_small texto={tech} key={tech} />
-        ))}
+        <div className="project-highlights-container">
+          {techs.map((tech) => (
+              <Highlight_small texto={tech} key={tech} />
+          ))}
+        </div>        
       </a>
     </div>
   );
 }
+
+Project.propTypes = {
+  id: PropTypes.string,
+  title: PropTypes.string,
+  type: PropTypes.string,
+  description: PropTypes.string,
+  website: PropTypes.string,
+  image: PropTypes.string,
+  techs: PropTypes.array
+};

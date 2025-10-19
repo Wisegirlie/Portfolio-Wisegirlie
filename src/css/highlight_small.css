@@ -6,8 +6,7 @@
     /* background-color: var(--fucsia); // fucsia orig*/
     /* background-color: #c91c53; // fucsia lindo*/
     /* background-color: #750035; // fucsia oscuro*/
-    background-color: #ffffff; 
-    
+    background-color: #ffffff;     
     color: #000000;
     border-radius: 9px;
     border: 1px solid transparent;
@@ -17,4 +16,6 @@
     font-family: inherit;
     transition: border-color 0.25s;
     letter-spacing: 0.1em;
+    color: var(--text-primary);
+    background-color: var(--highlight-small-bg);     
 }

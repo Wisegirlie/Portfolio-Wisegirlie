@@ -16,8 +16,9 @@ header {
     position: sticky;
     top: 0;
     z-index: 10;
-    padding-top: 5px;
-    background-color: #FFF;
+    padding-top: 5px;    
+    transition: border-color 0.3s ease;
+    background-color: var(--header-bg);
 }
 
 .logo-img {
@@ -35,6 +36,13 @@ header {
 
 /*  ----- NAV CSS ------ */
 
+.nav-ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;    
+}
+
 .nav-button {     
     display: inline-block;
     min-width: 40px;
@@ -43,17 +51,88 @@ header {
     font-family: "Roboto", "Arial", sans-serif;
     font-weight: 800;
     font-size: 1.125em;
-    letter-spacing: 0.02857em;
+    letter-spacing: 0.03em;
     text-align: center;
     min-width: 64px;
     margin: 6px 16px;
-    color: var(--fucsia);       
+    color: var(--nav-button);
+    transition: color 0.3s ease;       
 }
 
 .nav-button:hover {    
     transform: scale(1.1);
-    transition: all 0.2s; 
-   
+    transition: all 0.2s;    
+}
+
+
+/*  ----- THEME TOGGLE CSS ------ */
+
+.theme-toggle-nav {
+    display: inline-block;
+    margin-left: 14px;
+    list-style: none;
+}
+
+.theme-toggle-button {
+    background: none;    
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color: transparent;
+    padding: 0;
+    position: relative;
+}
+
+.theme-toggle-button:hover {
+    /* border-color: var(--fucsia); */
+    transform: scale(1.05);
+    box-shadow: 0 2px 8px var(--shadow);
+    border: none;
+}
+
+.theme-toggle-button:focus {
+    outline: none;
+}
+
+.theme-toggle-button:focus-visible {    
+    box-shadow: 0 0 0 4px rgba(188, 0, 86, 0.2);
+    outline: none;
+}
+
+.theme-toggle-icon {
+    width: 22px;
+    height: 22px;
+    transition: all 0.3s ease;
+    position: absolute;
+    z-index: 2;
+    opacity: 0;
+    transform: scale(0.8);
+    color: var(--text-primary);
+    margin-bottom: 2px;
+}
+
+/* Light mode - show sun */
+.theme-toggle-icon:first-child {
+    opacity: 1;
+    transform: scale(1);
+    color: #f87ec4;
+}
+
+/* Dark mode - show moon */
+[data-theme="dark"] .theme-toggle-icon:first-child {
+    opacity: 0;
+    transform: scale(0.8);
+}
+
+[data-theme="dark"] .theme-toggle-icon:last-child {
+    opacity: 1;
+    transform: scale(1);
 }
 
 .hamburger {
@@ -86,7 +165,12 @@ header {
     }
 
     .buttonHamburger {
-        background-color: #FFFFFF;
+        background-color: transparent;
+        border: none;
+    }
+
+    .buttonHamburger:focus {
+        outline: none;
     }
 
     .hamburger {
@@ -103,22 +187,29 @@ header {
     }
     
     .nav-ul {
-        display: none;
+        display: flex;
         flex-direction: column;
         align-items: flex-end;     
         margin-top: 64px;
         flex-wrap: wrap;
         position: absolute;
-        right: 15px;
-        background-color: #FFF;
+        right: 0px;
+        padding-right: 25px;
+        background-color: var(--nav-bg);
         border-radius: 20px;
         border-top-left-radius: 0px;
         border-top-right-radius: 0px;
         padding-top: 15px;
         padding-bottom: 20px;
-        border: 1px solid var(--fucsia);
+        border: 1px solid var(--nav-border);
         border-top: none;
         z-index: 20;
+        box-shadow: 0 4px 12px var(--shadow);
+        transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+        opacity: 0;
+        transform: translateY(-30px);
+        pointer-events: none;
+        visibility: hidden;
     }
 
     .nav-button {              
@@ -127,8 +218,25 @@ header {
         margin-right: 20px;
     }
 
+    .theme-toggle-nav {
+        margin: 6px 20px 6px 0;
+    }
+
+    .theme-toggle-button {
+        width: 35px;
+        height: 35px;
+    }
+
+    .theme-toggle-icon {
+        width: 16px;
+        height: 16px;
+    }
+
     .show-responsive-menu {
-        display: flex;
+        opacity: 1;
+        transform: translateY(0);
+        pointer-events: auto;
+        visibility: visible;
     }
 
     .logo-img {    

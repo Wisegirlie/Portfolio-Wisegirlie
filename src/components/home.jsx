@@ -31,7 +31,7 @@ export default function Home() {
                             Web & Mobile
                         </div>
                         <br /> <br />
-                        <span style={{ color: "#333" }}>
+                        <span className="home_text_intro"> 
                             Software Developer with a designer’s eye and an engineer's mind, passionate about crafting clear, intuitive, user-friendly, and visually appealing digital experiences. Blends strong UI/UX design and communication skills with solid technical expertise in modern technologies.
                         </span>
                         <br />

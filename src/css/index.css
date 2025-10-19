@@ -5,35 +5,173 @@
 
 html {
     color-scheme: light;
+    transition: color-scheme 0.3s ease;
+}
+
+/* Smooth transitions for theme changes */
+* {
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Respect user's motion preferences */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        transition: none;
+    }
+    
+    .theme-toggle-icon {
+        transition: none;
+    }
+    
+    .theme-toggle-button:hover .theme-toggle-icon {
+        transform: none;
+    }
 }
 
 :root {
+
+/* ======================================== */
+/*  Light theme                             */
+/* ======================================== */
 
   /* -----  COLORS  ----- */
   --fucsia: #BC0056;   
   --amarillo-light: #ffeab0;
   --amarillo:#ffe5a3;
 
-  color-scheme: only light;
+  /* -----  THEME VARIABLES  ----- */
+  /* Light theme (default) */
+  --bg-primary: #ffffff;
+  --bg-secondary: #eee;
+  --bg-tertiary: #e9ecef;
+  --text-primary: #212529;
+  --text-secondary: #9b9b9b;
+  --text-tertiary: #333333;
+  --titles: var(--fucsia); 
+
+
+  /* --text-secondary: #6c757d; */ /* darker */
+  --text-muted: #868e96;
+  --border-color: #dee2e6;
+  --shadow: rgba(0, 0, 0, 0.1);
+  --hover-bg: #f8f9fa;
+
+  /* Header specific */
+  --header-bg: #ffffff;
+  --nav-bg: #ffffff;
+  --nav-border: var(--fucsia);
+  --nav-button: var(--fucsia);
+  
+
+  /* Projects */
+  --project-title: #000;
+  --project-subtitle: #aaaaaa;
+  --project-text: #444;
+  --project-bg: #EEE;
+  --projects-shadow: #bdbdbd;
+  --badge-bg: #f8f8f8;
+  --badge-color: var(--fucsia);
+  --badge-border: rgba(199, 11, 80, 0.3);
+  --badge-shadow: #c70b5033;
+  --badge-clear-button: #f8f8f8;
+  --badge-clear-button-border: 2px;
+  --highlight-small-bg: #ffffff;
+  
+  
+  /* Button styles */
+  --button-bg: #f9f9f9;
+  --button-hover: #e9ecef;
+  --button-text: #212529;
+  
+  /* Link colors */
+  --link-color: #646cff;
+  --link-hover: #535bf2;
+
+/* Contact form */
+  --label-text:#213547;
+
+  color-scheme: light;
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  color: var(--text-primary);
+  background-color: var(--bg-primary);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* ======================================== */
+/*  Dark theme                              */
+/* ======================================== */
+[data-theme="dark"] {
+
+  --titles: #d80b68; 
+  --bg-primary: #1a1a1a;
+  --bg-secondary: #2d2d2d;
+  --bg-tertiary: #404040;
+  --text-primary: #ffffff;
+  --text-secondary: #b3b3b3;
+  --text-tertiary: #cdc8c8;
+  --text-muted: #999999;
+  --border-color: #404040;
+  --shadow: rgba(0, 0, 0, 0.3);
+  --hover-bg: #2d2d2d;
+  
+  /* Projects */
+    /* --project-title: #FFFFFF;
+    --project-subtitle: #e7086d;
+    --project-text: #939393;
+    --project-bg: #000000; 
+    --projects-shadow: #4d4d4d;*/
+    --projects-shadow: #6b6b6b;
+    --badge-bg: #1a1a1a;
+    --badge-color: #e4096c;
+    --badge-border: rgba(199, 11, 80, 0.35);    
+    --badge-clear-button: #242424;
+    --badge-clear-button-border: 1px;
+    --highlight-small-bg: #464646;  
+  
+
+  
+  /* Header specific */
+  --header-bg: #1a1a1a;
+  --nav-bg: #2d2d2d;
+  --nav-border: var(--fucsia);
+  --nav-button: white;
+  
+  /* Button styles */
+  /* --button-bg: #2d2d2d; */
+  --button-bg: #ffffff; 
+  --button-hover: #404040;
+  /* --button-text: #ffffff; */
+  --button-text: #000000;
+  
+  /* Link colors */
+  --link-color: #747bff;
+  --link-hover: #8b92ff;
+
+  /* Contact form */
+  --label-text:#213547;
+
+  color-scheme: dark;
+  color: var(--text-primary);
+  background-color: var(--bg-primary);
+}
+
+/* Update html color-scheme for dark theme */
+[data-theme="dark"] html {
+    color-scheme: dark;
+}
+
 a {
   font-weight: 500;
-  color: #646cff;
+  color: var(--link-color);
   text-decoration: inherit;
 }
 a:hover {
-  color: #535bf2;
+  color: var(--link-hover);
 }
 
 body {
@@ -56,27 +194,19 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: var(--button-bg);
+  color: var(--button-text);
   cursor: pointer;
-  transition: border-color 0.25s;
+  transition: all 0.25s ease;
 }
 button:hover {
-  border-color: #646cff;
+  border-color: var(--link-color);
+  background-color: var(--button-hover);
 }
 button:focus,
 button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  outline: 2px solid var(--link-color);
+  outline-offset: 2px;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-}
+/* Remove the old media query as we're using data-theme attribute instead */
