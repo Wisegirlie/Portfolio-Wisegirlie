@@ -11,16 +11,27 @@ export default function Dialog({ title = "Message", message = "", error = false,
     }
 
     return (
-        <div className="dialog-container" id="popup">
-            <div className="dialog-innercontainer">                 
-                <img className="dialog-icon" src={error ? Cancel : Tick} alt="Dialog Message" />  
-                <div className="dialog-title">                    
-                    {title}
-                </div>
-                <div className="dialog-message" style={{ whiteSpace: 'pre-line' }}>
+        <div className="dialog-background">
+            <div className="dialog-container" id="popup">
+                <img
+                    className="dialog-icon"
+                    src={error ? Cancel : Tick}
+                    alt="Dialog Message"
+                />
+                <div className="dialog-title">{title}</div>
+                <div
+                    className="dialog-message"
+                    style={{ whiteSpace: "pre-line" }}
+                >
                     {message}
                 </div>
-                <button className="close-button"  type="submit" onClick={closeDialog}>Close</button>
+                <button
+                    className="close-button"
+                    type="submit"
+                    onClick={closeDialog}
+                >
+                    Close
+                </button>
             </div>
         </div>
     );    
