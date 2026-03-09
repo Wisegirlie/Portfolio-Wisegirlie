@@ -4,7 +4,7 @@
    |        PAGE NOT USED        |
    =============================== */ 
    
-   import { Header } from "./header.jsx";
+import { Header } from "./header.jsx";
 import '../css/main.css'
 
 export function Page(props) {

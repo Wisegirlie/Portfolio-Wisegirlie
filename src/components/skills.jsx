@@ -107,15 +107,21 @@ export default function Skills() {
                     <div className="skills_info">
                         <h3>Frontend Development</h3>
                         <ul className="ul_bullet">
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>JavaScript</li>
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>JavaScript (ES6+)</li>
                             <li>React</li>
                             <li>React Native</li>
+                            <li>Vite</li>
+                            <li>Expo</li>
                             <li>WordPress</li>
                             <li>Responsive Design</li>
-                            <li>Accesibility</li>
+                            <li>Accessibility (WCAG)</li>
+                            <li>Semantic HTML</li>
                             <li>SVG</li>
+                            <li>CSS Grid / Flexbox</li>
+                            <li>Component-based</li>
+                            <li>REST API integration</li>
                         </ul>
                     </div>
                 </div>
@@ -123,14 +129,14 @@ export default function Skills() {
                 <div className="skills_div">
                     <div className="skills_info">
                         <h3>Backend Development</h3>
-                        <ul className="ul_bullet">                            
-                            <li>REST APIs</li>                            
-                            <li>Node.js</li>                            
+                        <ul className="ul_bullet">
+                            <li>REST APIs</li>
+                            <li>Node.js</li>
                             <li>Express.js</li>
                             <li>PHP</li>
                             <li>C#</li>
-                            <li>Java</li>                            
-                            <li>COBOL</li>                            
+                            <li>Java</li>
+                            <li>COBOL</li>
                         </ul>
                     </div>
                 </div>
@@ -143,6 +149,7 @@ export default function Skills() {
                             <li>MongoDB</li>
                             <li>Oracle SQL</li>
                             <li>PL/SQL</li>
+                            <li>PostgreSQL</li>
                         </ul>
                     </div>
                 </div>
@@ -155,7 +162,8 @@ export default function Skills() {
                         </h3>
                         <ul className="ul_bullet">
                             <li>Git</li>
-                            <li>Scrum</li>
+                            <li>GitHub</li>
+                            <li>Agile workflows</li>
                         </ul>
                     </div>
                 </div>
@@ -167,32 +175,60 @@ export default function Skills() {
                             <li>Figma</li>
                             <li>Adobe Illustrator</li>
                             <li>Adobe Photoshop</li>
-                            <li>Adobe Premiere</li>
-                            <li>Adobe Lightroom</li>
-                            <li>Capture One</li>
                             <li>Color Theory</li>
                             <li>Design principles</li>
+                            <li>Typography, spacing, and visual hierarchy</li>
+                            <li>Adobe Creative Suite</li>
                         </ul>
                     </div>
                 </div>
 
                 <div className="skills_div">
                     <div className="skills_info">
-                        <h3>Additional Tools</h3>
+                        <h3>Developer Tools</h3>
                         <ul className="ul_bullet">
-                            <li>SEO</li>        
-                            <li>Postman</li>                    
-                            <li>Visio</li>
                             <li>VS Code</li>
                             <li>Visual Studio</li>
+                            <li>Dreamweaver</li>
+                            <li>Visio</li>
+                            {/* <li>
+                                Microsoft Office Suite
+                                Word, Excel, PowerPoint, 
+                                Teams, Outlook, OneDrive
+                            </li> */}
+                            <li>Postman</li>
+                            <li>Prettier</li>
+                            <li>ESLint</li>
+                            <li>FastAPI</li>
+                            <li>SEO</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div className="skills_div" style={{ minHeight: "150px" }}>
+                    <div className="skills_info">
+                        <h3>AI-Enhanced Development</h3>
+                        <ul className="ul_bullet">
+                            <li>Prompt engineering</li>
+                            <li>AI-assisted debugging & refactoring</li>
+                            <li>Documentation and knowledge synthesis</li>
+                            <li>GitHub Copilot</li>
                             <li>Cursor AI</li>
-                            <li>Dreamweaver</li>                            
-                            <li>
-                                Microsoft Office Suite:
-                                
-                                Word, Excel, PowerPoint, Teams, Outlook,
-                                OneDrive
-                            </li>
+                            <li>ChatGPT</li>
+                            <li>Gemini</li>
+                            <li>DeepSeek</li>
+                            <li>Claude (Anthropic)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div className="skills_div" style={{ minHeight: "150px" }}>
+                    <div className="skills_info">
+                        <h3>Media Production</h3>
+                        <ul className="ul_bullet">
+                            <li>Adobe Premiere</li>
+                            <li>Adobe Lightroom</li>
+                            <li>Capture One</li>
                         </ul>
                     </div>
                 </div>
@@ -214,12 +250,12 @@ export default function Skills() {
                 {/* ---- COURSES ---- */}
                 <h1 className="hide">Certifications & Extra Courses</h1>
 
-                <div className="courses-container hide">                    
+                <div className="courses-container hide">
                     {courses.map((course) => (
                         <Course
                             id={course.id}
                             key={course.id}
-                            title={course.title}                        
+                            title={course.title}
                             logo={course.logo}
                             provider={course.provider}
                             date={course.date}
