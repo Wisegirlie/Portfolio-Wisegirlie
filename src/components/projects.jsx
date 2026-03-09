@@ -14,6 +14,7 @@ import projectRealStateImg from '../assets/projects/project-realstate1.jpg';
 import projectGabywaismanImg from '../assets/projects/projects-gabywaisman.jpg';
 import projectFormBuilderImg from '../assets/projects/project-form-builder.png';
 import projectFindGrantImg from '../assets/projects/project-findgrant-home2.jpg';
+import projectFireFlyImg from '../assets/projects/fireflySpark.jpg';
 import projectProtectedAreasImg from '../assets/projects/project-protectedareas_2.jpg';
 import projectMelisaWebImg from '../assets/projects/melisamozzatiweb_2.jpg';
 import projectSupermarketImg from '../assets/projects/project-supermarketlist.jpg';
@@ -36,27 +37,32 @@ export default function Projects() {
                 "Design and development of complete website for a company, including an internal portal to manage product database.",
             website: "https://energit.com.ar",
             image: projectEnergitImg,
-            techs: ["PHP", "MySQL", "JavaScript", "HTML", "CSS"],
+            techs: ["PHP", "MySQL", "JavaScript", "HTML", "CSS", "Git"],
         },
         {
-            id: "project-findgrant",
-            title: "Findgrant",
-            type: "Web & Mobile App",
+            id: "project-firefly",
+            title: "Firefly Spark",
+            type: "Mobile App",
             description:
-                "Front-end Development of a fully functional web & mobile app, based on a Figma design provided by the client. Successfully implemented the original design and functionality; later visual and structural changes were made by the product owner after handoff.",
-            website: "https://findgrant.ca/",
-            image: projectFindGrantImg,
+                "Fullstack development of a fully functional cross-platform mobile app for iOS and Android. \n Translated Figma designs, built custom reusable components, complete features, screens, backend RESTful APIs endpoints, and database integration, ensuring scalability and seamless user flows. (This version of the app has not been released yet.)",
+            website: "https://fireflyspark.io/",
+            image: projectFireFlyImg,
             techs: [
                 "React Native",
                 "Expo",
-                "REST API",
+                "RESTful APIs",
                 "Node.js",
                 "Express.js",
-                "Figma",
+                "Python",
+                "PostgreSQL",
                 "Git",
                 "JavaScript",
                 "HTML",
                 "CSS",
+                "SVG",
+                "Login authentication",
+                "Google MAPS Api",
+                "Figma",
             ],
         },
         {
@@ -68,6 +74,28 @@ export default function Projects() {
             website: "https://www.melisamozzati.com",
             image: projectMelisaWebImg,
             techs: ["HTML", "CSS", "JavaScript", "PHP", "MySQL", "Git"],
+        },
+        {
+            id: "project-findgrant",
+            title: "Findgrant",
+            type: "Web & Mobile App",
+            description:
+                "Front-end Development of a fully functional web & mobile app, based on a Figma design provided by the client. Successfully implemented the original design and functionality. Further changes were made by the product owner after handoff.",
+            website: "https://findgrant.ca/",
+            image: projectFindGrantImg,
+            techs: [
+                "React Native",
+                "Expo",
+                "RESTful APIs",
+                "Node.js",
+                "Express.js",
+                "Git",
+                "JavaScript",
+                "HTML",
+                "CSS",
+                "SVG",
+                "Figma",
+            ],
         },
         {
             id: "project-portfolio",
@@ -100,7 +128,7 @@ export default function Projects() {
                 "React",
                 "Vite",
                 "Node.js",
-                "REST API",
+                "RESTful APIs",
                 "Express.js",
                 "MongoDB",
                 "JavaScript",
@@ -173,7 +201,7 @@ export default function Projects() {
                 "React Native",
                 "Expo",
                 "Node.js",
-                "REST API",
+                "RESTful APIs",
                 "Express.js",
                 "MongoDB",
                 "Google Speech-to-Text API",

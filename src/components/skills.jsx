@@ -121,7 +121,7 @@ export default function Skills() {
                             <li>SVG</li>
                             <li>CSS Grid / Flexbox</li>
                             <li>Component-based</li>
-                            <li>REST API integration</li>
+                            <li>RESTful API integration</li>
                         </ul>
                     </div>
                 </div>
@@ -130,7 +130,7 @@ export default function Skills() {
                     <div className="skills_info">
                         <h3>Backend Development</h3>
                         <ul className="ul_bullet">
-                            <li>REST APIs</li>
+                            <li>RESTful APIs</li>
                             <li>Node.js</li>
                             <li>Express.js</li>
                             <li>PHP</li>
