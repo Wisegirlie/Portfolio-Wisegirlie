@@ -7,20 +7,20 @@
 import { useState, useMemo } from "react";
 import { Header } from "./header.jsx";
 import { Footer } from "./footer.jsx";
-import projectDiversaImg from '../assets/projects/project-diversa1.jpg';
+import projectDiversaImg from '../assets/projects/project-diversa1_resize.jpg';
 import projectRosariaImg from '../assets/projects/project-rosaria3.jpg';
 import projectEnergitImg from'../assets/projects/project-energit2.jpg';
 import projectRealStateImg from '../assets/projects/project-realstate1.jpg';
 import projectGabywaismanImg from '../assets/projects/projects-gabywaisman.jpg';
 import projectFormBuilderImg from '../assets/projects/project-form-builder.png';
 import projectFindGrantImg from '../assets/projects/project-findgrant-home2.jpg';
-import projectFireFlyImg from '../assets/projects/fireflySpark.jpg';
+import projectFireFlyImg from "../assets/projects/fireflySpark_resize.jpg";
 import projectProtectedAreasImg from '../assets/projects/project-protectedareas_2.jpg';
 import projectMelisaWebImg from '../assets/projects/melisamozzatiweb_2.jpg';
 import projectSupermarketImg from '../assets/projects/project-supermarketlist.jpg';
 import projectSvgMapImg from '../assets/projects/project-svgmap.jpg';
 import projectTheatreAppImg from '../assets/projects/projects-theatreapp.jpg';
-import projectRegistrationForm from '../assets/projects/secure-registration-form.jpg';
+import projectRegistrationForm from '../assets/projects/secure-registration-form_2.jpg';
 import Project from "./project.jsx";
 import "../css/projects.css";
 
