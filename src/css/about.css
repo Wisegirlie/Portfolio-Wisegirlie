@@ -82,6 +82,7 @@
     font-family: Raleway, Arial, Helvetica, sans-serif;    
     font-size: 1.5em;
     font-weight: 600;    
+    margin-top: 20px;
 }
 
 /* ============================
@@ -107,7 +108,7 @@
              1230
    ---------------------------- */
 
-   @media screen and (max-width: 1230px) {
+@media screen and (max-width: 1230px) {
     
 }
 

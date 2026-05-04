@@ -177,17 +177,17 @@ export default function Projects() {
             image: projectRealStateImg,
             techs: ["HTML", "CSS", "JavaScript"],
         },
-        {
-            id: "project-formbuilder",
-            title: "Form Builder",
-            type: "Web App",
-            description:
-                "Created a web app to create custom HTML forms with drag & drop. (I'll be adding features).",
-            website:
-                "https://www.gabywaisman.com/portfolio/form-builder/index.html",
-            image: projectFormBuilderImg,
-            techs: ["React", "JavaScript", "Git", "HTML", "CSS"],
-        },
+        // {
+        //     id: "project-formbuilder",
+        //     title: "Form Builder",
+        //     type: "Web App",
+        //     description:
+        //         "Created a web app to create custom HTML forms with drag & drop. (I'll be adding features).",
+        //     website:
+        //         "https://www.gabywaisman.com/portfolio/form-builder/index.html",
+        //     image: projectFormBuilderImg,
+        //     techs: ["React", "JavaScript", "Git", "HTML", "CSS"],
+        // },
         {
             id: "project-supermarketlist",
             title: "Voice Commanded Supermarket List",
@@ -231,17 +231,17 @@ export default function Projects() {
             image: projectSvgMapImg,
             techs: ["SVG", "JavaScript", "HTML", "CSS"],
         },
-        {
-            id: "project-protectedareas",
-            title: "Protected Areas",
-            type: "Webpage",
-            description:
-                "Design of the Look & Feel of a webpage for environmental protected areas.",
-            website:
-                "https://www.gabywaisman.com/portfolio/protected-areas/index.html",
-            image: projectProtectedAreasImg,
-            techs: ["HTML", "CSS"],
-        },
+        // {
+        //     id: "project-protectedareas",
+        //     title: "Protected Areas",
+        //     type: "Webpage",
+        //     description:
+        //         "Design of the Look & Feel of a webpage for environmental protected areas.",
+        //     website:
+        //         "https://www.gabywaisman.com/portfolio/protected-areas/index.html",
+        //     image: projectProtectedAreasImg,
+        //     techs: ["HTML", "CSS"],
+        // },
     ];
 
     // Get unique technologies from all projects

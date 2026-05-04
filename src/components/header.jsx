@@ -102,8 +102,8 @@ export function Header() {
                           className="theme-toggle-button"
                           title={`Switch to ${isDarkMode ? 'light' : 'dark'} mode`}
                       >                          
-                          <MoonIcon />
                           <SunIcon />
+                          <MoonIcon />                          
                       </button>
                   </li>
               </ul>

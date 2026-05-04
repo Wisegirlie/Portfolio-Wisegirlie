@@ -114,6 +114,7 @@ h1 {
 .button_white:hover, .button_white:active, .button_white_no_margin:hover, .button_white_no_margin:active {
     border-color: #BC0056;
     color: var(--fucsia);
+    transform: scale(1.05);
 }
 
 .button_white_no_margin {    
