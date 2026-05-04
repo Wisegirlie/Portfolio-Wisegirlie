@@ -217,7 +217,7 @@ export default function Skills() {
                             <li>ChatGPT</li>
                             <li>Gemini</li>
                             <li>DeepSeek</li>
-                            <li>Claude (Anthropic)</li>
+                            <li>Claude</li>
                         </ul>
                     </div>
                 </div>
