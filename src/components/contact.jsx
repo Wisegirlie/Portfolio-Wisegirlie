@@ -131,57 +131,103 @@ export default function Contact() {
     return (
         <div>
             <Header />
-                {/* Render Dialog conditionally */}                
-                {showDialog && (
-                    <Dialog
-                        title={dialogTitle}
-                        message={dialogMessage}
-                        error={isError}
-                        onClose={() => setShowDialog(false)} 
-                    />
-                )}  
-                {/* Render Loader image when submitting */}
-                {showLoader && <Loader  />}                  
+            {/* Render Dialog conditionally */}
+            {showDialog && (
+                <Dialog
+                    title={dialogTitle}
+                    message={dialogMessage}
+                    error={isError}
+                    onClose={() => setShowDialog(false)}
+                />
+            )}
+            {/* Render Loader image when submitting */}
+            {showLoader && <Loader />}
 
-                <main className="contact_recuadro_nomargin">
-                    <div className="contact_container">
-                        <div className="contact_info_div">
-                            <img src={logo_gaby_blanco} alt="Gabriela Logo" className="logo_g"/>
-                            <h1 className="blanco">Gabriela Waisman </h1> 
-                            <span className="contact_smalltext">
-                                <a href="mailto:developer@gabywaisman.com">developer@gabywaisman.com</a> <br />
-                                Toronto, Canada. 
-                            </span>
-                            <Nets className="net_icon" />
-                        </div> 
-                        <div className="contact_form_div gris_back"> 
-                            <h1 className="negro">Need a Developer?</h1>
-                                
-                            I'm ready to hear about your project. <br />
-                            Don't hesitate to get in touch with me using the contact form. 
-                            
-                            <form action="/" className="form_container" onSubmit={handleSubmit}>
-
-                                <label htmlFor="name">Full Name:</label>
-                                <input type="text" name="name" id="name" className="form_input" value={formData.name} onChange={handleInputChange} required/>  <br />
-                                <label htmlFor="email">E-mail:</label>
-                                <input type="email" name="email" id="email" className="form_input" value={formData.email} onChange={handleInputChange} required/> <br />
-                                <label htmlFor="number">Phone:</label>
-                                <input type="text" name="number" id="number" className="form_input" value={formData.number} onChange={handleInputChange}/>  <br />
-                                <label htmlFor="message">Your message:</label>
-                                <textarea name="message" id="message" rows="7" value={formData.message} onChange={handleInputChange} required></textarea><br />
-
-                            <button type="submit" className="form_boton_submit"  >Send</button>
-                            <button type="reset" className="form_boton_submit form_button_reset" onClick={handleReset}>Reset form</button>
-
-                            </form>
-
-
-                        </div>  
-                    </div> {/* contact_container */}
-                </main>
-            <Footer/>
-        </div>        
+            <main className="contact_recuadro_nomargin">
+                <div className="contact_container">
+                    <div className="contact_info_div">
+                        <img
+                            src={logo_gaby_blanco}
+                            alt="Gabriela Logo"
+                            className="logo_g"
+                        />
+                        <h1 className="blanco">Gabriela Waisman </h1>
+                        <span className="contact_smalltext">
+                            <a href="mailto:developer@gabywaisman.com">
+                                developer@gabywaisman.com
+                            </a>{" "}
+                            <br />
+                            Toronto, Canada.
+                        </span>
+                        <Nets className="net_icon" />
+                    </div>
+                    <div className="contact_form_div gris_back">
+                        <h1 className="negro">Need a Developer?</h1>
+                        Let’s connect to discuss how we can work together.                        
+                        <form
+                            action="/"
+                            className="form_container"
+                            onSubmit={handleSubmit}
+                        >
+                            <label htmlFor="name">Full Name:</label>
+                            <input
+                                type="text"
+                                name="name"
+                                id="name"
+                                className="form_input"
+                                value={formData.name}
+                                onChange={handleInputChange}
+                                required
+                            />{" "}
+                            <br />
+                            <label htmlFor="email">E-mail:</label>
+                            <input
+                                type="email"
+                                name="email"
+                                id="email"
+                                className="form_input"
+                                value={formData.email}
+                                onChange={handleInputChange}
+                                required
+                            />{" "}
+                            <br />
+                            <label htmlFor="number">Phone:</label>
+                            <input
+                                type="text"
+                                name="number"
+                                id="number"
+                                className="form_input"
+                                value={formData.number}
+                                onChange={handleInputChange}
+                            />{" "}
+                            <br />
+                            <label htmlFor="message">Your message:</label>
+                            <textarea
+                                name="message"
+                                id="message"
+                                rows="7"
+                                value={formData.message}
+                                onChange={handleInputChange}
+                                required
+                            ></textarea>
+                            <br />
+                            <button type="submit" className="form_boton_submit">
+                                Send
+                            </button>
+                            <button
+                                type="reset"
+                                className="form_boton_submit form_button_reset"
+                                onClick={handleReset}
+                            >
+                                Reset form
+                            </button>
+                        </form>
+                    </div>
+                </div>{" "}
+                {/* contact_container */}
+            </main>
+            <Footer />
+        </div>
     );
 }
     

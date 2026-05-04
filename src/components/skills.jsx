@@ -122,6 +122,7 @@ export default function Skills() {
                             <li>CSS Grid / Flexbox</li>
                             <li>Component-based</li>
                             <li>RESTful API integration</li>
+                            <li>SEO</li>
                         </ul>
                     </div>
                 </div>
@@ -200,7 +201,6 @@ export default function Skills() {
                             <li>Prettier</li>
                             <li>ESLint</li>
                             <li>FastAPI</li>
-                            <li>SEO</li>
                         </ul>
                     </div>
                 </div>
@@ -235,7 +235,7 @@ export default function Skills() {
 
                 <div className="skills_div" style={{ minHeight: "150px" }}>
                     <div className="skills_info">
-                        <h3>Spoken Languages</h3>
+                        <h3>Languages</h3>
                         <ul className="ul_bullet">
                             <li>English</li>
                             <li>Spanish</li>

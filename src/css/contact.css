@@ -41,14 +41,16 @@
 
 .contact_form_div {
     display: inline-block;
+    box-sizing: border-box;
     width: 65%;
-    padding: 20px;    
+    padding: 20px 40px 30px;    
     /* max-width: 800px; */
     margin-left: auto;
     margin-right: auto;  
     text-align: center;  
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
+    text-wrap: balance;
 }
 
 .contact_smalltext {
@@ -88,7 +90,7 @@
 .form_container {
     display: block;
     width: 68%;
-    margin-top: 40px;    
+    margin-top: 30px;    
     margin-left: auto;
     margin-right: auto;  
     background-color: #CCC;

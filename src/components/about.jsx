@@ -30,7 +30,10 @@ export default function About() {
                             href={"/Gabriela-Waisman-Resume.pdf"}
                             download="Gabriela-Waisman-Resume.pdf"
                         >
-                            <button className="button_white_no_margin " style={{ marginTop: "8px" }}>
+                            <button
+                                className="button_white_no_margin "
+                                style={{ marginTop: "8px" }}
+                            >
                                 Download Resume
                             </button>
                         </a>
@@ -55,15 +58,6 @@ export default function About() {
                         communication to build applications that are
                         well-engineered and intuitive for the people who use
                         them.
-                        <br /> <br />I bring extensive hands-on experience
-                        delivering end-to-end web and mobile solutions for real
-                        clients, translating requirements into effective digital
-                        products, building responsive interfaces, integrating
-                        APIs, and owning features from concept through
-                        deployment. I am equally comfortable working on the
-                        <strong> frontend</strong> and the{" "}
-                        <strong> backend</strong>, and I enjoy the full picture
-                        of how an application comes together.
                         <br /> <br />
                         Technology and design have shaped my background in equal
                         measure. I attended a technical high school, graduated
@@ -80,6 +74,15 @@ export default function About() {
                         <strong>Inclusive Leadership Practices</strong> which
                         provided me with critical skills to foster inclusivity
                         in modern workplaces.
+                        <br /> <br />I bring extensive hands-on experience
+                        delivering end-to-end web and mobile solutions for real
+                        clients, translating requirements into effective digital
+                        products, building responsive interfaces, integrating
+                        APIs, and owning features from concept through
+                        deployment. I am equally comfortable working on the
+                        <strong> frontend</strong> and the{" "}
+                        <strong> backend</strong>, and I enjoy the full picture
+                        of how an application comes together.
                         <br />
                         <br />
                         I am eager to contribute to the innovations shaping our
@@ -93,12 +96,13 @@ export default function About() {
                         <strong>Let’s make it happen!</strong>
                         <br />
                         <br />
+                        <br />
                         <h3>Awards</h3>
                         <strong>PomeGran Inc. Scholarship Award</strong> -
                         Centennial College
                         <br />
-                        Awarded scholarship based on demonstrated passion for
-                        the field and academic excellence. <br />
+                        Awarded scholarship based on academic excellence and
+                        demonstrated passion for the field. <br />
                         <br />
                         <strong>
                             Outstanding Personality of Culture of the City of
