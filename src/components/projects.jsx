@@ -9,7 +9,7 @@ import { Header } from "./header.jsx";
 import { Footer } from "./footer.jsx";
 import projectDiversaImg from '../assets/projects/project-diversa1_resize.jpg';
 import projectRosariaImg from '../assets/projects/project-rosaria3.jpg';
-import projectEnergitImg from'../assets/projects/project-energit2.jpg';
+import projectEnergitImg from'../assets/projects/project-energit5.jpg';
 import projectRealStateImg from '../assets/projects/project-realstate1.jpg';
 import projectGabywaismanImg from '../assets/projects/projects-gabywaisman.jpg';
 import projectFormBuilderImg from '../assets/projects/project-form-builder.png';
