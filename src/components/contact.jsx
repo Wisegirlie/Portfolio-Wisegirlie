@@ -8,7 +8,7 @@
 import { Header } from "./header.jsx";
 import { Footer } from "./footer.jsx";
 import { Nets } from "./nets.jsx";
-import { useState } from "react";
+import { useState, useRef } from "react";
 import Dialog from './dialog.jsx';
 import Loader from './loader.jsx';
 import logo_gaby_blanco from '../assets/logo_g_blanco.png';
@@ -29,7 +29,11 @@ export default function Contact() {
         email: "",
         number: "",
         message: "",
+        website: "", // honeypot field, must stay empty (bots tend to fill every field)
     });
+
+    // Timestamp when the form was rendered, used to reject bot submissions that are too fast
+    const formLoadedAt = useRef(Date.now());
 
     // Handle input changes
     const handleInputChange = (e) => {
@@ -71,6 +75,18 @@ export default function Contact() {
             return;
         }
 
+        // Silently drop bot submissions: honeypot filled in, or submitted unrealistically fast
+        const elapsedMs = Date.now() - formLoadedAt.current;
+        if (formData.website || elapsedMs < 1500) {
+            setShowLoader(false);
+            setDialogTitle("Message Sent");
+            setDialogMessage("Thank you for reaching out.\nI will respond promptly!");
+            setIsError(false);
+            setShowDialog(true);
+            setFormData({ name: "", email: "", number: "", message: "", website: "" });
+            return;
+        }
+
         // Send email
         // const formDataToSend = new FormData(e.target);
         const formDataToSend = new FormData();
@@ -78,12 +94,22 @@ export default function Contact() {
         formDataToSend.append('email', formData.email);
         formDataToSend.append('number', formData.number);
         formDataToSend.append('message', formData.message);
+        formDataToSend.append('website', formData.website); // honeypot, should always be empty
                 
         try {
             const response = await fetch("https://www.gabywaisman.com/mails/send-mail.php", {
                 method: "POST",
                 body: formDataToSend, // Send FormData directly
             });
+
+            if (response.status === 429) {
+                setShowLoader(false);
+                setDialogTitle("Too Many Attempts");
+                setDialogMessage("You've reached the submission limit. Please try again in a few minutes.");
+                setIsError(true);
+                setShowDialog(true);
+                return;
+            }
 
             const result = await response.json(); // Parse JSON response
             if (result.success) {
@@ -95,7 +121,7 @@ export default function Contact() {
                 setIsError(false);
                 setShowDialog(true);
                 
-                setFormData({ name: "", email: "", number: "", message: "" }); // Reset form
+                setFormData({ name: "", email: "", number: "", message: "", website: "" }); // Reset form
             } else {
                 // alert("Failed to submit form. Please try again.");
                 setShowLoader(false);
@@ -106,9 +132,8 @@ export default function Contact() {
                 setShowDialog(true);
             }
         } catch (error) {
-            // console.error("Error submitting form:", error);
             // alert("An error occurred. Please try again.");
-            console.error("Error submitting form:", error);
+            // console.error("Error submitting form:", error);
             setShowLoader(false);
             // Show error dialog
             setDialogTitle("Error submitting form");
@@ -125,6 +150,7 @@ export default function Contact() {
             email: "",
             number: "",
             message: "",
+            website: "",
         });
     };
 
@@ -211,6 +237,22 @@ export default function Contact() {
                                 required
                             ></textarea>
                             <br />
+                            
+                            {/* Honeypot: hidden from real users, bots often fill every field */}
+                            <label htmlFor="website" className="form_honeypot" aria-hidden="true">
+                                Leave this field empty
+                            </label>
+                            <input
+                                type="text"
+                                name="website"
+                                id="website"
+                                className="form_honeypot"
+                                value={formData.website}
+                                onChange={handleInputChange}
+                                tabIndex="-1"
+                                autoComplete="off"
+                                aria-hidden="true"
+                            />
                             <button type="submit" className="form_boton_submit">
                                 Send
                             </button>

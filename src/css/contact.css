@@ -39,6 +39,15 @@
     color: #FFF;  
 }
 
+/* Honeypot field: visually hidden from humans, still reachable by bots */
+.form_honeypot {
+    position: absolute;
+    left: -9999px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
 .contact_form_div {
     display: inline-block;
     box-sizing: border-box;
