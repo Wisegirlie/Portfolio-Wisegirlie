@@ -215,9 +215,9 @@ export default function Skills() {
                             <li>GitHub Copilot</li>
                             <li>Cursor AI</li>
                             <li>ChatGPT</li>
-                            <li>Gemini</li>
-                            <li>DeepSeek</li>
                             <li>Claude</li>
+                            <li>Gemini</li>
+                            <li>DeepSeek</li>                            
                         </ul>
                     </div>
                 </div>
@@ -228,6 +228,7 @@ export default function Skills() {
                         <ul className="ul_bullet">
                             <li>Adobe Premiere</li>
                             <li>Adobe Lightroom</li>
+                            <li>Adobe Photoshop</li>
                             <li>Capture One</li>
                         </ul>
                     </div>

@@ -1,1 +1,8 @@
-Agregar typescript donde corresponda
+Mover data sensible a .env (por ejemplo de los mails)
+
+
+RUN SITE
+npm run dev
+
+BUILD SITE
+npm run build

@@ -93,7 +93,8 @@ h1 {
 }
 
 .highlight_big {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
     background-color: var(--fucsia);
     color: #FFF;
     border-radius: 8px;
@@ -102,7 +103,65 @@ h1 {
     font-size: 1.05em;
     font-weight: 500;
     font-family: inherit;
-    transition: all 0.25s ease;
+    /* line-height: 1.5; */
+    /* gap: 0.35em; */
+    transition: background-color 0.25s ease, border-color 0.25s ease;
+    white-space: nowrap;
+}
+
+.title-rotator {
+    display: inline-grid;
+    justify-items: center;
+    align-items: center;
+    overflow: hidden;
+    line-height: inherit;
+    height: 1.5em;
+}
+
+.title-rotator-label {
+    line-height: inherit;
+}
+
+.title-rotator-sizer,
+.title-rotator-word {
+    grid-area: 1 / 1;
+    white-space: nowrap;
+}
+
+.title-rotator-sizer {
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.title-rotator-word {
+    animation: title-rise 2.2s ease-in-out both;
+}
+
+@keyframes title-rise {
+    0% {
+        transform: translateY(0.9em);
+        opacity: 0;
+    }
+    22% {
+        transform: translateY(0) scale(1.05);
+        opacity: 1;
+    }
+    72% {
+        transform: translateY(0) scale(1.05);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-0.7em);
+        opacity: 0;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .title-rotator-word {
+        animation: none;
+        opacity: 1;
+        transform: none;
+    }
 }
 
 .button_white {
