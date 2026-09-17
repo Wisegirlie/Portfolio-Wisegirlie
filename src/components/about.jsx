@@ -42,18 +42,19 @@ export default function About() {
                     <div className="about_bio_div gris_back">
                         <h1>About me</h1>
                         <span style={{ fontSize: "110%" }}>
-                            I'm a <strong>Full-Stack Software Developer</strong>{" "}
+                            I'm a <strong>
+                                Full-Stack Software Developer</strong>{" "}
                             with a strong focus on{" "}
                             <strong style={{ color: "var(--fucsia)" }}>
                                 Frontend Development
                             </strong>{" "}
-                            and a background in <strong> design </strong>
-                            and <strong>communication</strong>.
+                            and a background in <strong> Design </strong>
+                            and <strong>Communication</strong>.
                         </span>
                         <br /> <br />
-                        I'm a full-stack developer with a{" "}
-                        <strong>designer's eye</strong> and an{" "}
-                        <strong>engineer's mind</strong>, combining technical
+                        I'm a <strong>full-stack developer</strong> with a{" "}
+                        <strong style={{ color: "var(--fucsia)" }}>designer's eye</strong> and an{" "}
+                        <strong style={{ color: "var(--fucsia)" }}>engineer's mind</strong>, combining technical
                         depth with a strong background in design and
                         communication to build applications that are
                         well-engineered and intuitive for the people who use
