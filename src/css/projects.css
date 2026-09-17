@@ -126,7 +126,8 @@
 }
 
 .project_container a:hover, .project_container a:link, .project_container a:visited   {   
-    color: #000;
+    /* color: #000; */
+    text-decoration: none;
 }
   
 .project_div {
@@ -142,7 +143,9 @@
     box-shadow: var(--projects-shadow) 6px 8px 20px; /*#d2d2d2*/
     box-sizing: border-box;
     border: #cacaca solid 0px;    
-    padding-bottom: 10px;    
+    padding-bottom: 18px;
+    display: flex;
+    flex-direction: column;
 }
 
 .project_div:hover {
@@ -168,12 +171,12 @@
 }
 
 .project_title {
-    color: var(--project-subtitle);  
+    color: var(--project-subtitle);      
     /* #bfb3b8;    */
     font-weight: 500;
     letter-spacing: 0.05em;
     font-family: Raleway, Arial, Helvetica, sans-serif;
-    margin-top: 6px;
+    /* margin-top: 6px; */
     margin-bottom: 5px;
     padding-inline: 10px;
 }
@@ -219,6 +222,232 @@
 .project_text {
     padding: 0 30px;
     color: #444444;  
-    margin-bottom: 12px; 
+    margin-bottom: 14px; 
     color: var(--project-text);    
+    font-weight: 500;
+    font-size: .98rem;
+}
+
+/*  ---------------------------- */
+/*    PROJECT CARD ACTIONS    */
+/*  ---------------------------- */
+
+.project-card-actions {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 23px 16px 6px;
+    margin-top: auto;
+}
+
+.project-action-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 118px;
+    padding: 0.55em 1.1em;
+    border-radius: 10px;
+    font-size: 0.82em;
+    font-weight: 600;
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    letter-spacing: 0.04em;
+    text-decoration: none;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.project-action-btn-secondary {
+    /* background-color: transparent; */
+    /* color: var(--fucsia); */
+    /* border: 1.5px solid var(--fucsia); */
+    background-color: #AAA;
+    color: #FFF;
+    border: 1.5px solid #FFF;
+    
+}
+
+.project-action-btn-secondary:hover,
+.project-action-btn-secondary:focus-visible {
+    background-color: var(--fucsia);
+    color: #ffffff;
+    border-color: var(--fucsia);
+}
+
+.project-action-btn-primary {
+    background-color: var(--fucsia);
+    color: #ffffff;
+    border: 1.5px solid var(--fucsia);
+}
+
+.project-action-btn-primary:hover,
+.project-action-btn-primary:focus-visible,
+.project_container a.project-action-btn-primary,
+.project_container a.project-action-btn-primary:visited {
+    color: #ffffff;
+}
+
+.project-action-btn-primary:hover,
+.project-action-btn-primary:focus-visible {
+    background-color: #9a0046;
+    border-color: #9a0046;
+    transform: translateY(-1px);
+}
+
+.project-dialog-backdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.62);
+    z-index: 200;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px 16px;
+}
+
+.project-dialog {
+    position: relative;
+    width: min(980px, 100%);
+    max-height: 92vh;
+    overflow: auto;
+    background: var(--bg-primary);
+    color: var(--text-primary);
+    border-radius: 20px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.28);
+    text-align: left;
+}
+
+.project-dialog-close {
+    position: sticky;
+    top: 12px;
+    float: right;
+    z-index: 2;
+    margin: 8px 12px 0 0;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    padding-bottom: 5px;
+    padding-left: 1px;
+    border-radius: 50%;
+    border: 1px solid var(--border-color);
+    background: var(--bg-primary);
+    color: var(--text-primary);
+    font-size: 1.6rem;
+    line-height: 1;
+}
+
+.project-dialog-close:hover {
+    background-color: var(--fucsia);
+    color: #ffffff;
+    border-color: var(--fucsia);
+}
+
+.project-dialog-hero img {
+    display: block;
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+}
+
+.project-dialog-body {
+    padding: 8px 36px 36px;
+}
+
+.project-dialog-type {
+    margin: 8px 0 0;
+    color: var(--project-subtitle);
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    font-family: Raleway, Arial, Helvetica, sans-serif;
+}
+
+.project-dialog-body h2 {
+    margin: 4px 0 12px;
+    color: var(--titles);
+    font-family: Raleway, Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+}
+
+.project-dialog-summary {
+    white-space: pre-line;
+    color: var(--project-text);
+    margin-bottom: 16px;
+}
+
+.project-dialog-techs {
+    margin-bottom: 28px;
+}
+
+.project-dialog-section {
+    margin-bottom: 22px;
+}
+
+.project-dialog-section h3 {
+    margin: 0 0 8px;
+    color: var(--titles);
+    font-size: 1.05rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.project-dialog-section p,
+.project-dialog-section li {
+    color: var(--project-text);
+    line-height: 1.6;
+}
+
+.project-dialog-section ul {
+    margin: 0;
+    padding-left: 1.2em;
+}
+
+.project-dialog-screenshots {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 12px;
+}
+
+.project-dialog-screenshots figure {
+    margin: 0;
+}
+
+.project-dialog-screenshots img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.project-dialog-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 18px;
+}
+
+.project-dialog-links a {
+    color: var(--fucsia);
+    font-weight: 600;
+}
+
+.project-dialog-actions {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 28px;
+}
+
+@media (max-width: 700px) {
+    .project-dialog-body {
+        padding: 4px 20px 28px;
+    }
+
+    .project-dialog-hero img {
+        height: 180px;
+    }
+
+    .project-dialog-body h2 {
+        font-size: 1.5rem;
+    }
 }

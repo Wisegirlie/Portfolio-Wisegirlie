@@ -31,13 +31,13 @@
 }
 
 .dialog-title {
-    font-size: 26px;
+    font-size: 1.625rem;
     margin: 30px 0 10px;
     font-weight: 500;
 }
 
 .dialog-message {
-    font-size: 18px;    
+    font-size: 1.125rem;    
 }
 
 .close-button {

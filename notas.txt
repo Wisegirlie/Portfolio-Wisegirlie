@@ -1,5 +1,21 @@
+HACER
+
+PROJECTS
+========
+reemplazar foto del proyecto mapa por uno que no tenga telefono.
+renovar foros de Theatre app
+Poner screenshots de findgrant en vez de link a page porque no anda
+
+GENERALES
+=========
+Agregar que soy fotografa
+
+CHORES
+======
 Mover data sensible a .env (por ejemplo de los mails)
 
+
+-----------------------------
 
 RUN SITE
 npm run dev

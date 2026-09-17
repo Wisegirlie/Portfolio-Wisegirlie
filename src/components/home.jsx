@@ -13,8 +13,8 @@ import { useState, useEffect } from 'react';
 
 const titles = [
     "Full-Stack Developer",
-    // "Front-end Developer",
-    // "Back-end Developer",
+    "Front-end Developer",
+    "Back-end Developer",
     "Web Developer",   
     "App Developer",
     "Software Engineer",

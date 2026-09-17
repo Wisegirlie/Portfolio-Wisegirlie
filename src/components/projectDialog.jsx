@@ -1,0 +1,179 @@
+import { useEffect } from "react";
+import PropTypes from "prop-types";
+import Highlight_small from "./highlight_small.jsx";
+import "../css/projects.css";
+
+function DetailSection({ title, content }) {
+    if (!content || (Array.isArray(content) && content.length === 0)) {
+        return null;
+    }
+
+    return (
+        <section className="project-dialog-section">
+            <h3>{title}</h3>
+            {Array.isArray(content) ? (
+                <ul>
+                    {content.map((item) => (
+                        <li key={item}>{item}</li>
+                    ))}
+                </ul>
+            ) : (
+                <p>{content}</p>
+            )}
+        </section>
+    );
+}
+
+DetailSection.propTypes = {
+    title: PropTypes.string.isRequired,
+    content: PropTypes.oneOfType([
+        PropTypes.string,
+        PropTypes.arrayOf(PropTypes.string),
+    ]),
+};
+
+function isExternalUrl(url) {
+    return Boolean(url) && /^https?:\/\//i.test(url);
+}
+
+export default function ProjectDialog({ project, onClose }) {
+    useEffect(() => {
+        const previousOverflow = document.body.style.overflow;
+        document.body.style.overflow = "hidden";
+
+        const handleKeyDown = (event) => {
+            if (event.key === "Escape") {
+                onClose();
+            }
+        };
+
+        window.addEventListener("keydown", handleKeyDown);
+
+        return () => {
+            document.body.style.overflow = previousOverflow;
+            window.removeEventListener("keydown", handleKeyDown);
+        };
+    }, [onClose]);
+
+    const website = project.website;
+    const siteLabel = website?.includes("github.com")
+        ? "View on GitHub"
+        : website === "/"
+          ? "Open site"
+          : "Visit site";
+
+    return (
+        <div
+            className="project-dialog-backdrop"
+            onClick={onClose}
+            role="presentation"
+        >
+            <div
+                className="project-dialog"
+                role="dialog"
+                aria-modal="true"
+                aria-labelledby="project-dialog-title"
+                onClick={(event) => event.stopPropagation()}
+            >
+                <button
+                    type="button"
+                    className="project-dialog-close"
+                    onClick={onClose}
+                    aria-label="Close project details"
+                >
+                    ×
+                </button>
+
+                <div className="project-dialog-hero">
+                    <img src={project.image} alt="" />
+                </div>
+
+                <div className="project-dialog-body">
+                    <p className="project-dialog-type">{project.type}</p>
+                    <h2 id="project-dialog-title">{project.title}</h2>
+                    <p className="project-dialog-summary">{project.description}</p>
+
+                    <div className="project-dialog-techs">
+                        {project.techs.map((tech) => (
+                            <Highlight_small texto={tech} key={tech} />
+                        ))}
+                    </div>
+
+                    <DetailSection title="Overview" content={project.overview} />
+                    <DetailSection title="Objective" content={project.objective} />
+                    <DetailSection title="Process" content={project.process} />
+                    <DetailSection title="Challenges" content={project.challenges} />
+                    <DetailSection title="Learnings" content={project.learnings} />
+                    <DetailSection
+                        title="Technical approach"
+                        content={project.technicalApproach}
+                    />
+
+                    {project.screenshots?.length > 0 && (
+                        <section className="project-dialog-section">
+                            <h3>Screenshots</h3>
+                            <div className="project-dialog-screenshots">
+                                {project.screenshots.map((shot) => (
+                                    <figure key={shot.src}>
+                                        <img src={shot.src} alt={shot.alt} />
+                                    </figure>
+                                ))}
+                            </div>
+                        </section>
+                    )}
+
+                    <DetailSection title="Delivery" content={project.delivery} />
+
+                    {project.links?.length > 0 && (
+                        <section className="project-dialog-section">
+                            <h3>Links</h3>
+                            <ul className="project-dialog-links">
+                                {project.links.map((link) => (
+                                    <li key={link.href}>
+                                        <a
+                                            href={link.href}
+                                            target={
+                                                isExternalUrl(link.href)
+                                                    ? "_blank"
+                                                    : undefined
+                                            }
+                                            rel={
+                                                isExternalUrl(link.href)
+                                                    ? "noopener noreferrer"
+                                                    : undefined
+                                            }
+                                        >
+                                            {link.label}
+                                        </a>
+                                    </li>
+                                ))}
+                            </ul>
+                        </section>
+                    )}
+
+                    {website && (
+                        <div className="project-dialog-actions">
+                            <a
+                                className="project-action-btn project-action-btn-primary"
+                                href={website}
+                                target={isExternalUrl(website) ? "_blank" : undefined}
+                                rel={
+                                    isExternalUrl(website)
+                                        ? "noopener noreferrer"
+                                        : undefined
+                                }
+                            >
+                                {siteLabel}
+                            </a>
+                        </div>
+                    )}
+                </div>
+            </div>
+        </div>
+    );
+}
+
+ProjectDialog.propTypes = {
+    project: PropTypes.object.isRequired,
+    onClose: PropTypes.func.isRequired,
+};
