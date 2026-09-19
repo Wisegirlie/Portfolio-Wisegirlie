@@ -14,6 +14,7 @@ dist-ssr
 *.local
 src/assets/\[Originals\]/
 src/assets/projects/\[Originals\]/
+****/\[Originals\]/
 **/\[Originals\]/
 public/.htaccess
 
@@ -28,3 +29,5 @@ public/.htaccess
 *.sln
 *.sw?
 
+notas.txt
+****/\[Originals\]/

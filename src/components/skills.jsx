@@ -131,9 +131,11 @@ export default function Skills() {
                     <div className="skills_info">
                         <h3>Backend Development</h3>
                         <ul className="ul_bullet">
-                            <li>RESTful APIs</li>
                             <li>Node.js</li>
+                            <li>TypeScript</li>
+                            <li>RESTful APIs</li>
                             <li>Express.js</li>
+
                             <li>PHP</li>
                             <li>C#</li>
                             <li>Java</li>
@@ -146,11 +148,11 @@ export default function Skills() {
                     <div className="skills_info">
                         <h3>Database Management</h3>
                         <ul className="ul_bullet">
+                            <li>PostgreSQL</li>                            
                             <li>MySQL</li>
                             <li>MongoDB</li>
                             <li>Oracle SQL</li>
                             <li>PL/SQL</li>
-                            <li>PostgreSQL</li>
                         </ul>
                     </div>
                 </div>
@@ -217,7 +219,7 @@ export default function Skills() {
                             <li>ChatGPT</li>
                             <li>Claude</li>
                             <li>Gemini</li>
-                            <li>DeepSeek</li>                            
+                            <li>DeepSeek</li>
                         </ul>
                     </div>
                 </div>

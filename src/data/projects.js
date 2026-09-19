@@ -247,14 +247,14 @@ const projects = [
             { src: projectGabywaismanFullImg, alt: "Portfolio full page" },
         ],
         delivery: "This website — continuously updated as new work is added.",
-        links: [{ label: "Open site", href: "/" }],
+        links: [{ label: "Reload site", href: "/" }],
     },
 
     //  ---------  THEATRE APP  ---------
     {
         id: "project-theatreapp",
         title: "Theatre App",
-        type: "Web App Development",
+        type: "Web App",
         description:
             "Full-Stack development of a comprehensive online resource for the performing arts, culture, and entertainment. It features user authentication, client & admin portal, ticket purchasing simulation, among other features. (Still under development)",
         website: "https://github.com/Wisegirlie/Theatre-App",

@@ -7,10 +7,10 @@ function isExternalUrl(url) {
 }
 
 function siteButtonLabel(url) {
-    if (!url) return "Visit site";
+    if (!url) return "Live site";
     if (url.includes("github.com")) return "View on GitHub";
-    if (url === "/") return "Open site";
-    return "Visit site";
+    if (url === "/") return "Reload site";
+    return "Live site";
 }
 
 export default function Project({

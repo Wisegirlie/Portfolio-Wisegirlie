@@ -5,7 +5,7 @@
    =============================== */ 
    
 import { Header } from "./header.jsx";
-import '../css/main.css'
+import '../css/home.css'
 
 export function Page(props) {
 

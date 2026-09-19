@@ -6,7 +6,8 @@
 
 import { Header } from "./header.jsx";
 import { Footer } from "./footer.jsx";
-import '../css/main.css'
+import "../css/colors.css";
+import '../css/home.css'
 import { Link } from 'react-router-dom';
 import photo_gaby from '../assets/gaby_waisman_light.jpg';
 import { useState, useEffect } from 'react';

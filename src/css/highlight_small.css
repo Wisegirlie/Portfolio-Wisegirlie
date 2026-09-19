@@ -8,6 +8,8 @@
     /* background-color: #750035; // fucsia oscuro*/
     background-color: #ffffff;     
     color: #000000;
+    color: var(--text-primary);
+    background-color: var(--highlight-small-bg);
     border-radius: 9px;
     border: 1px solid transparent;
     padding: 0.2em 1.3em;
@@ -15,7 +17,5 @@
     font-weight: 600;
     font-family: inherit;
     transition: border-color 0.25s;
-    letter-spacing: 0.1em;
-    color: var(--text-primary);
-    background-color: var(--highlight-small-bg);     
+    letter-spacing: 0.1em;    
 }

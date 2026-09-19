@@ -26,13 +26,10 @@
     max-width: 800px;
 }
 
-.tech-badge {
-    /* background-color: var(--fucsia);
-    color: #ffffff; */
+.tech-badge {    
     background-color: var(--badge-bg);
     color: var(--badge-color);
-    border: 2px solid rgba(199, 11, 80, 0.3);    
-    border: 2px solid rgba(199, 11, 80, 0.35);    
+    border: 2px solid var(--badge-border);    
     box-shadow: 0 2px 6px var(--badge-shadow);
     border-radius: 12px;
     padding: 0.45em 1.2em;
@@ -294,6 +291,11 @@
     transform: translateY(-1px);
 }
 
+
+/*  ---------------------------- */
+/*    PROJECT DIALOG STYLES    */
+/*  ---------------------------- */
+
 .project-dialog-backdrop {
     position: fixed;
     inset: 0;
@@ -310,11 +312,12 @@
     width: min(980px, 100%);
     max-height: 92vh;
     overflow: auto;
-    background: var(--bg-primary);
-    color: var(--text-primary);
-    border-radius: 20px;
+    background: var(--projects-dialog-bg);
+    color: var(--projects-dialog-text);
+    border-radius: 20px;    
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.28);
     text-align: left;
+    border-top: var(--projects-dialog-border-top);
 }
 
 .project-dialog-close {
@@ -355,27 +358,27 @@
 
 .project-dialog-type {
     margin: 8px 0 0;
-    color: var(--project-subtitle);
+    color: var(--project-dialog-type);    
     font-weight: 500;
     letter-spacing: 0.05em;
     font-family: Raleway, Arial, Helvetica, sans-serif;
 }
 
 .project-dialog-body h2 {
-    margin: 4px 0 12px;
+    margin: 4px 0 20px;
     color: var(--titles);
     font-family: Raleway, Arial, Helvetica, sans-serif;
     font-size: 2rem;
 }
 
 .project-dialog-summary {
-    white-space: pre-line;
-    color: var(--project-text);
+    white-space: pre-line;    
     margin-bottom: 16px;
 }
 
 .project-dialog-techs {
-    margin-bottom: 28px;
+    margin-bottom: 28px;    
+    margin-left: -2px;
 }
 
 .project-dialog-section {
@@ -391,8 +394,7 @@
 }
 
 .project-dialog-section p,
-.project-dialog-section li {
-    color: var(--project-text);
+.project-dialog-section li {    
     line-height: 1.6;
 }
 

@@ -8,7 +8,7 @@
    
    export default function Highlight_small(props) {
     return (
-        <div className="highlight_small">
+        <div className="highlight_small" style={{ backgroundColor: `${props.backgroundColor} !important`, color: `${props.color} !important` }}>
                 {props.texto}
         </div>
     );

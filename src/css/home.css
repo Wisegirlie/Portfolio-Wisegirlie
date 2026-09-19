@@ -186,30 +186,6 @@ h1 {
     margin-left: 10px;
 }
   
-/* ----------------------------
-             COLORS
-   ---------------------------- */
-
-.gris_back {
-    background-color: var(--bg-secondary);
-}
-
-.negro {
-    color: var(--text-primary);
-}
-
-.rosa {
-    color: rgba(188, 0, 86, .1);
-}
-
-.rosa_back {
-    background-color: rgba(188, 0, 86, .1);
-}
-
-.fucsia {
-    color: #BC0056;  
-}
-
 
 .hide {
     display: none;

@@ -59,8 +59,8 @@ export default function ProjectDialog({ project, onClose }) {
     const siteLabel = website?.includes("github.com")
         ? "View on GitHub"
         : website === "/"
-          ? "Open site"
-          : "Visit site";
+          ? "Reload site"
+          : "Live site";
 
     return (
         <div
@@ -84,31 +84,64 @@ export default function ProjectDialog({ project, onClose }) {
                     ×
                 </button>
 
+                {/* ----- HERO ----- */}
                 <div className="project-dialog-hero">
                     <img src={project.image} alt="" />
                 </div>
 
+                {/* ----- BODY ----- */}
                 <div className="project-dialog-body">
+                    {/* ----- TYPE ----- */}
                     <p className="project-dialog-type">{project.type}</p>
+                    
+                    {/* ----- TITLE ----- */}
                     <h2 id="project-dialog-title">{project.title}</h2>
-                    <p className="project-dialog-summary">{project.description}</p>
 
-                    <div className="project-dialog-techs">
-                        {project.techs.map((tech) => (
-                            <Highlight_small texto={tech} key={tech} />
-                        ))}
-                    </div>
+                    {/* ----- DESCRIPTION ----- */}
+                    {/* <p className="project-dialog-summary">
+                        {project.description}
+                    </p> */}
 
-                    <DetailSection title="Overview" content={project.overview} />
-                    <DetailSection title="Objective" content={project.objective} />
+                    {/* ----- OVERVIEW ----- */}
+                    <DetailSection
+                        title="Overview"
+                        content={project.overview}
+                    />
+                    {/* ----- OBJECTIVE ----- */}
+                    <DetailSection
+                        title="Objective"
+                        content={project.objective}
+                    />
+                    {/* ----- PROCESS ----- */}
                     <DetailSection title="Process" content={project.process} />
-                    <DetailSection title="Challenges" content={project.challenges} />
-                    <DetailSection title="Learnings" content={project.learnings} />
+                    {/* ----- CHALLENGES ----- */}
+                    <DetailSection
+                        title="Challenges"
+                        content={project.challenges}
+                    />
+                    {/* ----- LEARNINGS ----- */}
+                    <DetailSection
+                        title="Learnings"
+                        content={project.learnings}
+                    />
+                    {/* ----- TECHNICAL APPROACH ----- */}
                     <DetailSection
                         title="Technical approach"
                         content={project.technicalApproach}
                     />
+                    {/* ----- TECHS ----- */}
+                    <div className="project-dialog-techs">
+                        {project.techs.map((tech) => (
+                            <Highlight_small
+                                texto={tech}
+                                key={tech}
+                                backgroundColor="var(--projects-dialog-badge-bg)"
+                                color="var(--projects-dialog-badge-color)"
+                            />
+                        ))}
+                    </div>
 
+                    {/* ----- SCREENSHOTS ----- */}
                     {project.screenshots?.length > 0 && (
                         <section className="project-dialog-section">
                             <h3>Screenshots</h3>
@@ -122,8 +155,13 @@ export default function ProjectDialog({ project, onClose }) {
                         </section>
                     )}
 
-                    <DetailSection title="Delivery" content={project.delivery} />
+                    {/* ----- DELIVERY ----- */}
+                    <DetailSection
+                        title="Delivery"
+                        content={project.delivery}
+                    />
 
+                    {/* ----- LINKS ----- */}
                     {project.links?.length > 0 && (
                         <section className="project-dialog-section">
                             <h3>Links</h3>
@@ -139,7 +177,7 @@ export default function ProjectDialog({ project, onClose }) {
                                             }
                                             rel={
                                                 isExternalUrl(link.href)
-                                                    ? "noopener noreferrer"
+                                                    ? "noopener"
                                                     : undefined
                                             }
                                         >
@@ -156,10 +194,14 @@ export default function ProjectDialog({ project, onClose }) {
                             <a
                                 className="project-action-btn project-action-btn-primary"
                                 href={website}
-                                target={isExternalUrl(website) ? "_blank" : undefined}
+                                target={
+                                    isExternalUrl(website)
+                                        ? "_blank"
+                                        : undefined
+                                }
                                 rel={
                                     isExternalUrl(website)
-                                        ? "noopener noreferrer"
+                                        ? "noopener"
                                         : undefined
                                 }
                             >

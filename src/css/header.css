@@ -91,9 +91,10 @@ header {
 
 .theme-toggle-button:hover {
     /* border-color: var(--fucsia); */
-    transform: scale(1.05);
+    transform: scale(1.15);
     box-shadow: 0 2px 8px var(--shadow);
     border: none;
+    background-color: transparent;    
 }
 
 .theme-toggle-button:focus {
