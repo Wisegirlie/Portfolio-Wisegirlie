@@ -243,6 +243,7 @@
     align-items: center;
     justify-content: center;
     min-width: 118px;
+    min-height: 36px;
     padding: 0.55em 1.1em;
     border-radius: 10px;
     font-size: 0.82em;
@@ -254,10 +255,7 @@
     box-sizing: border-box;
 }
 
-.project-action-btn-secondary {
-    /* background-color: transparent; */
-    /* color: var(--fucsia); */
-    /* border: 1.5px solid var(--fucsia); */
+.project-action-btn-secondary {    
     background-color: #AAA;
     color: #FFF;
     border: 1.5px solid #FFF;
@@ -291,6 +289,38 @@
     transform: translateY(-1px);
 }
 
+.project-action-btn-tertiary {
+    background-color: var(--projects-dialog-bg);
+    color: var(--fucsia);
+    border: 1.5px solid var(--fucsia);
+}
+
+.project-action-btn-tertiary:hover,
+.project-action-btn-tertiary:focus-visible {
+    background-color: var(--fucsia);
+    color: #ffffff;
+    border-color: var(--fucsia);
+}
+
+.project-dialog-link-icon {
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 2px;
+    width: 16px;
+    height: 16px;
+    margin-right: 12px;
+    color: var(--fucsia);
+}
+
+.project-link-icon {
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 1px;
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;    
+    margin-left: -3px;
+}
 
 /*  ---------------------------- */
 /*    PROJECT DIALOG STYLES    */
@@ -400,7 +430,7 @@
 
 .project-dialog-section ul {
     margin: 0;
-    padding-left: 1.2em;
+    padding-left: 0.8em;
 }
 
 .project-dialog-screenshots {

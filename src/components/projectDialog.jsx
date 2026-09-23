@@ -93,7 +93,7 @@ export default function ProjectDialog({ project, onClose }) {
                 <div className="project-dialog-body">
                     {/* ----- TYPE ----- */}
                     <p className="project-dialog-type">{project.type}</p>
-                    
+
                     {/* ----- TITLE ----- */}
                     <h2 id="project-dialog-title">{project.title}</h2>
 
@@ -119,11 +119,27 @@ export default function ProjectDialog({ project, onClose }) {
                         title="Challenges"
                         content={project.challenges}
                     />
+
                     {/* ----- LEARNINGS ----- */}
                     <DetailSection
                         title="Learnings"
                         content={project.learnings}
                     />
+
+                    {/* ----- SCREENSHOTS ----- */}
+                    {project.screenshots?.length > 0 && (
+                        <section className="project-dialog-section">
+                            <h3>Screenshots</h3>
+                            <div className="project-dialog-screenshots">
+                                {project.screenshots.map((shot) => (
+                                    <figure key={shot.src}>
+                                        <img src={shot.src} alt={shot.alt} />
+                                    </figure>
+                                ))}
+                            </div>
+                        </section>
+                    )}
+
                     {/* ----- TECHNICAL APPROACH ----- */}
                     <DetailSection
                         title="Technical approach"
@@ -140,21 +156,7 @@ export default function ProjectDialog({ project, onClose }) {
                             />
                         ))}
                     </div>
-
-                    {/* ----- SCREENSHOTS ----- */}
-                    {project.screenshots?.length > 0 && (
-                        <section className="project-dialog-section">
-                            <h3>Screenshots</h3>
-                            <div className="project-dialog-screenshots">
-                                {project.screenshots.map((shot) => (
-                                    <figure key={shot.src}>
-                                        <img src={shot.src} alt={shot.alt} />
-                                    </figure>
-                                ))}
-                            </div>
-                        </section>
-                    )}
-
+                    
                     {/* ----- DELIVERY ----- */}
                     <DetailSection
                         title="Delivery"
@@ -181,6 +183,11 @@ export default function ProjectDialog({ project, onClose }) {
                                                     : undefined
                                             }
                                         >
+                                            <img
+                                                src="./src/assets/icons/link.svg"
+                                                className="project-dialog-link-icon"
+                                                alt="Link icon"
+                                            />
                                             {link.label}
                                         </a>
                                     </li>
@@ -189,26 +196,17 @@ export default function ProjectDialog({ project, onClose }) {
                         </section>
                     )}
 
-                    {website && (
-                        <div className="project-dialog-actions">
-                            <a
-                                className="project-action-btn project-action-btn-primary"
-                                href={website}
-                                target={
-                                    isExternalUrl(website)
-                                        ? "_blank"
-                                        : undefined
-                                }
-                                rel={
-                                    isExternalUrl(website)
-                                        ? "noopener"
-                                        : undefined
-                                }
-                            >
-                                {siteLabel}
-                            </a>
-                        </div>
-                    )}
+                    {/* ----- Close Button ------ */}
+                    <div className="project-dialog-actions">
+                        <a
+                            className="project-action-btn project-action-btn-tertiary"
+                            onClick={onClose}
+                            aria-label="Close project details"
+                            style={{ marginTop: "20px", width: "150px" }}
+                        >
+                            Close
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>

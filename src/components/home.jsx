@@ -23,7 +23,7 @@ const titles = [
     "AI Enthusiast",
 ];
 
-const TITLE_CYCLE_MS = 2200;
+const TITLE_CYCLE_MS = 1800;
 
 export default function Home() {
 

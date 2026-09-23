@@ -29,39 +29,54 @@ const projects = [
         title: "Energit S.A.",
         type: "Website",
         description:
-            "Design and development of complete website for a company, including an internal portal to manage product database.",
+            "Design and development of a corporate and comercial website with an internal portal for managing the product catalogue, and user database.",        
         website: "https://energit.com.ar",
         image: projectEnergitImg,
         techs: ["PHP", "MySQL", "JavaScript", "HTML", "CSS", "Git"],
         overview:
-            "Corporate website for an energy company, paired with an internal portal that lets the team maintain the product catalog without touching code.",
+            "Design and development of a corporate website for a company specializing in power electronics equipment for energy applications.",
         objective:
-            "Give Energit a public presence that explains their offer, while making day-to-day product updates simple and reliable for non-technical staff.",
+            "Provide a public digital presence for Energit that increases visibility, engagement, and sales, while providing a detailed online product catalogue, client registration, and a simple, reliable way for non-technical staff to manage day-to-day product updates.",
         process: [
-            "Mapped public pages and the internal catalog workflow with the client.",
-            "Designed a clean corporate look and implemented the public site in HTML, CSS, and JavaScript.",
-            "Built a PHP/MySQL admin portal to create, edit, and organize product data.",
+            "Collaborated closely with the client to understand their business requirements and product characteristics, ensuring the solution met their business needs.", 
+            "Designed a clean corporate visual identity aligned with the company's brand colors, logo, and guidelines, giving the site a distinct personality rather than a generic template feel.",
+            "Developed the backend logic and database structure for product and user management.",
+            "Built the public-facing responsive website using PHP, MySQL, JavaScript, HTML, and CSS.",
+            "Developed an internal admin portal for creating, editing, and organizing product information.",            
+            "Implemented security measures throughout the website and administration system.",
             "Tested content workflows with the team before launch.",
+            "Conducted frequent iterations to improve or add features based on user feedback and evolving business needs.",  
+            "Provided hosting, support, and ongoing maintenance, to ensure the website and internal portal remain functional and up-to-date."
         ],
-        challenges: [
-            "Keeping the public catalog in sync with internal edits.",
-            "Designing an admin experience that is usable without technical training.",
+        challenges: [   
+            "Products could have multiple classification attributes, requiring careful front-end implementation to present the different combinations clearly and intuitively.",            
+            "Some legacy code used from the previous website required extensive refactoring and cleanup to integrate it with the new front-end and back-end systems.",
+            "Worked with minimal feedback and material resources from the client, requiring proactive problem-solving and initiative.",            
         ],
         learnings: [
-            "A small, focused CMS often serves a company better than a heavy generic one.",
-            "Early walkthroughs with the people who will edit content prevent rework after launch.",
+            "Finding ways to display complex product information that is both clear and user-friendly.",
+            "Provide comprehensive solutions without expecting the client to have all the answers or materials ready.", 
+            "When working with legacy code, careful integration, refactoring, and cleaning were essential.",            
+            "Extensive testing and implementing security measures are crucial to ensure a secure and reliable website.",
         ],
         technicalApproach:
-            "Server-rendered PHP pages on top of a MySQL product database, with JavaScript for front-end interactions. Git was used for version control throughout development.",
+            "This project involved both front-end and back-end development, ensuring a seamless user experience and efficient content management.",
         screenshots: [
             { src: projectEnergitImg, alt: "Energit homepage" },
             { src: projectEnergit2Img, alt: "Energit website screenshot" },
         ],
-        delivery:
-            "Live production website with an internal product-management portal.",
-        links: [{ label: "Live website", href: "https://energit.com.ar" }],
+        delivery: [
+            "Live corporate website featuring the complete product catalogue and contact information.",
+            "Internal management portal that allows administrators to manage the product catalogue and user database without touching code.",
+            "Hosting, support, and ongoing maintenance to ensure the website and internal portal remain functional and up-to-date.",
+        ],
+        links: [{ 
+            label: 'Visit Live website', 
+            href: "https://energit.com.ar" 
+        }],
     },
 
+    
     //  ---------  FIREFLY SPARK  ---------
     {
         id: "project-firefly",
