@@ -39,7 +39,7 @@ const projects = [
             "Provide a public digital presence for Energit that increases visibility, engagement, and sales, while providing a detailed online product catalogue, client registration, and a simple, reliable way for non-technical staff to manage day-to-day product updates.",
         process: [
             "Collaborated closely with the client to understand their business requirements and product characteristics, ensuring the solution met their business needs.", 
-            "Designed a clean corporate visual identity aligned with the company's brand colors, logo, and guidelines, giving the site a distinct personality rather than a generic template feel.",
+            "Designed a clean corporate visual identity aligned with the company's brand colors, logo, and guidelines, giving the site a distinct personality rather than a generic feel.",
             "Developed the backend logic and database structure for product and user management.",
             "Built the public-facing responsive website using PHP, MySQL, JavaScript, HTML, and CSS.",
             "Developed an internal admin portal for creating, editing, and organizing product information.",            
@@ -76,7 +76,7 @@ const projects = [
         }],
     },
 
-    
+
     //  ---------  FIREFLY SPARK  ---------
     {
         id: "project-firefly",
@@ -514,28 +514,38 @@ const projects = [
         image: projectRosariaImg,
         techs: ["HTML", "CSS", "JavaScript"],
         overview:
-            "Complete brand website designed and developed to the client's existing colors and fonts.",
-        objective:
-            "Launch a full site that feels like the brand, not a generic template.",
+            "Design and development of a brand website for an actress who creates shows for children.",
+        objective: 
+            "Provide a site that showcases the fictional character and is interactive, attractive, and engaging for children, while reflecting the fictional character's personality and maintaining the brand's visual identity.",        
         process: [
-            "Collected brand colors, type, and content requirements.",
-            "Designed layouts that respect those constraints.",
-            "Built and launched the site in HTML, CSS, and JavaScript.",
+            "Collected requirements: collaborated with the client to gather requirements, information, brand logo and colors, guidelines, typefaces, content, and other materials.",
+            "Created a mockup to present the initial design concept to the client and gather feedback.",
+            "Worked with an illustrator to create custom graphics that aligned with the visual identity.",
+            "Designed and built the entire site using HTML, CSS, and JavaScript.",
+            "Provided hosting and maintenance for the website",
+            "Maintained constant communication with the client to ensure alignment with their vision throughout the project lifecycle."
         ],
         challenges: [
-            "Working inside a fixed brand system while still creating a distinctive page rhythm.",
+            "The client required strict adherence to specific client-selected colors and a cursive font that affected readability.",
+            "All included multimedia content had to be carefully integrated to maintain the visual identity.",
+            "Completed the project with very limited resources."
         ],
         learnings: [
-            "Brand constraints can speed design if they are documented before layout starts.",
+            "Effectively explain the pros and cons of certain design decisions while adapting the design approach to meet the client's requirements, even when they chose a different direction.",
+            "Balance content in each section to achieve a visually appealing and functional website, with calls to action strategically placed.",
+            "Providing guidance for non-technical clients is crucial for the long-term success.",
         ],
-        technicalApproach:
-            "Custom HTML/CSS/JavaScript implementation of the client's visual identity.",
+        technicalApproach: 
+            " ",
         screenshots: [
-            { src: projectRosariaImg, alt: "Rosaria website" },
-            { src: projectRosaria1Img, alt: "Rosaria website page" },
+            { src: projectRosariaImg, alt: "Soy Rosaria website" },
+            { src: projectRosaria1Img, alt: "Soy Rosaria website page" },
         ],
-        delivery: "Live production website.",
-        links: [{ label: "Live website", href: "https://www.soyrosaria.com" }],
+        delivery: [
+            "Live website",
+            "Hosting, support, and ongoing maintenance",
+        ],
+        links: [{ label: "Visit live website", href: "https://www.soyrosaria.com" }],
     },
 
     //  ---------  INTERACTIVE SVG MAP  ---------
@@ -549,31 +559,36 @@ const projects = [
         image: projectSvgMapImg,
         techs: ["SVG", "JavaScript", "HTML", "CSS"],
         overview:
-            "Interactive map component that uses SVG properties for regions and interaction, visually matched to the client's existing site.",
+            "Interactive map component to be integrated into the client's existing site, using SVG properties for interaction.",
         objective:
-            "Let visitors explore geographic referents without breaking the look of the host page.",
+            "Deliver a fully functional interactive SVG map that reflects the client's visual identity.",
         process: [
-            "Studied the client's visual language.",
+            "Collected requirements and data, and studied the client's visual language.",
             "Built an SVG map with interactive states in JavaScript.",
-            "Embedded it so it sits naturally in the live page.",
+            "Tested the interactive map across different devices and browsers to ensure consistent behavior.",
+            "Embedded it so it sits naturally in the live page.",            
+            "Trained the client on how to update data on the interactive SVG map.",
         ],
         challenges: [
             "Making SVG regions usable on both desktop and mobile.",
-            "Matching colors and interaction to an already-live site.",
+            "Worked with a non-technical client who also managed their existing website, and trained them to update the data on the interactive SVG map when needed.",
         ],
         learnings: [
-            "SVG is a strong fit for maps when you need crisp scaling and per-region behavior.",
-            "Components that live inside someone else's site need extra care with CSS scope.",
+            "Taking advantage of the full capabilities of SVG.",
+            "Guiding clients with no technical knowledge.", 
         ],
         technicalApproach:
-            "SVG markup styled with CSS and driven by JavaScript for hover, selection, and related content.",
+            " ",
         screenshots: [
             { src: projectSvgMapImg, alt: "Interactive SVG map" },
         ],
-        delivery: "Live component on the client's website.",
+        delivery: [
+            "Live component embedded into the client's website.",
+            "Technical support and guidance.",
+        ],
         links: [
             {
-                label: "Live map",
+                label: "Visit live map component",
                 href: "https://unidadpopular.org.ar/mapa-referentes/",
             },
         ],
