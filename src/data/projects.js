@@ -145,28 +145,37 @@ const projects = [
         image: projectMelisaWebImg,
         techs: ["HTML", "CSS", "JavaScript", "PHP", "MySQL", "Git"],
         overview:
-            "Professional portfolio for a horror scriptwriter, with a mood and palette defined with the client and an internal portal for updating content.",
+            "Design and development of a professional digital portfolio for a horror scriptwriter.",
         objective:
-            "Present the writer's work with a distinctive horror-informed look, while letting her edit content independently.",
+            "Provide a website that presents the writer's work and profile with a distinctive horror-inspired look, including an internal content-editing portal to facilitate updates.",
         process: [
+            "Collaborated closely with the client to define contents and requirements.", 
             "Aligned on color, typography, and atmosphere with the client.",
+            "Created images and worked on the texts.",
             "Designed and built the public portfolio pages.",
-            "Added a PHP/MySQL content-editing portal for ongoing updates.",
+            "Added an internal content-editing portal for ongoing updates.",
+            "Tested the website thoroughly to ensure functionality and design consistency.",
+            "Launched the site and provided hosting, ongoing maintenance, and support.",
         ],
-        challenges: [
-            "Balancing a strong genre aesthetic with readability and professional credibility.",
-            "Giving the client a simple editing path without exposing the full stack.",
+        challenges: [                        
+            "Balancing a strong genre aesthetic with readability and professional credibility.",            
+            "Building an internal text editor for news, that enable the client to use font variations, image insertion, and formatting options.",
+            "Including little horror-themed interactive elements to enhance user engagement.",            
         ],
         learnings: [
-            "Look & feel decisions work best when they are made with the client, not presented as a surprise.",
-            "A lightweight CMS is enough when the content model is clear.",
+            "When working with very specialized genres, close collaboration with the client is crucial to ensure that the chosen resources align with their vision and expectations.",
+            "Iteration and continuous feedback are key to refining both the design and functionality, leaving the door open for future improvements.",
         ],
         technicalApproach:
-            "HTML, CSS, and JavaScript for the public site; PHP and MySQL for the internal editing portal, versioned with Git.",
+            "Developed with HTML, CSS, and JavaScript for the static site; and PHP and MySQL for editable content and registration of forms. Versioned with Git.",
         screenshots: [
             { src: projectMelisaWebImg, alt: "Melisa Mozzati portfolio website" },
         ],
-        delivery: "Live portfolio website with an internal content portal.",
+        delivery: [
+            "Live portfolio website",
+            "Internal content-editing portal.",
+            "Hosting, support, and ongoing maintenance.",
+        ],
         links: [{ label: "Live website", href: "https://www.melisamozzati.com" }],
     },
 
@@ -571,7 +580,7 @@ const projects = [
         ],
         challenges: [
             "Making SVG regions usable on both desktop and mobile.",
-            "Worked with a non-technical client who also managed their existing website, and trained them to update the data on the interactive SVG map when needed.",
+            "Working with a non-technical client who also manages their existing website, and training them to update the data on the interactive SVG map when needed.",
         ],
         learnings: [
             "Taking advantage of the full capabilities of SVG.",
