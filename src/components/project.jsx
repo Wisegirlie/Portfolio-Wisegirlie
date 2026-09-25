@@ -8,7 +8,7 @@ function isExternalUrl(url) {
 
 function siteButtonLabel(url) {
     if (!url) return "Live site";
-    if (url.includes("github.com")) return "View on GitHub";
+    if (url.includes("github.com")) return "GitHub";
     if (url === "/") return "Reload site";
     return "Live site";
 }
@@ -17,6 +17,7 @@ export default function Project({
     id,
     title,
     type,
+    publishInfo,
     description,
     website,
     image,
@@ -37,6 +38,7 @@ export default function Project({
                 ))}
             </div>
             <div className="project-card-actions">
+                {publishInfo && (
                 <button
                     type="button"
                     className="project-action-btn project-action-btn-secondary"
@@ -44,6 +46,7 @@ export default function Project({
                 >
                     + Info
                 </button>
+                )}
                 {website && (
                     <a
                         className="project-action-btn project-action-btn-secondary"
@@ -79,5 +82,6 @@ Project.propTypes = {
     website: PropTypes.string,
     image: PropTypes.string,
     techs: PropTypes.array,
+    publishInfo: PropTypes.bool,
     onMoreInfo: PropTypes.func,
 };

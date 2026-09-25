@@ -127,7 +127,7 @@ export default function ProjectDialog({ project, onClose }) {
                     />
 
                     {/* ----- SCREENSHOTS ----- */}
-                    {project.screenshots?.length > 0 && (
+                    {/* {project.screenshots?.length > 0 && (
                         <section className="project-dialog-section">
                             <h3>Screenshots</h3>
                             <div className="project-dialog-screenshots">
@@ -138,7 +138,7 @@ export default function ProjectDialog({ project, onClose }) {
                                 ))}
                             </div>
                         </section>
-                    )}
+                    )} */}
 
                     {/* ----- TECHNICAL APPROACH ----- */}
                     <DetailSection

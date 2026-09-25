@@ -102,6 +102,7 @@ export default function Projects() {
                             website={project.website}
                             image={project.image}
                             techs={project.techs}
+                            publishInfo={project.publishInfo}
                             onMoreInfo={() => setSelectedProject(project)}
                         />
                     </div>

@@ -42,21 +42,23 @@ export default function About() {
                     <div className="about_bio_div gris_back">
                         <h1>About me</h1>
                         <span style={{ fontSize: "110%" }}>
-                            I'm a <strong>
-                                Full-Stack Software Developer</strong>{" "}
+                            I'm a <strong>Full-Stack Software Developer</strong>{" "}
                             with a strong focus on{" "}
-                            <strong style={{ color: "var(--fucsia)" }}>
-                                Frontend Development
-                            </strong>{" "}
-                            and a background in <strong> Design </strong>
+                            <strong>Frontend Development</strong> and a
+                            background in <strong> Design </strong>
                             and <strong>Communication</strong>.
                         </span>
                         <br /> <br />
                         I'm a <strong>full-stack developer</strong> with a{" "}
-                        <strong style={{ color: "var(--fucsia)" }}>designer's eye</strong> and an{" "}
-                        <strong style={{ color: "var(--fucsia)" }}>engineer's mind</strong>, combining technical
-                        depth with a strong background in design and
-                        communication to build applications that are
+                        <strong style={{ color: "var(--fucsia)" }}>
+                            designer's eye
+                        </strong>{" "}
+                        and an{" "}
+                        <strong style={{ color: "var(--fucsia)" }}>
+                            engineer's mind
+                        </strong>
+                        , combining technical depth with a strong background in
+                        design and communication to build applications that are
                         well-engineered and intuitive for the people who use
                         them.
                         <br /> <br />
@@ -116,12 +118,37 @@ export default function About() {
                         <h3>Tech & Community</h3>
                         <strong>AI Ladies Lounge</strong>: Active member of this
                         monthly workshop and meetup group, focused on mastering
-                        AI and emerging technologies.
+                        AI and emerging technologies.&nbsp;
+                        <a
+                            href="https://www.ailadieslounge.com/"
+                            target="_blank"
+                            rel="noopener"
+                            style={{
+                                textDecoration: "none",
+                                color: "#000000",
+                                fontWeight: "400",
+                            }}
+                        >
+                            <em>www.ailadieslounge.com</em>
+                        </a>
                         <br />
                         <br />
                         <strong>Toronto Tech Week</strong>: Engaging with the
                         local ecosystem to stay current on emerging trends,
-                        industry leaders, and new professional connections.
+                        industry leaders, and new professional
+                        connections.&nbsp;
+                        <a
+                            href="https://www.torontotechweek.com/"
+                            target="_blank"
+                            rel="noopener"
+                            style={{
+                                textDecoration: "none",
+                                color: "#000000",
+                                fontWeight: "400",
+                            }}
+                        >
+                            <em>www.torontotechweek.com</em>
+                        </a>
                         <br />
                         <br />
                         <Link to="/contact">

@@ -74,6 +74,7 @@ const projects = [
             label: 'Visit Live website', 
             href: "https://energit.com.ar" 
         }],
+        publishInfo: true,
     },
 
 
@@ -96,6 +97,7 @@ const projects = [
             "PostgreSQL",
             "Git",
             "JavaScript",
+            "TypeScript",
             "HTML",
             "CSS",
             "SVG",
@@ -104,34 +106,54 @@ const projects = [
             "Figma",
         ],
         overview:
-            "Cross-platform mobile product for iOS and Android, built from Figma into a full stack of screens, APIs, and database integration. This version has not been released yet.",
+            "Fullstack development of a mobile app for making new friends, developed for both iOS and Android.",
         objective:
-            "Ship a scalable, production-ready app experience with reusable UI, authenticated user flows, and map-based features that match the design system.",
+            "Ship a scalable, production-ready app experience with reusable UI components, authenticated user flows, deep links, activity logs, live chat, user interactions, app configuration, and map-based features that match the design system.",
         process: [
-            "Translated Figma screens into reusable React Native / Expo components.",
-            "Implemented complete feature flows and navigation.",
-            "Built RESTful API endpoints and wired them to PostgreSQL.",
-            "Integrated login authentication and Google Maps.",
+            "Translated Figma designs into reusable components and full screens.",
+            "Refined components and system for design consistency.",
+            "Implemented complete feature flows and navigation for user account management, deep links, event creation, map integration, app configuration, credits management, activity log, admin account, among other features.",
+            "Built the correspondant backend RESTful API endpoints and integrated them with the database.",
+            "Ensured seamless integration between frontend components and backend services.",
+            "Integrated Google Maps with several features, including location filtering to allow only selected public spaces.",
+            "Created deep links for sharing specific app content.",
+            "Worked to ensure iOS and Android compatibility and visual consistency.",
+            "Led the development team during some sprints.",            
+            "Documented code for future reference and team onboarding.",            
+            "Worked in an Agile development environment with daily meetings, regular sprints and team collaboration.",
+            "Used issue tracking and project management tools for team coordination.",
+            "Managed Git workflows and version control for the development team.",
         ],
         challenges: [
-            "Keeping visual fidelity with Figma while building a maintainable component system.",
-            "Coordinating mobile UI, REST APIs, and database models so user flows stayed seamless.",
+            "Working in a very high-pressure environment with time constraints.",
+            "The designs kept changing continuously, requiring frequent updates to the components and screens.",
+            "The system itself had frequent major changes that required careful adjustments and updates to the features while keeping the project on track",
+            "Keeping visual fidelity and flow between iOS and Android.",
+            "Ensuring smooth collaboration between frontend and backend teams under tight deadlines.",
+            "Handling unexpected technical challenges and finding quick solutions under pressure.",
         ],
-        learnings: [
-            "Reusable components and a clear API contract make later screens much faster to ship.",
-            "Map and auth features need to be designed as first-class flows, not last-minute add-ons.",
+        learnings: [            
+            "Effective communication and collaboration are crucial in high-pressure development environments.",
+            "Balancing the need for rapid development with maintaining code quality.",  
+            "Adapting to frequent design changes while maintaining project progress.",            
+            "Prioritizing tasks effectively under tight deadlines.",
+            "Recognizing the value of thorough documentation for reference.",
+            "The importance of keeping the team engaged by actively hearing all voices and recognizing everyone's contributions.",
         ],
         technicalApproach:
-            "React Native with Expo on the client. Node.js/Express and Python services expose REST APIs backed by PostgreSQL. Authentication and Google Maps APIs sit on top of that stack.",
+            "Developed using React Native with Expo on the client side. The database was PostgreSQL, and the backend was built with Node.js/Express and Python, exposing REST APIs. Authentication and Google Maps APIs were integrated into the stack.",
         screenshots: [
             { src: projectFireFlyImg, alt: "Firefly Spark app preview" },
             { src: projectFireFly2Img, alt: "Firefly Spark screen" },
             { src: projectFireFly3Img, alt: "Firefly Spark screen 2" },
             { src: projectFireFly4Img, alt: "Firefly Spark screen 3" },
         ],
-        delivery:
-            "Fully functional app build and backend. Public product marketing site is live; this app version is not released yet.",
+        delivery: [        
+            "Fully functional app build and backend.",
+            "Public product marketing site is live; this app version is not yet released.",
+        ],
         links: [{ label: "Product site", href: "https://fireflyspark.io/" }],
+        publishInfo: true,
     },
 
     //  ---------  MELISA MOZZATI  ---------
@@ -163,11 +185,11 @@ const projects = [
             "Including little horror-themed interactive elements to enhance user engagement.",            
         ],
         learnings: [
-            "When working with very specialized genres, close collaboration with the client is crucial to ensure that the chosen resources align with their vision and expectations.",
+            "When working with very specialized topics, close collaboration with the client is crucial to ensure that the chosen resources align with their vision and expectations.",
             "Iteration and continuous feedback are key to refining both the design and functionality, leaving the door open for future improvements.",
         ],
         technicalApproach:
-            "Developed with HTML, CSS, and JavaScript for the static site; and PHP and MySQL for editable content and registration of forms. Versioned with Git.",
+            "Developed with HTML, CSS, and JavaScript for the static pages; and PHP and MySQL for editable content and registration of forms. Versioned with Git.",
         screenshots: [
             { src: projectMelisaWebImg, alt: "Melisa Mozzati portfolio website" },
         ],
@@ -177,6 +199,7 @@ const projects = [
             "Hosting, support, and ongoing maintenance.",
         ],
         links: [{ label: "Live website", href: "https://www.melisamozzati.com" }],
+        publishInfo: true,
     },
 
     //  ---------  FINDGRANT  ---------
@@ -196,6 +219,7 @@ const projects = [
             "Express.js",
             "Git",
             "JavaScript",
+            "TypeScript",
             "HTML",
             "CSS",
             "SVG",
@@ -227,6 +251,7 @@ const projects = [
         delivery:
             "Front-end handed off as a working product. The live site may include later changes by the product owner.",
         links: [{ label: "Live website", href: "https://findgrant.ca/" }],
+        publishInfo: false,
     },
 
     //  ---------  PORTFOLIO  ---------
@@ -243,6 +268,7 @@ const projects = [
             "Node.js",
             "PHP",
             "JavaScript",
+            "TypeScript",
             "HTML",
             "CSS",
             "Git",
@@ -272,6 +298,7 @@ const projects = [
         ],
         delivery: "This website — continuously updated as new work is added.",
         links: [{ label: "Reload site", href: "/" }],
+        publishInfo: false,
     },
 
     //  ---------  THEATRE APP  ---------
@@ -325,6 +352,7 @@ const projects = [
                 href: "https://github.com/Wisegirlie/Theatre-App",
             },
         ],
+        publishInfo: false,
     },
 
     //  ---------  DIVERSA FILMS  ---------
@@ -362,6 +390,7 @@ const projects = [
         links: [
             { label: "Live website", href: "https://www.diversafilms.com.ar" },
         ],
+        publishInfo: false,
     },
 
     //  ---------  SECURE REGISTRATION FORM  ---------
@@ -416,6 +445,7 @@ const projects = [
                 href: "https://gabywaisman.com/portfolio/secure-registration-form/index.html",
             },
         ],
+        publishInfo: false,
     },
 
     //  ---------  REAL STATE  ---------
@@ -456,6 +486,7 @@ const projects = [
                 href: "https://www.gabywaisman.com/portfolio/real-state/index.html",
             },
         ],
+        publishInfo: false,
     },
 
     //  ---------  VOICE COMMANDED SUPERMARKET LIST  ---------
@@ -477,6 +508,7 @@ const projects = [
             "MongoDB",
             "Google Speech-to-Text API",
             "JavaScript",
+            "TypeScript",
             "HTML",
             "CSS",
             "Git",
@@ -510,6 +542,7 @@ const projects = [
                 href: "https://github.com/Wisegirlie/Supermarket-list-voice-commanded",
             },
         ],
+        publishInfo: false,
     },
 
     //  ---------  ROSARIA  ---------
@@ -525,7 +558,7 @@ const projects = [
         overview:
             "Design and development of a brand website for an actress who creates shows for children.",
         objective: 
-            "Provide a site that showcases the fictional character and is interactive, attractive, and engaging for children, while reflecting the fictional character's personality and maintaining the brand's visual identity.",        
+            "Provide a site that showcases the fictional character and that is interactive, attractive, and engaging for children, while reflecting the fictional character's personality and maintaining the brand's visual identity.",        
         process: [
             "Collected requirements: collaborated with the client to gather requirements, information, brand logo and colors, guidelines, typefaces, content, and other materials.",
             "Created a mockup to present the initial design concept to the client and gather feedback.",
@@ -555,6 +588,7 @@ const projects = [
             "Hosting, support, and ongoing maintenance",
         ],
         links: [{ label: "Visit live website", href: "https://www.soyrosaria.com" }],
+        publishInfo: true,
     },
 
     //  ---------  INTERACTIVE SVG MAP  ---------
@@ -601,6 +635,7 @@ const projects = [
                 href: "https://unidadpopular.org.ar/mapa-referentes/",
             },
         ],
+        publishInfo: true,
     },
 ];
 

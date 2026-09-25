@@ -112,10 +112,12 @@ export default function Skills() {
                             <li>JavaScript (ES6+)</li>
                             <li>React</li>
                             <li>React Native</li>
+                            <li>TypeScript</li>
+                            <li>Next.js</li>
                             <li>Vite</li>
                             <li>Expo</li>
-                            <li>WordPress</li>
                             <li>Responsive Design</li>
+                            <li>WordPress</li>
                             <li>Accessibility (WCAG)</li>
                             <li>Semantic HTML</li>
                             <li>SVG</li>
@@ -132,14 +134,14 @@ export default function Skills() {
                         <h3>Backend Development</h3>
                         <ul className="ul_bullet">
                             <li>Node.js</li>
-                            <li>TypeScript</li>
                             <li>RESTful APIs</li>
+                            <li>TypeScript</li>
                             <li>Express.js</li>
-
+                            <li>Next.js</li>
                             <li>PHP</li>
                             <li>C#</li>
                             <li>Java</li>
-                            <li>COBOL</li>
+                            <li>Cobol</li>
                         </ul>
                     </div>
                 </div>
@@ -148,7 +150,7 @@ export default function Skills() {
                     <div className="skills_info">
                         <h3>Database Management</h3>
                         <ul className="ul_bullet">
-                            <li>PostgreSQL</li>                            
+                            <li>PostgreSQL</li>
                             <li>MySQL</li>
                             <li>MongoDB</li>
                             <li>Oracle SQL</li>
@@ -166,7 +168,7 @@ export default function Skills() {
                         <ul className="ul_bullet">
                             <li>Git</li>
                             <li>GitHub</li>
-                            <li>Agile workflows</li>
+                            <li>Agile Workflows</li>
                         </ul>
                     </div>
                 </div>
@@ -191,6 +193,7 @@ export default function Skills() {
                         <h3>Developer Tools</h3>
                         <ul className="ul_bullet">
                             <li>VS Code</li>
+                            <li>Cursor AI</li>
                             <li>Visual Studio</li>
                             <li>Dreamweaver</li>
                             <li>Visio</li>
@@ -212,14 +215,14 @@ export default function Skills() {
                         <h3>AI-Enhanced Development</h3>
                         <ul className="ul_bullet">
                             <li>Prompt engineering</li>
-                            <li>AI-assisted debugging & refactoring</li>
-                            <li>Documentation and knowledge synthesis</li>
                             <li>GitHub Copilot</li>
                             <li>Cursor AI</li>
                             <li>ChatGPT</li>
                             <li>Claude</li>
                             <li>Gemini</li>
                             <li>DeepSeek</li>
+                            <li>AI-assisted debugging & refactoring</li>
+                            <li>Documentation and knowledge synthesis</li>
                         </ul>
                     </div>
                 </div>
@@ -238,7 +241,7 @@ export default function Skills() {
 
                 <div className="skills_div" style={{ minHeight: "150px" }}>
                     <div className="skills_info">
-                        <h3>Languages</h3>
+                        <h3>Spoken Languages</h3>
                         <ul className="ul_bullet">
                             <li>English</li>
                             <li>Spanish</li>
