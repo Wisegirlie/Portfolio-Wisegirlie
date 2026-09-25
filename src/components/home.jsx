@@ -77,7 +77,7 @@ export default function Home() {
                         </div>
                         <br /> <br />
                         <span className="home_text_intro"> 
-                            Software Developer with a designer’s eye and an engineer's mind, passionate about crafting clear, intuitive, user-friendly, and visually appealing digital experiences. Blends strong UI/UX design and communication expertise with solid technical expertise in modern technologies.
+                            Software Developer with a designer’s eye and an engineer's mind, passionate about crafting clear, intuitive, user-friendly, and visually appealing digital experiences. Blends strong UI/UX design and communication expertise with solid technical skills in modern technologies.
                         </span>
                         <br />
                         <Link to="/about">
